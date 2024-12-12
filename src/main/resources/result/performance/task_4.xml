@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<performanceList>
+    <performance>
+        <title>Дядя Ваня</title>
+        <duration>2:15</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/188_58c9205a286214b81811b0c5a89566.jpg</imageUrl>
+        <date>17 октября 2024 в 18:30</date>
+    </performance>
+    <performance>
+        <title>Шукшин. Рассказы</title>
+        <duration>2:20</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/214_15d6dd0fcde141e10dc6d83121f2dd.jpg</imageUrl>
+        <date>19 октября 2024 в 17:00</date>
+    </performance>
+    <performance>
+        <title>Хлынов. Сага о городе и его жителях</title>
+        <duration>3:00</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/303_647cb5206e33ff2fdda27337c07293.jpg</imageUrl>
+        <date>02 ноября 2024 в 18:30</date>
+    </performance>
+    <performance>
+        <title>Пиковая дама</title>
+        <duration>2:45</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/339_c6b39f57656b1907620a0ccc69592f.jpg</imageUrl>
+        <date>16 ноября 2024 в 17:00</date>
+    </performance>
+    <performance>
+        <title>Семейка Краузе</title>
+        <duration>2:20</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/27_d88dcfb9bef9eb18788ae177faac6e.jpg</imageUrl>
+        <date>26 октября 2024 в 18:30</date>
+    </performance>
+    <performance>
+        <title>Монарх</title>
+        <duration>2:50</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/225_e95cc32223ae5de7de1f4efbc978ff.jpg</imageUrl>
+        <date>30 ноября 2024 в 17:00</date>
+    </performance>
+</performanceList>

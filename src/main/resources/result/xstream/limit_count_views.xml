@@ -1,0 +1,471 @@
+<articles>
+  <article>
+    <title>$800 000 на фейковой аналитике: история самого юного биржевого мошенника</title>
+    <author>Finam_Broker</author>
+    <datePublished>2024-11-10 12:00:00.0 UTC</datePublished>
+    <timeToRead>5</timeToRead>
+    <countViews>19000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/c3b/445/e2f/c3b445e2f88bf2a3da01747b1e23707e.jpg</imageUrl>
+    <categories>
+      <category>Блог компании Финам</category>
+      <category>Научно-популярное</category>
+      <category>Читальный зал</category>
+    </categories>
+    <textPreview>В этой статье мы расскажем о нашем опыте использования предиктивного анализа на основе нейросетей LSTM для прогнозирования состояния насосов.</textPreview>
+  </article>
+  <article>
+    <title>«Самолёт» прилетел</title>
+    <author>it_union</author>
+    <datePublished>2024-11-08 09:00:00.0 UTC</datePublished>
+    <timeToRead>2</timeToRead>
+    <countViews>14000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/752/dd7/afa/752dd7afa49a422b7ab0c0164d6409be.jpg</imageUrl>
+    <categories>
+      <category>Карьера в IT-индустрии</category>
+    </categories>
+    <textPreview>В этой статье описана история дизайн-директора в web-разработке, который два года назад переехал в Испанию. Наш герой рассказал об испанской Startup-визе, своей жизни в Барселоне и сравнил ее с жизнью в Ницце: сколько стоит жилье, какие есть повседневные расходы и почему Испания лучше, чем Франция.</textPreview>
+  </article>
+  <article>
+    <title>«Энциклопедия профессора Фортрана»: вспоминаем легендарную книгу из детства миллениалов</title>
+    <author>Erwinmal</author>
+    <datePublished>2024-11-09 09:01:00.0 UTC</datePublished>
+    <timeToRead>15</timeToRead>
+    <countViews>13000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Блог компании RUVDS.com</category>
+      <category>Научно-популярное</category>
+      <category>Читальный зал</category>
+    </categories>
+    <textPreview>В 2008 году на падении рынков я познакомился с фондовым рынком, тогда мне уже удалось с зарплаты и халтурок накопить несколько десятков тысяч долларов, хотелось легких денег и закрывать квартирный вопорос и вообще, сделать рывок.</textPreview>
+  </article>
+  <article>
+    <title>Анонимный мессенджер — обязательный стандарт для каждого человека</title>
+    <author>alizar</author>
+    <datePublished>2024-11-07 10:25:00.0 UTC</datePublished>
+    <timeToRead>8</timeToRead>
+    <countViews>53000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Open source</category>
+      <category>*</category>
+      <category>Децентрализованные сети</category>
+      <category>*</category>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+      <category>Криптография</category>
+      <category>*</category>
+      <category>Мессенджеры</category>
+      <category>*</category>
+    </categories>
+    <textPreview>В этой статье мы применим некоторые оптимизации к коду, увеличим разрешение и перейдем в режим immediate graphics, когда рендер выполняется программой, а не API графической библиотеки.</textPreview>
+  </article>
+  <article>
+    <title>Вся правда о переходе с монолита на микросервисы, когда у тебя сеть из десятков тысяч магазинов: опыт Х5 Tech</title>
+    <author>MarioKiber</author>
+    <datePublished>2024-11-08 11:55:00.0 UTC</datePublished>
+    <timeToRead>14</timeToRead>
+    <countViews>13000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/5f3/f42/5c2/5f3f425c2878a03c4f520ca09a07fd0c.png</imageUrl>
+    <categories>
+      <category>Блог компании Нетология</category>
+      <category>Блог компании X5 Tech</category>
+      <category>Микросервисы</category>
+      <category>*</category>
+      <category>Проектирование и рефакторинг</category>
+      <category>*</category>
+      <category>Облачные сервисы</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Привет, Хабр! Меня зовут Алексей Топчий, я уже более 20 лет работаю в IT. Прошёл все уровни: бэкенд, фронтенд, фулстек со множеством языков и технологий. В СберТехе занимался Единой фронтальной системой, в Яндексе участвовал в стартапе, связанном с FMCG. Сейчас занимаюсь сервисом ценообразования в сети магазинов «Пятёрочка» (X5 Group).</textPreview>
+  </article>
+  <article>
+    <title>Герой нашего времени</title>
+    <author>FanatPHP</author>
+    <datePublished>2024-11-08 06:53:00.0 UTC</datePublished>
+    <timeToRead>3</timeToRead>
+    <countViews>11000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Habr</category>
+      <category>История IT</category>
+      <category>Социальные сети и сообщества</category>
+    </categories>
+    <textPreview>За каждым великим мужчиной стоит женщина, стоит и ворчит. (народная мудрость, отцензурировано)</textPreview>
+  </article>
+  <article>
+    <title>Действительно ли смартфон может работать в режиме скрытой прослушки?</title>
+    <author>GlobalSign_admin</author>
+    <datePublished>2024-11-10 16:45:00.0 UTC</datePublished>
+    <timeToRead>3</timeToRead>
+    <countViews>14000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Блог компании GlobalSign</category>
+      <category>Звук</category>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+      <category>Медийная реклама</category>
+      <category>*</category>
+      <category>Смартфоны</category>
+    </categories>
+    <textPreview>В одном из прошлых постов, я рассказывал, как снял трейлер несуществующего фильма на фотоаппарат и там было очень много интересных комментариев и замечаний, так что я решил выпустить вторую редакцию трейлера. Доснял несколько кадров, какие-то улучшил, ну и полностью все перемонтировал.</textPreview>
+  </article>
+  <article>
+    <title>Запрещенная соцсеть приносила бауманцу 63 млн в год, а теперь маркетплейсы приносят страдания</title>
+    <author>slava_rumin</author>
+    <datePublished>2024-11-11 15:07:00.0 UTC</datePublished>
+    <timeToRead>10</timeToRead>
+    <countViews>70000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/4a0/149/875/4a0149875de2ba88575aef96274d2da8.png</imageUrl>
+    <categories>
+      <category>Лайфхаки для гиков</category>
+      <category>Бизнес-модели</category>
+      <category>*</category>
+      <category>Развитие стартапа</category>
+      <category>Интервью</category>
+    </categories>
+    <textPreview>Технический долг — это как оставлять грязные тарелки в раковине. Если все время откладывать, рано или поздно они превратятся в гору, с которой придется бороться. В этой статье мы поговорим о том, как не допустить, чтобы горы долга перекрыли все возможности для чистоты и порядка в проекте.</textPreview>
+  </article>
+  <article>
+    <title>Как поднять личный Прокси в Европе за 15 минут</title>
+    <author>alexander_kisochkin</author>
+    <datePublished>2024-11-08 00:21:00.0 UTC</datePublished>
+    <timeToRead>2</timeToRead>
+    <countViews>30000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/c08/4cf/d63/c084cfd6399855f1560cb9b5f4833405.jpg</imageUrl>
+    <categories>
+      <category>Системное администрирование</category>
+      <category>*</category>
+      <category>Хостинг</category>
+      <category>Настройка Linux</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Все это богатство надо как-то организовать и перестать, наконец, дергать в слаке коллег с вопросом: &quot;А напомни, плз, ссылку на...&quot;.</textPreview>
+  </article>
+  <article>
+    <title>Как растить мышцы двумя тренировками в неделю? Подход для людей с полной занятостью и готовый план на 2 дня</title>
+    <author>Terentew</author>
+    <datePublished>2024-11-10 01:27:00.0 UTC</datePublished>
+    <timeToRead>9</timeToRead>
+    <countViews>112000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/246/abd/d77/246abdd77bd4117d687ffdfaee058be8.png</imageUrl>
+    <categories>
+      <category>Читальный зал</category>
+      <category>Здоровье</category>
+    </categories>
+    <textPreview>Так случилось и у меня в один из недавних вечеров.</textPreview>
+  </article>
+  <article>
+    <title>Ключ от всех дверей: как нашли бэкдор в самых надежных* картах доступа</title>
+    <author>breakmirrors</author>
+    <datePublished>2024-11-07 11:02:00.0 UTC</datePublished>
+    <timeToRead>9</timeToRead>
+    <countViews>18000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/226/dcd/432/226dcd4327a1b66f30caab7c033d950a.jpeg</imageUrl>
+    <categories>
+      <category>Блог компании Бастион</category>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+      <category>Криптография</category>
+      <category>*</category>
+      <category>Тестирование IT-систем</category>
+      <category>*</category>
+      <category>Старое железо</category>
+    </categories>
+    <textPreview>Вы прикладываете ключ-карту к считывателю, и дверь офиса открывается. Но что, если такой пропуск может взломать и скопировать любой желающий?</textPreview>
+  </article>
+  <article>
+    <title>Ленточные накопители в домашнем ПК</title>
+    <author>MaFrance351</author>
+    <datePublished>2024-11-08 08:05:00.0 UTC</datePublished>
+    <timeToRead>11</timeToRead>
+    <countViews>20000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Блог компании Timeweb Cloud</category>
+      <category>Компьютерное железо</category>
+      <category>Накопители</category>
+      <category>Старое железо</category>
+      <category>Хранение данных</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Рассказываю, как выбирал агентство для сотрудничества и по каким критериям нашел подходящее.</textPreview>
+  </article>
+  <article>
+    <title>Ликуй, разработчик — всего 14 лет и QNX снова открыли</title>
+    <author>Seleditor</author>
+    <datePublished>2024-11-10 08:45:00.0 UTC</datePublished>
+    <timeToRead>4</timeToRead>
+    <countViews>18000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Блог компании Selectel</category>
+      <category>История IT</category>
+      <category>Операционные системы</category>
+      <category>Софт</category>
+    </categories>
+    <textPreview>Началось всё в самом конце 90-х годов, когда мне в руки попал диск с пиратской копией Delphi какой-торанней версии и на глаза попалась статья из Delphi World про управление лотком CD‑ROM&apos;а. «Блин, да это же идея для вируса!», — подумал я...</textPreview>
+  </article>
+  <article>
+    <title>Лучшие backend-фреймворки для веб-разработки в 2024 году</title>
+    <author>Timeweb_Cloud</author>
+    <datePublished>2024-11-07 08:05:00.0 UTC</datePublished>
+    <timeToRead>13</timeToRead>
+    <countViews>21000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/339/b99/f7e/339b99f7e6db2a4e8245b9dc99284927.png</imageUrl>
+    <categories>
+      <category>Блог компании Timeweb Cloud</category>
+      <category>Программирование</category>
+      <category>*</category>
+      <category>Интерфейсы</category>
+      <category>*</category>
+      <category>Софт</category>
+      <category>Веб-разработка</category>
+      <category>*</category>
+    </categories>
+    <textPreview>В версии 2.30.0 Docker Compose появился новый функционал - хуки жизненного цикла контейнера. Давайте разберемся, что это такое и как их использовать для решения практических задач.</textPreview>
+  </article>
+  <article>
+    <title>Мои Red-Flags при устройстве в IT-компании: Как не стать гребцом</title>
+    <author>DmitryR3989</author>
+    <datePublished>2024-11-11 18:51:00.0 UTC</datePublished>
+    <timeToRead>5</timeToRead>
+    <countViews>50000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/3e1/cba/e17/3e1cbae1746e8f5b2e359cfcae1e6d4b.jpeg</imageUrl>
+    <categories>
+      <category>Карьера в IT-индустрии</category>
+      <category>IT-компании</category>
+      <category>GTD</category>
+      <category>*</category>
+    </categories>
+    <textPreview>1. Time of Flight (ToF)</textPreview>
+  </article>
+  <article>
+    <title>Новая модель OpenAI достигла предела</title>
+    <author>zarytskiy</author>
+    <datePublished>2024-11-12 01:18:00.0 UTC</datePublished>
+    <timeToRead>4</timeToRead>
+    <countViews>12000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/d9f/78d/968/d9f78d968156a4ce33cf7ce8c676fc39.png</imageUrl>
+    <categories>
+      <category>Искусственный интеллект</category>
+    </categories>
+    <textPreview>Введение в технологию LIDAR</textPreview>
+  </article>
+  <article>
+    <title>Новый этап эволюции Vue — Vapor</title>
+    <author>YukinoKingu</author>
+    <datePublished>2024-11-07 08:50:00.0 UTC</datePublished>
+    <timeToRead>7</timeToRead>
+    <countViews>12000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/9eb/26b/e17/9eb26be175c323e953bce551329b401b.png</imageUrl>
+    <categories>
+      <category>Блог компании FirstVDS</category>
+      <category>VueJS</category>
+      <category>*</category>
+      <category>JavaScript</category>
+      <category>*</category>
+      <category>Веб-разработка</category>
+      <category>*</category>
+    </categories>
+    <textPreview>А что произойдет, если новый владелец вашего прежнего номера попробует авторизоваться там, где ранее регистрировались вы? Чтобы ответить на этот вопрос, мы провели эксперимент.</textPreview>
+  </article>
+  <article>
+    <title>Опасное цифровое наследство: какие угрозы таит реинкарнация утраченного номера</title>
+    <author>ptsecurity</author>
+    <datePublished>2024-11-07 09:35:00.0 UTC</datePublished>
+    <timeToRead>7</timeToRead>
+    <countViews>13000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/1c3/e4e/a87/1c3e4ea8729da6db03afc4840bec540c.jpg</imageUrl>
+    <categories>
+      <category>Блог компании Positive Technologies</category>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+      <category>Сотовая связь</category>
+      <category>Исследования и прогнозы в IT</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Мы продолжаем изучать дефекты, которые можно встретить при рентген-контроле качества печатных узлов. В первой части статьи Александр Патутинский, технолог по подготовке и запуску печатных плат в производство, систематизировал дефекты BGA-корпусов. Кроме них, рентген-снимки могут показать дефекты таких корпусов, как QFN (Quad Flat No-lead), SON (Small Outline No-lead), DFN (Dual Flat No-lead) и QFP (Quad Flat Package), в том числе с термопадами. Под катом Александр разберет эти случаи, как стандартные, так и более редкие, чтобы никакие результаты рентген-исследования не смогли ввести вас в заблуждение.</textPreview>
+  </article>
+  <article>
+    <title>От мышей на экране до zip-бомбы: топ приложений-шуток из начала нулевых</title>
+    <author>k0mar0v</author>
+    <datePublished>2024-11-08 12:00:00.0 UTC</datePublished>
+    <timeToRead>5</timeToRead>
+    <countViews>14000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/db6/c05/f11/db6c05f11853016b511f79f13752686f.png</imageUrl>
+    <categories>
+      <category>Блог компании МТС</category>
+      <category>Софт</category>
+      <category>История IT</category>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Как удалось ускорить выполнение запроса MySQL почти на порядок с помощью простого изменения формулировки условия.</textPreview>
+  </article>
+  <article>
+    <title>Почему любая оценка IT-шников обречена на провал?</title>
+    <author>levmaltsev</author>
+    <datePublished>2024-11-11 08:15:00.0 UTC</datePublished>
+    <timeToRead>6</timeToRead>
+    <countViews>23000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/fb1/e93/9e1/fb1e939e1a1f99cdf19d1b7c1c46e240.png</imageUrl>
+    <categories>
+      <category>Карьера в IT-индустрии</category>
+      <category>Исследования и прогнозы в IT</category>
+      <category>*</category>
+      <category>Управление персоналом</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Согласно исследованиям, при подготовке к спортивным соревнованиям интенсивность тренировок должна иногда превышать интенсивность, необходимую во время официальных стартов. В спринте, например, эту задачу можно решить путем выполнения на тренировке упражнений в усложненных, облегченных и обычных условиях, сочетаемых в определенной последовательности.</textPreview>
+  </article>
+  <article>
+    <title>Почему я не готовлюсь к алгоритмическому интервью</title>
+    <author>mclander</author>
+    <datePublished>2024-11-11 05:34:00.0 UTC</datePublished>
+    <timeToRead>7</timeToRead>
+    <countViews>37000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/08f/b6a/ba6/08fb6aba65bfe644e5fefb8875e97bbe.jpg</imageUrl>
+    <categories>
+      <category>Программирование</category>
+      <category>*</category>
+      <category>Алгоритмы</category>
+      <category>*</category>
+      <category>JavaScript</category>
+      <category>*</category>
+      <category>Карьера в IT-индустрии</category>
+    </categories>
+    <textPreview>Хабр, привет! Меня зовут Сергей Константинов. Я старший разработчик в Сбере и наставник на курсе «Фронтенд-разработчик» в Практикуме. Возможно, вы уже знакомы с моей статьёй «Путь фронтенд-разработчика. От рождения до тимлида», в которой я описал типичный карьерный путь, полный трудностей и преодолений. На этот раз я расскажу о том же пути, но с другого ракурса — и разберу задачи, которые часто выполняют фронтенд-разработчики разных грейдов и на разных местах работы.</textPreview>
+  </article>
+  <article>
+    <title>Правительство США: критически важное программное обеспечение должно отказаться от C/C++ к 2026 году</title>
+    <author>diakin</author>
+    <datePublished>2024-11-07 12:38:00.0 UTC</datePublished>
+    <timeToRead>6</timeToRead>
+    <countViews>25000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/5eb/374/929/5eb37492993c583bc24ce2e87b9454fb.jpg</imageUrl>
+    <categories>
+      <category>Информационная безопасность</category>
+      <category>*</category>
+      <category>C++</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Предлагаем рассмотреть импровизированный курс, состоящий из обучающих видеоуроков. Они посвящены Роблоксу и предназначены для детей 8–9 лет и старше. Но начнем с теории и опишем обозначенные инструменты: это поможет разобраться в основах, если нет их понимания.</textPreview>
+  </article>
+  <article>
+    <title>Расширения VSCode для комфортной работы с проектами</title>
+    <author>Splicerok</author>
+    <datePublished>2024-11-10 19:07:00.0 UTC</datePublished>
+    <timeToRead>4</timeToRead>
+    <countViews>24000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>ReactJS</category>
+      <category>*</category>
+      <category>React Native</category>
+      <category>*</category>
+      <category>JavaScript</category>
+      <category>*</category>
+      <category>Текстовые редакторы и IDE</category>
+      <category>*</category>
+      <category>VueJS</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Почему я не готовлюсь к алгоритмическому интервью</textPreview>
+  </article>
+  <article>
+    <title>Скачиваем и смотрим YouTube на своём хостинге</title>
+    <author>Qusi</author>
+    <datePublished>2024-11-12 12:40:00.0 UTC</datePublished>
+    <timeToRead>6</timeToRead>
+    <countViews>15000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/180/df3/521/180df3521843e9f22a83171d0584e4bd.jpg</imageUrl>
+    <categories>
+      <category>Open source</category>
+      <category>*</category>
+      <category>Работа с видео</category>
+      <category>*</category>
+      <category>Серверное администрирование</category>
+      <category>*</category>
+      <category>Софт</category>
+      <category>Хостинг</category>
+    </categories>
+    <textPreview>В мире, где каждый день начинается с пробок, бесконечных рабочих звонков и сотен уведомлений, желание сбежать куда подальше может возникнуть даже у самого стойкого сотрудника офиса. Именно тут виртуальная реальность предлагает интересный выход: почему бы не сбежать в шкуру зверя? Пусть и виртуально. Идея «побыть тигром на час» — это как удалёнка, но с правом рычать, не оплачивая счета за электричество и не слушая, как внизу сосед опять включил дрель. Побыть животным через VR — это возможность оторваться от рутины, переключить внимание и испытать что-то действительно новое. Ведь если уж отдыхать, то почему бы не с видом на джунгли?</textPreview>
+  </article>
+  <article>
+    <title>Телефоны с дисплеями E-Ink: для тех, кому нужна связь и не хочется отвлекаться</title>
+    <author>BiktorSergeev</author>
+    <datePublished>2024-11-11 12:00:00.0 UTC</datePublished>
+    <timeToRead>4</timeToRead>
+    <countViews>13000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/91e/f73/afc/91ef73afc7a65a1d299bac66dd883a11.jpg</imageUrl>
+    <categories>
+      <category>Блог компании МТС</category>
+      <category>Производство и разработка электроники</category>
+      <category>*</category>
+      <category>Гаджеты</category>
+      <category>Софт</category>
+    </categories>
+    <textPreview>Сегодня переходим к 4-ой части нашего обзора регуляторики практик разработки безопасного ПО (РБПО). На повестке у нас требования к государственным информационным системам (ГИС) и информационным системам обработки персональных данных (ИСПДн), а также немного отраслевых требований.</textPreview>
+  </article>
+  <article>
+    <title>Темная сторона ИТ</title>
+    <author>strannikac</author>
+    <datePublished>2024-11-10 15:07:00.0 UTC</datePublished>
+    <timeToRead>4</timeToRead>
+    <countViews>26000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Карьера в IT-индустрии</category>
+    </categories>
+    <textPreview>К счастью, данную проблему удалось решить с помощью установки кондиционера с притоком свежего воздуха. Причем некоторые нюансы выбора кондиционера оказались настолько важными, что я был очень неприятно удивлен тем фактом, что при выборе и покупке модели мне про них продавец ничего не рассказал. Более того, некоторые особенности наоборот попытался скрыть или выставить как не важные.</textPreview>
+  </article>
+  <article>
+    <title>Трёхмерные. Почему в современных ОС не прижились 3D-интерфейсы?</title>
+    <author>CyberPaul</author>
+    <datePublished>2024-11-07 10:24:00.0 UTC</datePublished>
+    <timeToRead>6</timeToRead>
+    <countViews>14000</countViews>
+    <imageUrl></imageUrl>
+    <categories>
+      <category>Блог компании Serverspace</category>
+      <category>Интерфейсы</category>
+      <category>*</category>
+      <category>История IT</category>
+      <category>Читальный зал</category>
+    </categories>
+    <textPreview>Часть 2. Адвекция</textPreview>
+  </article>
+  <article>
+    <title>Ты — ненастоящий айтишник / Дедовщина в IT</title>
+    <author>m0rtymerr</author>
+    <datePublished>2024-11-13 10:07:00.0 UTC</datePublished>
+    <timeToRead>8</timeToRead>
+    <countViews>22000</countViews>
+    <imageUrl>https://habrastorage.org/r/w1560/getpro/habr/upload_files/c45/21c/8a1/c4521c8a11b1481fbf2b1b4543466c32.png</imageUrl>
+    <categories>
+      <category>Карьера в IT-индустрии</category>
+      <category>Управление персоналом</category>
+      <category>*</category>
+      <category>Управление разработкой</category>
+      <category>*</category>
+    </categories>
+    <textPreview>· что такое обезличивание,</textPreview>
+  </article>
+  <article>
+    <title>Управляющая компания, у нас проблема! Как за жителями хрущевок следят по кабелям провайдера</title>
+    <author>ivntv</author>
+    <datePublished>2024-11-12 07:35:00.0 UTC</datePublished>
+    <timeToRead>3</timeToRead>
+    <countViews>46000</countViews>
+    <imageUrl>https://habrastorage.org/r/w780/getpro/habr/upload_files/ca0/da1/aad/ca0da1aad414434a60b0643a012714aa.jpg</imageUrl>
+    <categories>
+      <category>Блог компании МТС</category>
+      <category>Читальный зал</category>
+      <category>Инженерные системы</category>
+      <category>*</category>
+    </categories>
+    <textPreview>Ну что ж, попробую порассуждать на эту тему.</textPreview>
+  </article>
+</articles>
