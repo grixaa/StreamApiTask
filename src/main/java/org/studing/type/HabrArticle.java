@@ -30,14 +30,14 @@ public class HabrArticle {
     @Override
     public String toString() {
         return "HabrArticle{" +
-               "title=" + title + '\n' +
-               ", author=" + author + '\n' +
-               ", datePublished=" + FORMAT_DATE_PUBLISHED.format(datePublished) + '\n' +
-               ", timeToRead=" + timeToRead + '\n' +
-               ", countViews=" + countViews + '\n' +
-               ", imageUrl=" + imageUrl + '\n' +
-               ", categories=" + categories + '\n' +
-               ", textPreview=" + textPreview + '\n' +
-               '}';
+            "title=" + title + '\n' +
+            ", author=" + author + '\n' +
+            ", datePublished=" + FORMAT_DATE_PUBLISHED.format(datePublished) + '\n' +
+            ", timeToRead=" + timeToRead + '\n' +
+            ", countViews=" + countViews + '\n' +
+            ", imageUrl=" + imageUrl + '\n' +
+            ", categories=" + categories + '\n' +
+            ", textPreview=" + textPreview + '\n' +
+            '}';
     }
 }

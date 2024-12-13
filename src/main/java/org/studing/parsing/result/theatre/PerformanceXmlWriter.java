@@ -84,7 +84,11 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    private void writeOnePerformanceWithListDate(Element root, Document doc, Performance performance, List<Date> dateList) {
+    private void writeOnePerformanceWithListDate(
+        Element root,
+        Document doc,
+        Performance performance,
+        List<Date> dateList) {
         Element articleElement = writeAllWithoutDate(root, doc, performance);
 
         Element dateElement = doc.createElement("date");

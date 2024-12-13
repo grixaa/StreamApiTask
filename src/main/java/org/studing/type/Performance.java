@@ -30,12 +30,12 @@ public class Performance {
     @Override
     public String toString() {
         return "Performance{" + '\n' +
-               "title=" + title + '\n' +
-               ", date=" + FORMAT_DATE.format(date) + '\n' +
-               ", duration=" + duration + '\n' +
-               ", ageLimit=" + ageLimit + '\n' +
-               ", imageUrl=" + imageUrl + '\n' +
-               '}';
+            "title=" + title + '\n' +
+            ", date=" + FORMAT_DATE.format(date) + '\n' +
+            ", duration=" + duration + '\n' +
+            ", ageLimit=" + ageLimit + '\n' +
+            ", imageUrl=" + imageUrl + '\n' +
+            '}';
     }
 }
 

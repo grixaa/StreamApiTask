@@ -15,8 +15,9 @@ public class PerformanceFromJson implements ParserFromJson<Performance> {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE);
-            return mapper.readValue(new File(path),
-                    mapper.getTypeFactory().constructCollectionType(List.class, Performance.class));
+            return mapper.readValue(
+                new File(path),
+                mapper.getTypeFactory().constructCollectionType(List.class, Performance.class));
 
         } catch (IOException e) {
             throw new RuntimeException(e);

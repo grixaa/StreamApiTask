@@ -1,2392 +1,2462 @@
 <authors>
-  <author>
-    <name>AKlimenkov</name>
-    <titles>
-      <title>Мои простые правила хорошего текста: личное руководство по стилю</title>
-      <title>«Так и знала, что вы — бывший двоечник!» Самые глупые ошибки моей компьютерной молодости</title>
-    </titles>
-  </author>
-  <author>
-    <name>n_glebko</name>
-    <titles>
-      <title>Инхаус-разметка с нуля. Реально ли это и насколько полезно?</title>
-    </titles>
-  </author>
-  <author>
-    <name>nickolaym</name>
-    <titles>
-      <title>Концептуальный wish-you-happy-debug</title>
-    </titles>
-  </author>
-  <author>
-    <name>Xcom-shop</name>
-    <titles>
-      <title>Чем архитектура Zen 5 в процессорах Ryzen 9000 отличается от Zen 4</title>
-      <title>Что такое память CUDIMM, чем она отличается от DIMM и где применяется</title>
-      <title>Какую скорость развивает самый быстрый интернет в мире и как это возможно</title>
-    </titles>
-  </author>
-  <author>
-    <name>KDim4eg91</name>
-    <titles>
-      <title>SQL для Junior Data Engineers: примеры бизнес-задач</title>
-    </titles>
-  </author>
-  <author>
-    <name>maximthomas</name>
-    <titles>
-      <title>А ваш IDM умеет играть в шахматы?</title>
-    </titles>
-  </author>
-  <author>
-    <name>darovska_online</name>
-    <titles>
-      <title>Как мы докатились до Kubernetes и чем он заслужил любовь бизнеса</title>
-    </titles>
-  </author>
-  <author>
-    <name>PorisulkiP</name>
-    <titles>
-      <title>Сердце насоса склонно к износу: предиктивная аналитика как гарант надёжности оборудования</title>
-    </titles>
-  </author>
-  <author>
-    <name>nletra</name>
-    <titles>
-      <title>IT-лидеры с предпринимательским характером: особенности пути и способы преодоления сложностей</title>
-      <title>Делегирование как инструмент лидерства, эффективности, мотивации и профессионального развития</title>
-    </titles>
-  </author>
-  <author>
-    <name>Cobalt</name>
-    <titles>
-      <title>Как я делал видео трансляцию кормушки для птиц</title>
-    </titles>
-  </author>
-  <author>
-    <name>aaplpro</name>
-    <titles>
-      <title>Apple Pro Weekly News (04.11 – 10.11.24)</title>
-    </titles>
-  </author>
-  <author>
-    <name>Number571</name>
-    <titles>
-      <title>Запуск узла Hidden Lake на языке Go</title>
-    </titles>
-  </author>
-  <author>
-    <name>aabzel</name>
-    <titles>
-      <title>Обновление Прошивки из Make Скрипта</title>
-      <title>Конечный Aвтомат Аппаратного I2C-Трансивера</title>
-    </titles>
-  </author>
-  <author>
-    <name>UXART</name>
-    <titles>
-      <title>Мини UX-патруль: редизайн Яндекс Музыки, который не смог</title>
-    </titles>
-  </author>
-  <author>
-    <name>NastyaIsch</name>
-    <titles>
-      <title>App Intents: новые возможности для разработчиков в iOS 18</title>
-    </titles>
-  </author>
-  <author>
-    <name>kosyakus</name>
-    <titles>
-      <title>История одного модального окна или переходим с UIKit на SwiftUI. Часть 3. ProgressView vs SkeletonView</title>
-    </titles>
-  </author>
-  <author>
-    <name>SlaF</name>
-    <titles>
-      <title>Управление памятью в ассемблере для Apple Silicon</title>
-    </titles>
-  </author>
-  <author>
-    <name>AlexeyRybakov</name>
-    <titles>
-      <title>7 популярных библиотек Vue 3 UI-компонентов, которые заслуживают внимания</title>
-    </titles>
-  </author>
-  <author>
-    <name>RoboForm</name>
-    <titles>
-      <title>Мобильная разработка за неделю #563 (5 — 10 ноября)</title>
-    </titles>
-  </author>
-  <author>
-    <name>pltnkv</name>
-    <titles>
-      <title>Как я психанул и написал свой менеджер закладок</title>
-    </titles>
-  </author>
-  <author>
-    <name>Basheyev</name>
-    <titles>
-      <title>Boson — разработка СУБД «с нуля» (итог)</title>
-    </titles>
-  </author>
-  <author>
-    <name>kevtushx</name>
-    <titles>
-      <title>Как мы работу блочного pNFS исправляли: продолжение остросюжетного детектива с Linux в главной роли</title>
-    </titles>
-  </author>
-  <author>
-    <name>ag_belaya_raduga</name>
-    <titles>
-      <title>Почему не работает профилактическая медицина</title>
-    </titles>
-  </author>
-  <author>
-    <name>arlion</name>
-    <titles>
-      <title>Outstatic CMS для персонального блога на Next.js: Легко и Быстро</title>
-    </titles>
-  </author>
-  <author>
-    <name>DariaEmacs</name>
-    <titles>
-      <title>Синхронизация звука и видео. Взгляд дилетанта</title>
-    </titles>
-  </author>
-  <author>
-    <name>biwed</name>
-    <titles>
-      <title>Инструмент обеспечения качества данных: от теории к практике</title>
-    </titles>
-  </author>
-  <author>
-    <name>nikgerasimenko</name>
-    <titles>
-      <title>Генерируем презентации с помощью GigaChat и Kandinsky</title>
-    </titles>
-  </author>
-  <author>
-    <name>dust70</name>
-    <titles>
-      <title>Подсмотрено: WB-MAP и управление насосами</title>
-    </titles>
-  </author>
-  <author>
-    <name>frontendmma</name>
-    <titles>
-      <title>Мой путь в мире веб-рендеринга: от статических страниц к гибридным архитектурам</title>
-    </titles>
-  </author>
-  <author>
-    <name>ivan_fr</name>
-    <titles>
-      <title>Автоматизация мониторинга с Monq: Управление сигналами и интеграция с Zabbix</title>
-    </titles>
-  </author>
-  <author>
-    <name>GeorgeNordic</name>
-    <titles>
-      <title>История Data Literacy в России</title>
-    </titles>
-  </author>
-  <author>
-    <name>Gavichi</name>
-    <titles>
-      <title>Дорожная карта тестирования безопасности в играх: Поиск уязвимостей в видеоиграх</title>
-    </titles>
-  </author>
-  <author>
-    <name>Konstantin-2</name>
-    <titles>
-      <title>Гексагональная сетка для игр с круглой Землей</title>
-    </titles>
-  </author>
-  <author>
-    <name>Erwinmal</name>
-    <titles>
-      <title>«Энциклопедия профессора Фортрана»: вспоминаем легендарную книгу из детства миллениалов</title>
-    </titles>
-  </author>
-  <author>
-    <name>diakin</name>
-    <titles>
-      <title>Правительство США: критически важное программное обеспечение должно отказаться от C/C++ к 2026 году</title>
-    </titles>
-  </author>
-  <author>
-    <name>omedeto4u</name>
-    <titles>
-      <title>Дизайн за 5 минут. Дайджест октября 2024</title>
-    </titles>
-  </author>
-  <author>
-    <name>sokolov-denis</name>
-    <titles>
-      <title>Мой базовый паттерн использования ansible</title>
-    </titles>
-  </author>
-  <author>
-    <name>belousoffplus</name>
-    <titles>
-      <title>Pygame для начинающих программистов. Статья вторая. События</title>
-      <title>Pygame для начинающих программистов. Статья первая</title>
-    </titles>
-  </author>
-  <author>
-    <name>Rombneromb</name>
-    <titles>
-      <title>Анонс докладов по управлению знаниями</title>
-    </titles>
-  </author>
-  <author>
-    <name>khdavid</name>
-    <titles>
-      <title>Начинай с сути: говорим и пишем яснее</title>
-    </titles>
-  </author>
-  <author>
-    <name>zoomerit</name>
-    <titles>
-      <title>Что лучше — оценка рекрутера или подбрасывание монетки? Вот данные:</title>
-    </titles>
-  </author>
-  <author>
-    <name>rcl</name>
-    <titles>
-      <title>Rust custom Triplet</title>
-      <title>MTA-STS на вашем почтовом сервере</title>
-    </titles>
-  </author>
-  <author>
-    <name>GlobalSign_admin</name>
-    <titles>
-      <title>Действительно ли смартфон может работать в режиме скрытой прослушки?</title>
-    </titles>
-  </author>
-  <author>
-    <name>SLY_G</name>
-    <titles>
-      <title>Дайджест научпоп-новостей за неделю, о которых мы ничего не писали</title>
-      <title>Чёрные дыры, образующиеся при «обратном воспроизведении Большого взрыва», могут объяснить тёмную энергию</title>
-      <title>Как оккультизм породил науку</title>
-    </titles>
-  </author>
-  <author>
-    <name>vada</name>
-    <titles>
-      <title>Хьюстон, у нас проблема?! Что, если Google Docs у нас не будет?</title>
-    </titles>
-  </author>
-  <author>
-    <name>alizar</name>
-    <titles>
-      <title>Анонимный мессенджер — обязательный стандарт для каждого человека</title>
-    </titles>
-  </author>
-  <author>
-    <name>Catherine_Romanova</name>
-    <titles>
-      <title>Линейка VoIP-шлюзов IPmatika: первое знакомство</title>
-    </titles>
-  </author>
-  <author>
-    <name>MediascopeTeam</name>
-    <titles>
-      <title>Дизайн-система Mediascope: единый стиль для всех диджитал-продуктов компании</title>
-    </titles>
-  </author>
-  <author>
-    <name>motoroller95</name>
-    <titles>
-      <title>Сдохни или умри: мой опыт создания проекта от идеи до релиза</title>
-    </titles>
-  </author>
-  <author>
-    <name>Mazaltov</name>
-    <titles>
-      <title>Онбординг сотрудников при внедрении BI: как организовать правильно?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Grigory_Otrepyev</name>
-    <titles>
-      <title>Ушла ли эпоха удивительных импортозаместительных историй?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Cveto4ek</name>
-    <titles>
-      <title>По собственному опыту собрали суперподробный гайд по CRM-стратегии</title>
-    </titles>
-  </author>
-  <author>
-    <name>Kampus</name>
-    <titles>
-      <title>Студенты для студентов: от курсов по вышмату в МИСиС до приложения для вузов по всей России</title>
-    </titles>
-  </author>
-  <author>
-    <name>RationalAnswer</name>
-    <titles>
-      <title>Новый старый дед в Штатах, а также заработок криптокита $85 млн на ставке на Трампа</title>
-      <title>«Interactive Brokers закрывает счета россиянам»: разбираемся, что происходит на самом деле</title>
-    </titles>
-  </author>
-  <author>
-    <name>krandix</name>
-    <titles>
-      <title>Рекламные платформы 2024: что выбрать — Telegram Ads, ВКонтакте, Яндекс.Директ, Авито или Одноклассники?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Clickk</name>
-    <titles>
-      <title>Прогноз геомагнитных бурь: когда ожидать магнитных колебаний?</title>
-      <title>Популярные платежные решения для Adult 18+ проектов</title>
-    </titles>
-  </author>
-  <author>
-    <name>retroman</name>
-    <titles>
-      <title>VR для квадроберов: как безопасно погружаться в образ животного</title>
-    </titles>
-  </author>
-  <author>
-    <name>GidraVydra</name>
-    <titles>
-      <title>Почему ток течет через электрод</title>
-    </titles>
-  </author>
-  <author>
-    <name>alex_rum</name>
-    <titles>
-      <title>Пример использования Spring Data и Redis для временного хранения персональных данных</title>
-    </titles>
-  </author>
-  <author>
-    <name>myoffice_ru</name>
-    <titles>
-      <title>Сила лидерского слушания</title>
-    </titles>
-  </author>
-  <author>
-    <name>DmitryR3989</name>
-    <titles>
-      <title>Мои Red-Flags при устройстве в IT-компании: Как не стать гребцом</title>
-      <title>Как управлять техническим долгом и минимизировать его влияние на проект</title>
-      <title>Feature-Sliced Design (FSD): Основы и практические примеры архитектуры</title>
-      <title>ChatGPT как второй пилот: сильные и слабые стороны с практическими советами</title>
-    </titles>
-  </author>
-  <author>
-    <name>Dmytro_Kikot</name>
-    <titles>
-      <title>Серебряная москитная сетка: излучательное охлаждение без потери видимости</title>
-      <title>О хомяках и водорослях: внедрение хлоропластов в клетки животных</title>
-    </titles>
-  </author>
-  <author>
-    <name>monoiddd</name>
-    <titles>
-      <title>[САТИРА] Ох, блин, во что ж ты вляпался в этот раз?</title>
-      <title>Забытая повесть «Машины, пишущие код»</title>
-    </titles>
-  </author>
-  <author>
-    <name>ITxasky</name>
-    <titles>
-      <title>Парадокс сложности Тога — продукты, которые должны упростить задачи, на деле приводят к возникновению еще более сложных</title>
-    </titles>
-  </author>
-  <author>
-    <name>eshelenkova</name>
-    <titles>
-      <title>Как организовать совместную работу в маленьких, но быстрорастущих компаниях</title>
-    </titles>
-  </author>
-  <author>
-    <name>e2k_sid</name>
-    <titles>
-      <title>Ответ на статью о «Наиболее быстром интерпретаторе»</title>
-    </titles>
-  </author>
-  <author>
-    <name>JustMisha</name>
-    <titles>
-      <title>Ускорение запроса MySQL с помощью обратного условия</title>
-    </titles>
-  </author>
-  <author>
-    <name>ZubikIT</name>
-    <titles>
-      <title>Руководство по созданию приложения для поиска данных на основе агента GraphRAG</title>
-    </titles>
-  </author>
-  <author>
-    <name>Zen-Mode</name>
-    <titles>
-      <title>Путь одного IOS-приложения</title>
-    </titles>
-  </author>
-  <author>
-    <name>Kaspersky_Lab</name>
-    <titles>
-      <title>Security Week 2446: исследование троянской программы SteelFox</title>
-    </titles>
-  </author>
-  <author>
-    <name>tabukhov</name>
-    <titles>
-      <title>Fallout London: гигантский мод для Fallout 4. Что за новинка и стоит ли поиграть?</title>
-    </titles>
-  </author>
-  <author>
-    <name>mbystrov_23</name>
-    <titles>
-      <title>Уважаемые блогеры, блогайте пожалуйста помедленней</title>
-    </titles>
-  </author>
-  <author>
-    <name>spiralle</name>
-    <titles>
-      <title>Мотивационные стили в обучении: почему вам (возможно) не нужны цели или общение с одногруппниками</title>
-    </titles>
-  </author>
-  <author>
-    <name>vaiti_media</name>
-    <titles>
-      <title>Погружение в Kubernetes Network Policies</title>
-    </titles>
-  </author>
-  <author>
-    <name>SolDemir</name>
-    <titles>
-      <title>Адаптеры в Android: «сервируем» данные красиво</title>
-    </titles>
-  </author>
-  <author>
-    <name>kucev</name>
-    <titles>
-      <title>Оценка LLM: комплексные оценщики и фреймворки оценки</title>
-    </titles>
-  </author>
-  <author>
-    <name>avsolovyev</name>
-    <titles>
-      <title>Как мы учили робота распознавать чертежи и изготавливать мебель</title>
-    </titles>
-  </author>
-  <author>
-    <name>rip_m</name>
-    <titles>
-      <title>Что нового в .NET 9?</title>
-      <title>.NET Digest #4</title>
-    </titles>
-  </author>
-  <author>
-    <name>yadro_team</name>
-    <titles>
-      <title>Взгляд в игольное ушко: какие дефекты открывает рентген на печатных узлах QFN, SON, DFN и QFP</title>
-    </titles>
-  </author>
-  <author>
-    <name>Bieta_k</name>
-    <titles>
-      <title>Обновляем мерч: шо, опять?</title>
-    </titles>
-  </author>
-  <author>
-    <name>juliaaravina</name>
-    <titles>
-      <title>Почему важно растить джунов и как делать это с умом</title>
-    </titles>
-  </author>
-  <author>
-    <name>avanov</name>
-    <titles>
-      <title>“Ну тут недельки на две”. Оцениваем задачи</title>
-    </titles>
-  </author>
-  <author>
-    <name>m0rtymerr</name>
-    <titles>
-      <title>Ты — ненастоящий айтишник / Дедовщина в IT</title>
-    </titles>
-  </author>
-  <author>
-    <name>valisak</name>
-    <titles>
-      <title>Почему сегодня Марс так сильно отличается от Земли?</title>
-    </titles>
-  </author>
-  <author>
-    <name>granite_shield</name>
-    <titles>
-      <title>Как мы в МКБ обновляли Zabbix с 4.4 до 6.0 — проблемы и подводные камни</title>
-    </titles>
-  </author>
-  <author>
-    <name>the_bat</name>
-    <titles>
-      <title>Преобразование одноканального LVDS в двухканальный</title>
-    </titles>
-  </author>
-  <author>
-    <name>SergeiFilatov</name>
-    <titles>
-      <title>Как можно запустить процесс эволюции IT в промышленной компании</title>
-    </titles>
-  </author>
-  <author>
-    <name>SvetlanaPalitsyna</name>
-    <titles>
-      <title>DPC (Device Policy Controller): админим блокировку экрана в Android</title>
-    </titles>
-  </author>
-  <author>
-    <name>Madcopy</name>
-    <titles>
-      <title>Тексты для IT может писать только айтишник! Нет. Рассказываем, как делаем IT-контент для beeline cloud и не сходим с ума</title>
-    </titles>
-  </author>
-  <author>
-    <name>dsalahutdinov</name>
-    <titles>
-      <title>Инженерный трек: как вырасти из senior’а в staff-инженера</title>
-    </titles>
-  </author>
-  <author>
-    <name>Maggotya</name>
-    <titles>
-      <title>Заметка про пользовательские соглашения в Web-играх</title>
-    </titles>
-  </author>
-  <author>
-    <name>maynoz</name>
-    <titles>
-      <title>Не удержался-2 – цепная реакция. Ответ ответа на статью про «где лучше платят»</title>
-    </titles>
-  </author>
-  <author>
-    <name>dontuseit</name>
-    <titles>
-      <title>Сколько я заработал за год фриланса?</title>
-      <title>В чем польза мок-собеседований?</title>
-      <title>Как я перешел из веб разработки в мобильную?</title>
-    </titles>
-  </author>
-  <author>
-    <name>kailot2</name>
-    <titles>
-      <title>Разбор dos-подобной операционной системы. OzonOS</title>
-    </titles>
-  </author>
-  <author>
-    <name>RSHB_tsyfra</name>
-    <titles>
-      <title>Как тестировщики запустили ВездеКОТ</title>
-    </titles>
-  </author>
-  <author>
-    <name>K_Kim</name>
-    <titles>
-      <title>Доверяй, но тестируй. Что изменилось на рынке оборудования для ЦОДов и как работать с новыми вендорами</title>
-    </titles>
-  </author>
-  <author>
-    <name>rsashka</name>
-    <titles>
-      <title>Создаем комфорт на рабочем месте или неочевидные характеристики при выборе кондиционера</title>
-      <title>Переосмысление концепции подсчета ссылок и полный отказ от сборщика мусора</title>
-    </titles>
-  </author>
-  <author>
-    <name>olegmalahov1989</name>
-    <titles>
-      <title>Что на неделе: экзамены для айтишников на «Госуслугах», новые фичи Telegram и ИИ-портрет за $1,08 миллионов</title>
-    </titles>
-  </author>
-  <author>
-    <name>s231644</name>
-    <titles>
-      <title>Понимают ли большие языковые модели данные из таблиц?</title>
-    </titles>
-  </author>
-  <author>
-    <name>JerryI</name>
-    <titles>
-      <title>Очередная реализация fluid sim методом Эйлера, но в блокноте WL. Чернила. Часть 3</title>
-    </titles>
-  </author>
-  <author>
-    <name>SeminMA</name>
-    <titles>
-      <title>Курс Roblox в 8–9 лет и старше: моделирование и программирование</title>
-    </titles>
-  </author>
-  <author>
-    <name>Bright_Translate</name>
-    <titles>
-      <title>Почему программное обеспечение движется только вперёд</title>
-      <title>Австралия, Лорд-Хау — самый странный часовой пояс</title>
-    </titles>
-  </author>
-  <author>
-    <name>R_STYLE_SOFTLAB</name>
-    <titles>
-      <title>Деменция LLM: как языковые модели забывают, зачем учились, и что из этого следует</title>
-    </titles>
-  </author>
-  <author>
-    <name>dionisdimetor</name>
-    <titles>
-      <title>Вакуум – пустота или полнота? Виртуальные частицы, квантовая пена, излучения Хокинга и Унру</title>
-    </titles>
-  </author>
-  <author>
-    <name>EgorKotkin</name>
-    <titles>
-      <title>Как меняется кибермошенничество</title>
-    </titles>
-  </author>
-  <author>
-    <name>atomr_mf</name>
-    <titles>
-      <title>Жаркий спор по теме Masonry в CSS</title>
-    </titles>
-  </author>
-  <author>
-    <name>ASDF102030</name>
-    <titles>
-      <title>Выбираем BI платформу для начинающего специалиста</title>
-    </titles>
-  </author>
-  <author>
-    <name>Soloist</name>
-    <titles>
-      <title>Как обойти блокировки с помощью Tor в Docker</title>
-    </titles>
-  </author>
-  <author>
-    <name>devleader-pro</name>
-    <titles>
-      <title>Зачем искать палиндромы и вращать матрицы в поисках лучшей работы</title>
-    </titles>
-  </author>
-  <author>
-    <name>FanatPHP</name>
-    <titles>
-      <title>Герой нашего времени</title>
-    </titles>
-  </author>
-  <author>
-    <name>Oficerova</name>
-    <titles>
-      <title>Как специалисту найти клиентов: 50+ проверенных способов</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ruslan_nsk54</name>
-    <titles>
-      <title>Самое подробное сравнение аутстаффинга и классического рекрутинга в закрытии IT позиций</title>
-    </titles>
-  </author>
-  <author>
-    <name>vsnikolaev</name>
-    <titles>
-      <title>Ускорение LUP-разложения матрицы с помощью OpenCL</title>
-    </titles>
-  </author>
-  <author>
-    <name>Hedgehog_art</name>
-    <titles>
-      <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 4</title>
-      <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 3</title>
-      <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 2</title>
-    </titles>
-  </author>
-  <author>
-    <name>DRoman0v</name>
-    <titles>
-      <title>Ремонт беспроводных наушников JVC HA-s35bt — заряжаются, но не включаются. Что делать и где искать проблему?</title>
-      <title>Умные часы для DIY-энтузиастов: от Pocuter Spectra до Bangle.js</title>
-    </titles>
-  </author>
-  <author>
-    <name>spring_aio</name>
-    <titles>
-      <title>Поддержка RestClient для OAuth2 в Spring Security 6.4</title>
-    </titles>
-  </author>
-  <author>
-    <name>despair</name>
-    <titles>
-      <title>Словарь программисткого жаргона без англицизмов</title>
-      <title>Бог, «кибер-религии», современная физика, теорема Гёделя и агностицизм</title>
-    </titles>
-  </author>
-  <author>
-    <name>MisterClever</name>
-    <titles>
-      <title>Ваш хирург обучался на видосиках</title>
-      <title>Препарат от Альцгеймера ускорил снижение когнитивных способностей</title>
-      <title>Всего 5 минут повышенной активности в день приносят заметную пользу для здоровья сердца</title>
-      <title>Киберпсихология. Улучшение памяти с помощью VR и глубокой стимуляции мозга</title>
-    </titles>
-  </author>
-  <author>
-    <name>kovalenkoap</name>
-    <titles>
-      <title>HR-бренд, методика разработки</title>
-    </titles>
-  </author>
-  <author>
-    <name>deepdeeppink</name>
-    <titles>
-      <title>Правильные графики и коммуникация</title>
-    </titles>
-  </author>
-  <author>
-    <name>Igor_Le</name>
-    <titles>
-      <title>Конференции PGConf.СПб 2024 и PGConf.Academy</title>
-    </titles>
-  </author>
-  <author>
-    <name>mclander</name>
-    <titles>
-      <title>Почему я не готовлюсь к алгоритмическому интервью</title>
-    </titles>
-  </author>
-  <author>
-    <name>Suvitruf</name>
-    <titles>
-      <title>Недельный геймдев: #199 — 10 ноября, 2024</title>
-    </titles>
-  </author>
-  <author>
-    <name>OlegPS</name>
-    <titles>
-      <title>Как мы строили платформу на базе Kubernetes и старались не скатиться в «Кубер с аутентификацией»</title>
-    </titles>
-  </author>
-  <author>
-    <name>bodyawm</name>
-    <titles>
-      <title>Апгрейд мобильного компьютера паяльником</title>
-    </titles>
-  </author>
-  <author>
-    <name>Rockis</name>
-    <titles>
-      <title>Shadowsocks, OpenVPN, Vmess, VLESS: какой протокол победит в эпоху цифровой цензуры?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Squirrelfm</name>
-    <titles>
-      <title>Стандартное отклонение для полных чайников</title>
-    </titles>
-  </author>
-  <author>
-    <name>gregyku</name>
-    <titles>
-      <title>Зачем и как нейросети учат быть человечными</title>
-    </titles>
-  </author>
-  <author>
-    <name>Av3rtino</name>
-    <titles>
-      <title>Дизайн аналитических инструментов для управления СИМ в мегаполисе: вызовы и решения</title>
-    </titles>
-  </author>
-  <author>
-    <name>e_meltsaykin</name>
-    <titles>
-      <title>Как силами мобильных разработчиков автоматизировать процесс разработки</title>
-    </titles>
-  </author>
-  <author>
-    <name>dkorzh10</name>
-    <titles>
-      <title>Голос под защитой. Запускаем хакатон SafeSpeak-2024, посвящённый борьбе с голосовыми дипфейками</title>
-    </titles>
-  </author>
-  <author>
-    <name>A1LEks</name>
-    <titles>
-      <title>Как мы разработали и добавили «истории» в сервис для поиска работы за 3 месяца</title>
-    </titles>
-  </author>
-  <author>
-    <name>levmaltsev</name>
-    <titles>
-      <title>Почему любая оценка IT-шников обречена на провал?</title>
-    </titles>
-  </author>
-  <author>
-    <name>CatScience</name>
-    <titles>
-      <title>Нейронаука и «Лосось сомнений»</title>
-    </titles>
-  </author>
-  <author>
-    <name>Cutcode</name>
-    <titles>
-      <title>План Б — путь к поражению? Моя история принятия сложного решения</title>
-    </titles>
-  </author>
-  <author>
-    <name>Andrey2008</name>
-    <titles>
-      <title>DPDK: 100 больших и маленьких багов</title>
-    </titles>
-  </author>
-  <author>
-    <name>klimensky</name>
-    <titles>
-      <title>GPS в нашей жизни: как навигация стала доступна каждому</title>
-    </titles>
-  </author>
-  <author>
-    <name>UnknownDoomer</name>
-    <titles>
-      <title>Doom. Часть 6. Другое измерение или сказ о 5 тотальных конверсиях и 2 модификациях</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ivan_Bal</name>
-    <titles>
-      <title>Как инженеру техподдержки трансформироваться в мобильного разработчика</title>
-    </titles>
-  </author>
-  <author>
-    <name>Guren302</name>
-    <titles>
-      <title>Ремейк ремастеру рознь? Как переиздания меняют восприятие культовых игр</title>
-    </titles>
-  </author>
-  <author>
-    <name>Clevertec_dev</name>
-    <titles>
-      <title>Битва титанов: натив, кроссплатформа и PWA – ищем плюсы и минусы на каждом этапе разработки. Часть 2</title>
-    </titles>
-  </author>
-  <author>
-    <name>Avonae</name>
-    <titles>
-      <title>Чиним GRUB без флешки</title>
-    </titles>
-  </author>
-  <author>
-    <name>Krakaz</name>
-    <titles>
-      <title>5 шагов адаптации тимлида в новой компании</title>
-    </titles>
-  </author>
-  <author>
-    <name>zarytskiy</name>
-    <titles>
-      <title>Учёные обнаружили быстрый радиовсплеск в мёртвой галактике</title>
-      <title>Учёная вылечила рак с помощью вирусов, которые сама вырастила в лаборатории</title>
-      <title>Новая модель OpenAI достигла предела</title>
-    </titles>
-  </author>
-  <author>
-    <name>vasilisa_b</name>
-    <titles>
-      <title>Не только нейроимпланты: как нейротехнологии меняют медицину</title>
-    </titles>
-  </author>
-  <author>
-    <name>Hymn_of_the_forstborn</name>
-    <titles>
-      <title>Скрипты VS Коробка. Как эффективно маскировать данные</title>
-    </titles>
-  </author>
-  <author>
-    <name>Surf_Studio</name>
-    <titles>
-      <title>Flutter Web. Часть 2</title>
-    </titles>
-  </author>
-  <author>
-    <name>Adm1ngmz</name>
-    <titles>
-      <title>Хитрости Красной команды</title>
-      <title>Создание незаметного вредоносного ПО для Windows</title>
-    </titles>
-  </author>
-  <author>
-    <name>vanadium23</name>
-    <titles>
-      <title>Как в базе поставщиков найти лучшие по цене предложения, чтобы показать их пользователю</title>
-    </titles>
-  </author>
-  <author>
-    <name>sszz</name>
-    <titles>
-      <title>Семантический веб: краткий обзор технологий и инструментов</title>
-    </titles>
-  </author>
-  <author>
-    <name>Sqrudj</name>
-    <titles>
-      <title>KAN: Kolmogorov–Arnold Networks</title>
-    </titles>
-  </author>
-  <author>
-    <name>vsebelev</name>
-    <titles>
-      <title>Реальность — виртуальная и физическая. Проблемы взаимодействия</title>
-    </titles>
-  </author>
-  <author>
-    <name>vanillathunder</name>
-    <titles>
-      <title>Применение статических анализаторов архитектуры на примере гексагональной архитектуры</title>
-    </titles>
-  </author>
-  <author>
-    <name>ilkhom_cinecast</name>
-    <titles>
-      <title>Как запустить подкаст в 2024 и не облажаться</title>
-    </titles>
-  </author>
-  <author>
-    <name>SbWereWolf</name>
-    <titles>
-      <title>Никогда не используйте MySQL, всегда используйте PostgreSQL</title>
-    </titles>
-  </author>
-  <author>
-    <name>PIK-Digital</name>
-    <titles>
-      <title>Правила построения BIM-команды</title>
-    </titles>
-  </author>
-  <author>
-    <name>MaxRokatansky</name>
-    <titles>
-      <title>Как сделать хорошую камеру в Unity — мощь Cinemachine</title>
-    </titles>
-  </author>
-  <author>
-    <name>strannikac</name>
-    <titles>
-      <title>Темная сторона ИТ</title>
-    </titles>
-  </author>
-  <author>
-    <name>Z1at</name>
-    <titles>
-      <title>Написание ETL пайплайна при помощи airflow, rabbitmq и postgres</title>
-    </titles>
-  </author>
-  <author>
-    <name>gguzhov</name>
-    <titles>
-      <title>Дата-центры Илона Маска: Tesla, Dojo, X (Twitter), xAI</title>
-    </titles>
-  </author>
-  <author>
-    <name>Cloud4Y</name>
-    <titles>
-      <title>Управление IT-инфраструктурой: бюджетирование, риски, отказоустойчивость и катастрофоустойчивость</title>
-      <title>Усиление защиты серверов Linux от угроз и атак</title>
-      <title>Взлом 700 миллионов аккаунтов Electronic Arts (этично): как это было</title>
-    </titles>
-  </author>
-  <author>
-    <name>rikki_tikki</name>
-    <titles>
-      <title>Автоматизированное тестирование API с использованием Python. Работа с JSON и JsonPath</title>
-    </titles>
-  </author>
-  <author>
-    <name>kubitre</name>
-    <titles>
-      <title>Как масштабировать права в проекте и продуктах без боли</title>
-    </titles>
-  </author>
-  <author>
-    <name>vlnel</name>
-    <titles>
-      <title>Искусственный интеллект и «взлом» культуры</title>
-    </titles>
-  </author>
-  <author>
-    <name>vladpriv</name>
-    <titles>
-      <title>Заметки по ROS: Простое введение в launch файлы</title>
-    </titles>
-  </author>
-  <author>
-    <name>Robotium</name>
-    <titles>
-      <title>Учебный язык в робототехнике</title>
-    </titles>
-  </author>
-  <author>
-    <name>tarlakovsky</name>
-    <titles>
-      <title>Красный восход</title>
-    </titles>
-  </author>
-  <author>
-    <name>aberezovskaya</name>
-    <titles>
-      <title>IaC и DevSecOps: выбираем лучшие инструменты анализа и защиты инфраструктурного кода</title>
-    </titles>
-  </author>
-  <author>
-    <name>n27051538</name>
-    <titles>
-      <title>Как перенести UEFI системный диск Enterprise Linux на другое устройство?</title>
-    </titles>
-  </author>
-  <author>
-    <name>achekalin</name>
-    <titles>
-      <title>Вышла Grafana 11.3: дашборды на базе Scenes, обновления визуализаций, панелей, и многое другое</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ivan_Nemov</name>
-    <titles>
-      <title>Как я настраивал меню выхода в Qtile</title>
-    </titles>
-  </author>
-  <author>
-    <name>ElenaAladina</name>
-    <titles>
-      <title>Не усложняй: простые фреймворки, чтобы быстрее принимать решения и приоритизировать задачи</title>
-    </titles>
-  </author>
-  <author>
-    <name>RaufchickValeev</name>
-    <titles>
-      <title>Анализ рынка фильмов. Как аналитический подход убивает творчество</title>
-    </titles>
-  </author>
-  <author>
-    <name>Unovad</name>
-    <titles>
-      <title>Особенности хранения проектной информации в среде общих данных строительного проекта</title>
-    </titles>
-  </author>
-  <author>
-    <name>GoodGod</name>
-    <titles>
-      <title>Моя парадигма программирования</title>
-    </titles>
-  </author>
-  <author>
-    <name>DavidTskhvaradze</name>
-    <titles>
-      <title>MoexBuilder: как я создаю библиотеку на Python. Часть 3</title>
-      <title>MoexBuilder: как я создаю библиотеку на Python. Часть 2</title>
-      <title>MoexBuilder: как я создаю библиотеку на Python. Часть 1</title>
-    </titles>
-  </author>
-  <author>
-    <name>ko_ya</name>
-    <titles>
-      <title>Основатель и идеолог Nvidia: как Дженсен Хуанг создал одну из самых дорогих компаний в мире</title>
-    </titles>
-  </author>
-  <author>
-    <name>iMonin</name>
-    <titles>
-      <title>Вентиляция крытых бассейнов и аквапарков в холодном климате: Как избежать конденсата на окнах?</title>
-    </titles>
-  </author>
-  <author>
-    <name>dididididi</name>
-    <titles>
-      <title>Как затащить быстро и дешево</title>
-    </titles>
-  </author>
-  <author>
-    <name>fallenstorm</name>
-    <titles>
-      <title>Как связаны скоростные шоссе и естественный отбор?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Daria_Chetyrkina</name>
-    <titles>
-      <title>Как фрагментация индексов в SQL Server «подкладывает свинью» производительности, и что с этим делать</title>
-    </titles>
-  </author>
-  <author>
-    <name>k0rsakov</name>
-    <titles>
-      <title>Что такое Data Driven подход</title>
-    </titles>
-  </author>
-  <author>
-    <name>Sivchenko_translate</name>
-    <titles>
-      <title>Запросто собираем базу данных при помощи команд Linux</title>
-    </titles>
-  </author>
-  <author>
-    <name>Dhwtj</name>
-    <titles>
-      <title>Рефакторинг в условиях жесткого дефицита ресурсов</title>
-    </titles>
-  </author>
-  <author>
-    <name>GalsSoftware</name>
-    <titles>
-      <title>Расширенное обнаружение проблем в Zabbix: продвинутая работа с триггерами, тегами и вычисляемыми элементам</title>
-    </titles>
-  </author>
-  <author>
-    <name>PatientZero</name>
-    <titles>
-      <title>Разбор регулярного выражения, проверяющего простоту чисел</title>
-      <title>Оптимизируем использование памяти для поиска IP-адресов</title>
-      <title>Когда есть разница регистров, но это не верхний и не нижний регистры?</title>
-    </titles>
-  </author>
-  <author>
-    <name>MuonKvark</name>
-    <titles>
-      <title>Java Digest #18</title>
-    </titles>
-  </author>
-  <author>
-    <name>xtile</name>
-    <titles>
-      <title>Практический опыт выбора лидара для робототехнических проектов: от теории к практике</title>
-    </titles>
-  </author>
-  <author>
-    <name>LadyLogic</name>
-    <titles>
-      <title>Как пройти стажировку бизнес- и системного аналитика и не «сгореть» в персональной преисподней</title>
-    </titles>
-  </author>
-  <author>
-    <name>andrey_stepanov1</name>
-    <titles>
-      <title>Исследование рынка .NET разработки: Анализ текущих тенденций и прогнозы</title>
-    </titles>
-  </author>
-  <author>
-    <name>dan_sw</name>
-    <titles>
-      <title>Разработка служб для Windows на C++</title>
-    </titles>
-  </author>
-  <author>
-    <name>Laserbuilder</name>
-    <titles>
-      <title>Азотный лазер большой мощности: так ли он прост?</title>
-    </titles>
-  </author>
-  <author>
-    <name>ph_piter</name>
-    <titles>
-      <title>Книга: «Linux. Карманный справочник. 4-е изд.»</title>
-      <title>Книга: «Математика для Data Science. Управляем данными с помощью линейной алгебры, теории вероятностей и статистики»</title>
-    </titles>
-  </author>
-  <author>
-    <name>lenasherparpa</name>
-    <titles>
-      <title>Кристофер Йех, аспирант Калтеха, про «тренажеры» для разработки алгоритмов</title>
-    </titles>
-  </author>
-  <author>
-    <name>appp_master</name>
-    <titles>
-      <title>Apache Flink: Сериализация и JacksonStateSerializer</title>
-    </titles>
-  </author>
-  <author>
-    <name>Usetech</name>
-    <titles>
-      <title>Как обновить зависимости, чтобы не было больно</title>
-    </titles>
-  </author>
-  <author>
-    <name>igumnov</name>
-    <titles>
-      <title>Буферный пул для максимальной скорости: квест по победе над Nginx</title>
-      <title>CBLT — безопасный, быстрый и минималистичный веб-сервер на языке программирования Rust</title>
-    </titles>
-  </author>
-  <author>
-    <name>YukinoKingu</name>
-    <titles>
-      <title>Новый этап эволюции Vue — Vapor</title>
-    </titles>
-  </author>
-  <author>
-    <name>zoldaten</name>
-    <titles>
-      <title>Как разобрать и собрать обратно apk под windows</title>
-    </titles>
-  </author>
-  <author>
-    <name>blognaumen</name>
-    <titles>
-      <title>Как создать плохой REST-сервис: краткое руководство</title>
-    </titles>
-  </author>
-  <author>
-    <name>ITMonsters</name>
-    <titles>
-      <title>Почему 1С?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Darya_Frolova</name>
-    <titles>
-      <title>Подвесной монорельс для денег: как магазины XIX–XX веков пытались упростить доставку кэша</title>
-      <title>От Гарфилда до Кота Саймона: как кошки становятся прототипами героев фильмов, мультиков и игр</title>
-      <title>Как лидар помог обнаружить древние города: что ученые узнали о Шелковом пути</title>
-    </titles>
-  </author>
-  <author>
-    <name>MsRedlLynx</name>
-    <titles>
-      <title>Когда релиз? Как мы оптимизировали процессы с помощью метрик</title>
-    </titles>
-  </author>
-  <author>
-    <name>CyberPaul</name>
-    <titles>
-      <title>Трёхмерные, часть 2. О 3D-интерфейсах в операционных системах</title>
-      <title>Трёхмерные. Почему в современных ОС не прижились 3D-интерфейсы?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Fabrichkin</name>
-    <titles>
-      <title>Плагиат, референс, отсылка — где пролегает граница при разработке игр</title>
-    </titles>
-  </author>
-  <author>
-    <name>elaracore</name>
-    <titles>
-      <title>Как айтишнику живется в Барселоне — в городе криминала и специфических запахов</title>
-    </titles>
-  </author>
-  <author>
-    <name>anmnv</name>
-    <titles>
-      <title>LaTeX для всех: от первых шагов до продвинутых трюков</title>
-    </titles>
-  </author>
-  <author>
-    <name>TNapreev</name>
-    <titles>
-      <title>Read IT Club: как мы повышаем качество русскоязычной ИТ-литературы</title>
-    </titles>
-  </author>
-  <author>
-    <name>nanocad</name>
-    <titles>
-      <title>Инновации в инженерии: функционал конвертации проектов и анализ целостности систем в nanoCAD BIM Вентиляция</title>
-    </titles>
-  </author>
-  <author>
-    <name>LysanovSergey</name>
-    <titles>
-      <title>Как мы сделали собственный Software-Defined Storage для публичного облака Cloud.ru Evolution</title>
-    </titles>
-  </author>
-  <author>
-    <name>case-tech</name>
-    <titles>
-      <title>Библиотека CUtils</title>
-    </titles>
-  </author>
-  <author>
-    <name>Beeline_tech</name>
-    <titles>
-      <title>Как мы в билайне боремся со спам-звонками с помощью машинного обучения, часть 1</title>
-    </titles>
-  </author>
-  <author>
-    <name>Kisel_n</name>
-    <titles>
-      <title>Кастомизация Django Admin. Часть 1: Структура шаблонов</title>
-    </titles>
-  </author>
-  <author>
-    <name>zabelinleo</name>
-    <titles>
-      <title>Бухгалтерия (А)УСН, ПСН в Excel с выводом декларации в xls, ТОП-10 и прибыльностью</title>
-    </titles>
-  </author>
-  <author>
-    <name>ProstoKirReal</name>
-    <titles>
-      <title>Сложно о простом. Самые популярные заголовки уровня L3 и L4 модели OSI</title>
-    </titles>
-  </author>
-  <author>
-    <name>AnZakharova</name>
-    <titles>
-      <title>Разгоняем 1С: 27 приемов</title>
-    </titles>
-  </author>
-  <author>
-    <name>def_to_explore</name>
-    <titles>
-      <title>Новый вид мошенничества в IT: как рекрутеры-мошенники выманивают деньги у соискателей</title>
-    </titles>
-  </author>
-  <author>
-    <name>GeeksCat</name>
-    <titles>
-      <title>Жил да был купец…</title>
-      <title>Как создавалась антология Риддика</title>
-    </titles>
-  </author>
-  <author>
-    <name>ifap</name>
-    <titles>
-      <title>Как региональные госсайты оказались защищены лучше федеральных</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ivan_V_V</name>
-    <titles>
-      <title>Восстановление нерабочей клавиатуры с помощью QMK и RP2040</title>
-    </titles>
-  </author>
-  <author>
-    <name>khafizovtim</name>
-    <titles>
-      <title>По мотивам одного сбоя в БД Oracle</title>
-    </titles>
-  </author>
-  <author>
-    <name>nata_python</name>
-    <titles>
-      <title>Топ-5 ботов с нейросетями для генерации изображений — те самые, что спасли наш бизнес и принесли 15 млн ₽</title>
-    </titles>
-  </author>
-  <author>
-    <name>koanse</name>
-    <titles>
-      <title>Определяем доли и коэффициенты проникновения с помощью DAX</title>
-    </titles>
-  </author>
-  <author>
-    <name>Demin_Konstantin</name>
-    <titles>
-      <title>Разработка гибкой платформы для кредитования: от крупных банков к массовому рынку</title>
-    </titles>
-  </author>
-  <author>
-    <name>deeamtee</name>
-    <titles>
-      <title>Чем занимается фронтенд-разработчик — джуниор, мидл, синьор и тимлид</title>
-    </titles>
-  </author>
-  <author>
-    <name>techno_mot</name>
-    <titles>
-      <title>Обзор способов защиты контейнеров Docker: от простого к сложному</title>
-    </titles>
-  </author>
-  <author>
-    <name>Faux_x_x</name>
-    <titles>
-      <title>Как аналитика помогает разработать игры, которые понимают своих игроков</title>
-    </titles>
-  </author>
-  <author>
-    <name>k0mar0v</name>
-    <titles>
-      <title>От мышей на экране до zip-бомбы: топ приложений-шуток из начала нулевых</title>
-    </titles>
-  </author>
-  <author>
-    <name>AlexMeshock</name>
-    <titles>
-      <title>Как я создавал бесплатный сервис оптимизации изображений FlashImg.ru</title>
-    </titles>
-  </author>
-  <author>
-    <name>Alexander238</name>
-    <titles>
-      <title>Serviceability в действии: реальные примеры разработки и улучшения процедур обслуживания IT-оборудования</title>
-    </titles>
-  </author>
-  <author>
-    <name>angelrsa</name>
-    <titles>
-      <title>E-com как снежный ком: история развития направления электронной коммерции в России на личном опыте</title>
-    </titles>
-  </author>
-  <author>
-    <name>SamDurak</name>
-    <titles>
-      <title>Исследование возможности импортозамещения файлового сервера: Часть первая</title>
-    </titles>
-  </author>
-  <author>
-    <name>CentariumV</name>
-    <titles>
-      <title>Уровни изоляции транзакций в PostgreSQL, MySQL, MSQL, Oracle с примерами на Go</title>
-    </titles>
-  </author>
-  <author>
-    <name>HunterXXI</name>
-    <titles>
-      <title>Я бы строить дом пошел или на какую профессию сменить ИТ</title>
-    </titles>
-  </author>
-  <author>
-    <name>skillfactory_school</name>
-    <titles>
-      <title>Support Vector Machine: +1 алгоритм машинного обучения для начинающих</title>
-    </titles>
-  </author>
-  <author>
-    <name>SimpleOne_it</name>
-    <titles>
-      <title>Low-code платформа: кому нужна, в чем выгода и почему это тренд для компаний уровня Enterprise</title>
-    </titles>
-  </author>
-  <author>
-    <name>artemmoscow</name>
-    <titles>
-      <title>Выйти из IT или почему я не на месте TradingView</title>
-    </titles>
-  </author>
-  <author>
-    <name>flancer</name>
-    <titles>
-      <title>Разница между ранним и поздним связыванием</title>
-    </titles>
-  </author>
-  <author>
-    <name>Kokokakoly</name>
-    <titles>
-      <title>Один день из жизни системного аналитика: синки, факапы в тестировании, сценарии и шутейки</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ivan_Kadochnikov</name>
-    <titles>
-      <title>Принцип цифрового управления непосредственным преобразователем напряжения</title>
-    </titles>
-  </author>
-  <author>
-    <name>Terentew</name>
-    <titles>
-      <title>Как растить мышцы двумя тренировками в неделю? Подход для людей с полной занятостью и готовый план на 2 дня</title>
-    </titles>
-  </author>
-  <author>
-    <name>Oksana_Nedvigina</name>
-    <titles>
-      <title>Чтение на выходные: «Великий Китайский Файрвол. Как создать свой собственный интернет и управлять им» Джеймса Гриффитса</title>
-    </titles>
-  </author>
-  <author>
-    <name>savrus_pub</name>
-    <titles>
-      <title>Новые динтаблицы: вторичные индексы, web assembly и ещё много улучшений к версии YTsaurus 24.1.0</title>
-    </titles>
-  </author>
-  <author>
-    <name>kanasero</name>
-    <titles>
-      <title>Тварь ли я дрожащая или право имею? Берем чужие сайты под свой контроль. Часть 2 — Пользовательские скрипты в Chrome</title>
-    </titles>
-  </author>
-  <author>
-    <name>slava_rumin</name>
-    <titles>
-      <title>Запрещенная соцсеть приносила бауманцу 63 млн в год, а теперь маркетплейсы приносят страдания</title>
-    </titles>
-  </author>
-  <author>
-    <name>Zak0</name>
-    <titles>
-      <title>Как я пытался приручить кофемашину</title>
-    </titles>
-  </author>
-  <author>
-    <name>SearchInform_team</name>
-    <titles>
-      <title>«Думаю, как можно слить и не спалиться»: ИБ-аналитик о том, как научиться видеть инцидент</title>
-    </titles>
-  </author>
-  <author>
-    <name>Avokadavr</name>
-    <titles>
-      <title>Проверяем, мог ли модуль пожаротушения стать причиной пожара на складе</title>
-    </titles>
-  </author>
-  <author>
-    <name>artem_dobrovinskiy</name>
-    <titles>
-      <title>Описываем UseCase&apos;ы правильно</title>
-    </titles>
-  </author>
-  <author>
-    <name>HeresA</name>
-    <titles>
-      <title>🪄 Мой топ-5 полезных Figma-плагинов для работы с компонентами и токенами — UX/UI дизайн</title>
-    </titles>
-  </author>
-  <author>
-    <name>yarlykovrv</name>
-    <titles>
-      <title>Обзор и архитектура протокола LayerZero v2</title>
-    </titles>
-  </author>
-  <author>
-    <name>mtuci</name>
-    <titles>
-      <title>В МТУСИ применили методы многомерного статистического анализа и NLP для классификации научных публикаций</title>
-      <title>Выяснили, как эффективно подготовить спринтеров к соревнованиям и делимся теперь с вами</title>
-    </titles>
-  </author>
-  <author>
-    <name>dalerank</name>
-    <titles>
-      <title>Тяжелый H[header]</title>
-    </titles>
-  </author>
-  <author>
-    <name>glebmachine</name>
-    <titles>
-      <title>Как избежать разочарования пользователя: от NPS к ценности</title>
-    </titles>
-  </author>
-  <author>
-    <name>Finam_Broker</name>
-    <titles>
-      <title>$800 000 на фейковой аналитике: история самого юного биржевого мошенника</title>
-    </titles>
-  </author>
-  <author>
-    <name>volgeorge</name>
-    <titles>
-      <title>Топ-6 пиар-агентств для работы в России: личный рейтинг пиарщика компании</title>
-    </titles>
-  </author>
-  <author>
-    <name>SoraVWV</name>
-    <titles>
-      <title>Синтаксический анализатор на стеках и lambda-выражениях (Axolotl)</title>
-    </titles>
-  </author>
-  <author>
-    <name>ru_vds</name>
-    <titles>
-      <title>Как мы обнаружили потенциальные атаки при помощи штрих-кодов</title>
-    </titles>
-  </author>
-  <author>
-    <name>morett1m</name>
-    <titles>
-      <title>Rust без прикрас: где мы ошибаемся</title>
-    </titles>
-  </author>
-  <author>
-    <name>BabayMazay</name>
-    <titles>
-      <title>Lampwork — декоративная стеклодувная техника. Часть 1. Работы подготовительные</title>
-    </titles>
-  </author>
-  <author>
-    <name>zloiromantik</name>
-    <titles>
-      <title>Обзор KICKPI KP1: пожалуй, лучшая сертифицированная Android-TV приставка в ценовой категории до $50</title>
-    </titles>
-  </author>
-  <author>
-    <name>michabramov</name>
-    <titles>
-      <title>Как сделать интерактивную панель для отправки SMS</title>
-      <title>SIP для Интернета вещей: почему устройствам нужны голосовые возможности</title>
-    </titles>
-  </author>
-  <author>
-    <name>MINDINMAP</name>
-    <titles>
-      <title>Как и где создавать ментальные карты для работы и учебы</title>
-    </titles>
-  </author>
-  <author>
-    <name>Neom1an</name>
-    <titles>
-      <title>Скрытые цифровые привычки зумеров</title>
-    </titles>
-  </author>
-  <author>
-    <name>iik_812</name>
-    <titles>
-      <title>Создание плагина для IntelliJ IDE с подключением GigaChat для проверки качества кода</title>
-    </titles>
-  </author>
-  <author>
-    <name>in86</name>
-    <titles>
-      <title>Keycloak Starter. Удобный способ аутентификации и авторизации</title>
-    </titles>
-  </author>
-  <author>
-    <name>yonesko</name>
-    <titles>
-      <title>Льем из Postgres в Elastic консистентно</title>
-    </titles>
-  </author>
-  <author>
-    <name>Mastersland</name>
-    <titles>
-      <title>Flutter Push-уведомления, том числе в Web</title>
-    </titles>
-  </author>
-  <author>
-    <name>it_union</name>
-    <titles>
-      <title>Удивительные истории, о которых невозможно молчать</title>
-      <title>«Самолёт» прилетел</title>
-    </titles>
-  </author>
-  <author>
-    <name>Tzimie</name>
-    <titles>
-      <title>Насколько сложна ваша работа MS SQL server DBA?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Xedox_SlimeLime</name>
-    <titles>
-      <title>Пишем ArrayList на C</title>
-      <title>Управление памятью в C</title>
-    </titles>
-  </author>
-  <author>
-    <name>sugrobov</name>
-    <titles>
-      <title>Предвзятость русскоязычных LLM: кого машина считает «обычным человеком»?</title>
-    </titles>
-  </author>
-  <author>
-    <name>rawmantique</name>
-    <titles>
-      <title>Глубокая оптимизация сверточных нейронных сетей: Анализ методов улучшения модели на примере CIFAR-10</title>
-      <title>Путь разметки данных для NER: от Open Source до Prodigy</title>
-    </titles>
-  </author>
-  <author>
-    <name>ivntv</name>
-    <titles>
-      <title>Управляющая компания, у нас проблема! Как за жителями хрущевок следят по кабелям провайдера</title>
-    </titles>
-  </author>
-  <author>
-    <name>nik_vr</name>
-    <titles>
-      <title>Как я писал «Вирус-бякус» на Delphi (шутка родом из конца 90-х)</title>
-    </titles>
-  </author>
-  <author>
-    <name>DragorWW</name>
-    <titles>
-      <title>DDD и аналитика данных</title>
-    </titles>
-  </author>
-  <author>
-    <name>MaFrance351</name>
-    <titles>
-      <title>Ленточные накопители в домашнем ПК</title>
-    </titles>
-  </author>
-  <author>
-    <name>RodionGork</name>
-    <titles>
-      <title>Поревьюим и порефакторим — Ассемблер для любопытных #2</title>
-      <title>Turbo-Pascal 5.5 (и другие) в браузере — с загрузкой программ по ссылке</title>
-      <title>Перебор Соседних Клеток — забавные формулы</title>
-    </titles>
-  </author>
-  <author>
-    <name>ptsecurity</name>
-    <titles>
-      <title>Тренды VM: топ уязвимостей октября, «метод Форда» и «атака на жалобщика»</title>
-      <title>Экспертиза под микроскопом [Оголяемся технологически. MaxPatrol SIEM]</title>
-      <title>Вести с полей киберинцидентов: команда расследователей делится итогами проектов 2023-2024</title>
-      <title>Опасное цифровое наследство: какие угрозы таит реинкарнация утраченного номера</title>
-    </titles>
-  </author>
-  <author>
-    <name>az013</name>
-    <titles>
-      <title>Введение в ПЛИС: Содержание курса</title>
-    </titles>
-  </author>
-  <author>
-    <name>T1_IT</name>
-    <titles>
-      <title>Data Fusion Contest 2024, разбор и итоги соревнования</title>
-    </titles>
-  </author>
-  <author>
-    <name>VAE</name>
-    <titles>
-      <title>Продовольственная безопасность. Часть I</title>
-      <title>Алгоритмы. Рекурсивные функции. Часть I</title>
-    </titles>
-  </author>
-  <author>
-    <name>Elvira_Shiralieva</name>
-    <titles>
-      <title>Биохакинг – палка о двух концах</title>
-    </titles>
-  </author>
-  <author>
-    <name>wadik69</name>
-    <titles>
-      <title>Telegram web apps как альтернатива мобильным приложениям</title>
-    </titles>
-  </author>
-  <author>
-    <name>parseny</name>
-    <titles>
-      <title>Понимает ли Vision Llama импрессионистов?</title>
-    </titles>
-  </author>
-  <author>
-    <name>alexander_kisochkin</name>
-    <titles>
-      <title>Как поднять личный Прокси в Европе за 15 минут</title>
-    </titles>
-  </author>
-  <author>
-    <name>Lunathecat</name>
-    <titles>
-      <title>Прокачиваем «народную» электрогитару Cort KX100</title>
-    </titles>
-  </author>
-  <author>
-    <name>TeleportAcademy</name>
-    <titles>
-      <title>Почему никто не откликается на вашу вакансию? 18 способов изменить ситуацию</title>
-    </titles>
-  </author>
-  <author>
-    <name>AlbinaAskerova</name>
-    <titles>
-      <title>Регуляторика РБПО. Часть 4 – Требования к ГИС, ИСПДн, отраслевые требования</title>
-    </titles>
-  </author>
-  <author>
-    <name>youjintyan</name>
-    <titles>
-      <title>Как организовать сериализацию в Redux и избежать ошибки: non-serializable value</title>
-    </titles>
-  </author>
-  <author>
-    <name>Caterin</name>
-    <titles>
-      <title>Как использовать плагины SBP для развития b2b продукта</title>
-    </titles>
-  </author>
-  <author>
-    <name>Statzilla</name>
-    <titles>
-      <title>Поиск по фото для Ozon и WB за 3 часа</title>
-    </titles>
-  </author>
-  <author>
-    <name>Safreliy</name>
-    <titles>
-      <title>Нейронные оптимизаторы запросов в реляционных БД (Часть 3): Погружение в ранжирование</title>
-    </titles>
-  </author>
-  <author>
-    <name>Seleditor</name>
-    <titles>
-      <title>Квантовые вычисления: основные идеи и состояние квантовых технологий</title>
-      <title>Ликуй, разработчик — всего 14 лет и QNX снова открыли</title>
-    </titles>
-  </author>
-  <author>
-    <name>Assa99habr</name>
-    <titles>
-      <title>Трансформация или чемодан без ручки (часть 7) Конфликты и компромиссы…</title>
-    </titles>
-  </author>
-  <author>
-    <name>Splicerok</name>
-    <titles>
-      <title>Расширения VSCode для комфортной работы с проектами</title>
-    </titles>
-  </author>
-  <author>
-    <name>BiktorSergeev</name>
-    <titles>
-      <title>HamClock и Pi-Star — запускаем сервер радиолюбительского приложения на «малинке»</title>
-      <title>Phanerochaete velutina: живой компьютер, который занят поиском еды</title>
-      <title>Телефоны с дисплеями E-Ink: для тех, кому нужна связь и не хочется отвлекаться</title>
-    </titles>
-  </author>
-  <author>
-    <name>Andrey_Biryukov</name>
-    <titles>
-      <title>Работа с дисками в РЕД ОС</title>
-      <title>Безопасная разработка на Python</title>
-      <title>Работа в командной строкой ОС Astra Linux</title>
-    </titles>
-  </author>
-  <author>
-    <name>freehabr</name>
-    <titles>
-      <title>Предложение государству: как обеспечить безопасность в интернете без «все всем заблокировать»</title>
-    </titles>
-  </author>
-  <author>
-    <name>kaufmanendy</name>
-    <titles>
-      <title>Интеграция внешнего сервера авторизации https://authorizer.dev в фулстек приложение на NestJS и Angular</title>
-    </titles>
-  </author>
-  <author>
-    <name>Zextras</name>
-    <titles>
-      <title>Настройка Carbonio Proxy</title>
-    </titles>
-  </author>
-  <author>
-    <name>tripolskypetr</name>
-    <titles>
-      <title>Почему мы выбрали gRPC вместо tRPC?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Clickru</name>
-    <titles>
-      <title>РСЯ для блогеров: тестируем публикации у блогеров через Директ</title>
-    </titles>
-  </author>
-  <author>
-    <name>Catx2</name>
-    <titles>
-      <title>Правда и ложь про природную ренту</title>
-    </titles>
-  </author>
-  <author>
-    <name>idsulik</name>
-    <titles>
-      <title>Жизненный цикл контейнеров в Docker Compose: использование хуков post_start, pre_stop</title>
-    </titles>
-  </author>
-  <author>
-    <name>roman_logo</name>
-    <titles>
-      <title>Как нейросети меняют работу дизайнеров</title>
-    </titles>
-  </author>
-  <author>
-    <name>IisNuINu</name>
-    <titles>
-      <title>GIMP Script-Fu Первый Дан. Погружение в программирование графики</title>
-      <title>GIMP Script-Fu Первый Дан. Расширения к Script-fu</title>
-    </titles>
-  </author>
-  <author>
-    <name>kirrya</name>
-    <titles>
-      <title>Вывод уравнений Фридмана и анализ одного из его предельных решений</title>
-      <title>Опционы и формула Блэка-Шоулза (часть 2)</title>
-    </titles>
-  </author>
-  <author>
-    <name>vaclav1986</name>
-    <titles>
-      <title>Подмания: запускаем графические приложения в контейнерах</title>
-    </titles>
-  </author>
-  <author>
-    <name>lapkin25</name>
-    <titles>
-      <title>Ход в игре «крестики-нолики» с помощью SAT-солвера</title>
-    </titles>
-  </author>
-  <author>
-    <name>breakmirrors</name>
-    <titles>
-      <title>Ключ от всех дверей: как нашли бэкдор в самых надежных* картах доступа</title>
-    </titles>
-  </author>
-  <author>
-    <name>verych</name>
-    <titles>
-      <title>Первые женщины в IT</title>
-    </titles>
-  </author>
-  <author>
-    <name>555www555</name>
-    <titles>
-      <title>Как приходят идеи красивого и полезного. Кентавр</title>
-    </titles>
-  </author>
-  <author>
-    <name>Nepomnin</name>
-    <titles>
-      <title>Ретроспектива: создание одних из первых автоматизированных рабочих мест</title>
-    </titles>
-  </author>
-  <author>
-    <name>coctok</name>
-    <titles>
-      <title>Как системному аналитику выделиться на собеседовании в 2024?</title>
-    </titles>
-  </author>
-  <author>
-    <name>empenoso</name>
-    <titles>
-      <title>Инструменты робота, торгующего на Московской бирже через API брокера</title>
-    </titles>
-  </author>
-  <author>
-    <name>mClouds_editor</name>
-    <titles>
-      <title>Обзор российской СХД от YADRO: какова TATLIN.FLEX.PRO в деле</title>
-    </titles>
-  </author>
-  <author>
-    <name>jasiejames</name>
-    <titles>
-      <title>Когда 1+1 равно 1 (часть 2)</title>
-    </titles>
-  </author>
-  <author>
-    <name>isfr</name>
-    <titles>
-      <title>Apex Architecture: Модульность и стабильность в Android-разработке</title>
-    </titles>
-  </author>
-  <author>
-    <name>Wladradchenko</name>
-    <titles>
-      <title>Практика: мой опыт интеграции более 50 нейронных сетей в один проект</title>
-    </titles>
-  </author>
-  <author>
-    <name>sashacmc</name>
-    <titles>
-      <title>Склеить несколько видеофайлов, что может быть проще…</title>
-    </titles>
-  </author>
-  <author>
-    <name>zorgan</name>
-    <titles>
-      <title>Секреты успешной миграции: как перенести базу данных с выделенного сервера в облако</title>
-    </titles>
-  </author>
-  <author>
-    <name>evgeni_zaharenko</name>
-    <titles>
-      <title>SEO магазина — пошаговая инструкция</title>
-    </titles>
-  </author>
-  <author>
-    <name>Chad_AI</name>
-    <titles>
-      <title>Конец эпохи fashion-дизайнеров? Как ИИ меняет мир моды</title>
-    </titles>
-  </author>
-  <author>
-    <name>redhurt96</name>
-    <titles>
-      <title>Unity .NET и Mono — галопом по компонентам</title>
-    </titles>
-  </author>
-  <author>
-    <name>andrew_k_21_12</name>
-    <titles>
-      <title>kjs-box: добавляем ленивые модули, ресурсы с типизацией и модели представления в React-проекты на Kotlin</title>
-    </titles>
-  </author>
-  <author>
-    <name>badcasedaily1</name>
-    <titles>
-      <title>Триггеры в PostgreSQL: основы</title>
-      <title>Транзакции в Spring: сила управления данными</title>
-      <title>Не бойтесь потоков в Python, они не кусаются</title>
-      <title>Отправка и получение сообщений через RabbitMQ в Symfony</title>
-      <title>Классы без лишнего веса: инлайн-классы в Kotlin</title>
-      <title>Паттерн Наблюдатель в Golang на котиках</title>
-      <title>Как Sample Ratio Mismatch спасает A/B тесты от ложных выводов</title>
-      <title>Django-аутентификация: просто о сложном</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ann_Rodina</name>
-    <titles>
-      <title>#ВОбъективеИИ: большие планы на агентский ИИ и новые лидары</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ruins007</name>
-    <titles>
-      <title>Skyrim — и только блеск кожанки в отражении заднего зеркала</title>
-    </titles>
-  </author>
-  <author>
-    <name>evgeniatro</name>
-    <titles>
-      <title>Как создать датасет для машинного обучения за 6 шагов</title>
-      <title>Как разметить данные для классификации изображений: руководство с примерами</title>
-    </titles>
-  </author>
-  <author>
-    <name>VadimBordik</name>
-    <titles>
-      <title>10 детских онлайн-лагерей: информационные технологии, языки, творчество и другие направления</title>
-      <title>100+ бесплатных уроков по программированию для детей и подростков онлайн</title>
-    </titles>
-  </author>
-  <author>
-    <name>OrkBiotechnologist</name>
-    <titles>
-      <title>Рубрика: VPS на пределе возможностей. LLM на CPU с 12Gb RAM</title>
-    </titles>
-  </author>
-  <author>
-    <name>runity</name>
-    <titles>
-      <title>Как развернуть сервис в Kubernetes: гайд для начинающих</title>
-    </titles>
-  </author>
-  <author>
-    <name>OnArs</name>
-    <titles>
-      <title>Anthropic и гонка к «безопасному ИИ»: что рассказал CEO компании Дарио Амодеи на подкасте Lex Fridman</title>
-    </titles>
-  </author>
-  <author>
-    <name>technokratiya</name>
-    <titles>
-      <title>Мультимодальный RAG может повысить эффективность использования ИИ для бизнеса</title>
-      <title>Как изменится положение дел в Кремниевой Долине во время второго срока Дональда Трампа</title>
-    </titles>
-  </author>
-  <author>
-    <name>Sber</name>
-    <titles>
-      <title>OpenShift и Kubernetes: сравнительный обзор, основные различия</title>
-      <title>Как мы развиваем архитектурные навыки ИТ-специалистов в Сбере</title>
-    </titles>
-  </author>
-  <author>
-    <name>SanDark7</name>
-    <titles>
-      <title>О технарях, управленцах и почему всё не так однозначно, как кажется</title>
-    </titles>
-  </author>
-  <author>
-    <name>volodya_research</name>
-    <titles>
-      <title>Считаем доверительные интервалы для долей и медианы по нормальному распределению (готовимся к собесу на аналитика)</title>
-    </titles>
-  </author>
-  <author>
-    <name>avangonina</name>
-    <titles>
-      <title>UML для всех: почему бы не описать проект на языке диаграмм?</title>
-    </titles>
-  </author>
-  <author>
-    <name>Tirarex</name>
-    <titles>
-      <title>Играем на Sony PlayStation2 в 2024 году</title>
-    </titles>
-  </author>
-  <author>
-    <name>AnSt</name>
-    <titles>
-      <title>Из опыта обучения взрослых. Практические приёмы</title>
-    </titles>
-  </author>
-  <author>
-    <name>Evgeny_E</name>
-    <titles>
-      <title>Оценка токопотребления батарейных радиоканальных устройств</title>
-    </titles>
-  </author>
-  <author>
-    <name>Parafinwe</name>
-    <titles>
-      <title>Глубокое погружение в базовую архитектуру LPU Groq</title>
-    </titles>
-  </author>
-  <author>
-    <name>Magnit_tech</name>
-    <titles>
-      <title>Как мы создаем цифровой опыт сотрудников в «Магните»</title>
-    </titles>
-  </author>
-  <author>
-    <name>MarioKiber</name>
-    <titles>
-      <title>Вся правда о переходе с монолита на микросервисы, когда у тебя сеть из десятков тысяч магазинов: опыт Х5 Tech</title>
-    </titles>
-  </author>
-  <author>
-    <name>veseluha</name>
-    <titles>
-      <title>Пишем небольшое приложение на Python для повышения продуктивности с помощью ИИ и BotHub API</title>
-    </titles>
-  </author>
-  <author>
-    <name>Gazinformservice</name>
-    <titles>
-      <title>Краткий обзор форума GIS DAYS 2024: студенческий день, тренды в инфобезе и киберсоревнования</title>
-    </titles>
-  </author>
-  <author>
-    <name>unixendless</name>
-    <titles>
-      <title>Как быстро уснуть? Здоровый сон — хороший код</title>
-    </titles>
-  </author>
-  <author>
-    <name>bimisla</name>
-    <titles>
-      <title>Как сократить время при повторных проверках проектной документации, используя среду общих данных и инструмент сравнения</title>
-    </titles>
-  </author>
-  <author>
-    <name>ar2d2</name>
-    <titles>
-      <title>Когда слепой увидит зрячего?</title>
-    </titles>
-  </author>
-  <author>
-    <name>a-ustyuzhanin</name>
-    <titles>
-      <title>ECCV 2024: как это было. Актуальные статьи и главные тренды</title>
-    </titles>
-  </author>
-  <author>
-    <name>accurate_random</name>
-    <titles>
-      <title>Асинхронная логика — насколько же это может быть быстро… (+ небольшая победа на багом в Gowin EDA)</title>
-    </titles>
-  </author>
-  <author>
-    <name>SF_author</name>
-    <titles>
-      <title>Ода любви к nvtop — консольный мониторинг GPU, который мы заслужили</title>
-    </titles>
-  </author>
-  <author>
-    <name>Aygul_Kamaltinova</name>
-    <titles>
-      <title>Как агенту изменений выйти за границы возможностей и выжить там, где тебя не ждут?</title>
-    </titles>
-  </author>
-  <author>
-    <name>kinh</name>
-    <titles>
-      <title>Умножение троичных матриц для нейросетей</title>
-    </titles>
-  </author>
-  <author>
-    <name>MrPizzly</name>
-    <titles>
-      <title>Состояние производительности Python 3.13: Free-Threading</title>
-      <title>Разбираем выравнивание данных и структуру памяти в Rust</title>
-    </titles>
-  </author>
-  <author>
-    <name>stein_osint</name>
-    <titles>
-      <title>GEOINT Challenge: геолокация уличного искусства в Доминике</title>
-    </titles>
-  </author>
-  <author>
-    <name>Ivan_zar</name>
-    <titles>
-      <title>Запуск необанка на core-banking platform АБС RStyle: вызовы в финансовом секторе</title>
-    </titles>
-  </author>
-  <author>
-    <name>Lampbike</name>
-    <titles>
-      <title>Есть ли разница между седлами для шоссейных и горных велосипедов?</title>
-      <title>Аэро-, легкий или универсальный: какой из шоссейных велосипедов самый быстрый?</title>
-    </titles>
-  </author>
-  <author>
-    <name>CyberAGF</name>
-    <titles>
-      <title>Под одну гребенку. Режим эмуляции ЦП в Кибер Инфраструктуре</title>
-    </titles>
-  </author>
-  <author>
-    <name>shanker</name>
-    <titles>
-      <title>Практические варианты использования port knocking</title>
-    </titles>
-  </author>
-  <author>
-    <name>kreout</name>
-    <titles>
-      <title>Сквозное шифрование и двухфакторная аутентификация в современном интернете</title>
-    </titles>
-  </author>
-  <author>
-    <name>Qusi</name>
-    <titles>
-      <title>Скачиваем и смотрим YouTube на своём хостинге</title>
-    </titles>
-  </author>
-  <author>
-    <name>tataranovich</name>
-    <titles>
-      <title>Миллиомметр своими руками</title>
-    </titles>
-  </author>
-  <author>
-    <name>Realife</name>
-    <titles>
-      <title>Аппаратное кодирование HEVC в FFmpeg — как быстро вникнуть и начать уже сейчас?</title>
-    </titles>
-  </author>
-  <author>
-    <name>MorwranK</name>
-    <titles>
-      <title>Управление ядрами ЦПУ при обработке сетевого трафика</title>
-    </titles>
-  </author>
-  <author>
-    <name>akibkalo</name>
-    <titles>
-      <title>Apple Devices – замена iTunes. Как заставить работать на Windows 10 LTSC</title>
-    </titles>
-  </author>
-  <author>
-    <name>vgkostin</name>
-    <titles>
-      <title>Нужно создать условия для роста IT-компаний в регионе? Спросите у Липецкой области как</title>
-    </titles>
-  </author>
-  <author>
-    <name>Marik1001</name>
-    <titles>
-      <title>Как я снимал трейлер несуществующего фильма. Часть 2</title>
-    </titles>
-  </author>
-  <author>
-    <name>PavelIvanov3</name>
-    <titles>
-      <title>«Гараж» Рексофт: от идеи до внедрения</title>
-    </titles>
-  </author>
-  <author>
-    <name>maxim_tsar</name>
-    <titles>
-      <title>Код из цитат Шварценеггера и песен Битлов: как мир искусства проникал в эзотерические языки программирования</title>
-    </titles>
-  </author>
-  <author>
-    <name>LisaTsareva</name>
-    <titles>
-      <title>Гайд: как попасть с докладом на крупную конференцию и на что обратить внимание при подготовке</title>
-    </titles>
-  </author>
-  <author>
-    <name>tw0face</name>
-    <titles>
-      <title>Онлайн-платформа для управления сообществом, агрегатор исследований для бизнеса – и еще 9 российских стартапов</title>
-    </titles>
-  </author>
-  <author>
-    <name>Timeweb_Cloud</name>
-    <titles>
-      <title>Лучшие backend-фреймворки для веб-разработки в 2024 году</title>
-    </titles>
-  </author>
-  <author>
-    <name>100chuk</name>
-    <titles>
-      <title>Беда “войти в айти” или курсы тестировщика отзывы: Три ошибки создателей IT-курсов</title>
-    </titles>
-  </author>
-  <author>
-    <name>cicwak</name>
-    <titles>
-      <title>Моя подборка ChatGPT Телеграм ботов</title>
-    </titles>
-  </author>
-  <author>
-    <name>smart_pic</name>
-    <titles>
-      <title>Старое, доброе, немного ламповое ИК управление</title>
-    </titles>
-  </author>
-  <author>
-    <name>DmitryI</name>
-    <titles>
-      <title>От провала до успеха один шаг: как спасти заваленный проект</title>
-    </titles>
-  </author>
-  <author>
-    <name>Wonderlove</name>
-    <titles>
-      <title>Обновление FaceFusion v3.0.0 — ультимативной нейросети для дипфейков</title>
-    </titles>
-  </author>
-  <author>
-    <name>mr-pickles</name>
-    <titles>
-      <title>Обманчивая статистическая значимость</title>
-    </titles>
-  </author>
-  <author>
-    <name>nanoslavic</name>
-    <titles>
-      <title>Цифровая настройка хода в часах на STM32 простым языком</title>
-    </titles>
-  </author>
-  <author>
-    <name>Rumantic</name>
-    <titles>
-      <title>Приветствие от Искусственного Интеллекта: Время быть услышанным</title>
-    </titles>
-  </author>
-  <author>
-    <name>Holofox</name>
-    <titles>
-      <title>Как внести свой вклад в Open Source и стать полезным</title>
-    </titles>
-  </author>
-  <author>
-    <name>Pavel_Slyusar</name>
-    <titles>
-      <title>Когда железки знобит: мониторинг NFC-модулей банкоматов</title>
-    </titles>
-  </author>
-  <author>
-    <name>alex912004</name>
-    <titles>
-      <title>Зачем нам Node.js или Angular на бэкенде</title>
-    </titles>
-  </author>
-  <author>
-    <name>alexandervarlamov</name>
-    <titles>
-      <title>Tech каналы Telegram</title>
-    </titles>
-  </author>
+    <author>
+        <name>AKlimenkov</name>
+        <titles>
+            <title>Мои простые правила хорошего текста: личное руководство по стилю</title>
+            <title>«Так и знала, что вы — бывший двоечник!» Самые глупые ошибки моей компьютерной молодости</title>
+        </titles>
+    </author>
+    <author>
+        <name>n_glebko</name>
+        <titles>
+            <title>Инхаус-разметка с нуля. Реально ли это и насколько полезно?</title>
+        </titles>
+    </author>
+    <author>
+        <name>nickolaym</name>
+        <titles>
+            <title>Концептуальный wish-you-happy-debug</title>
+        </titles>
+    </author>
+    <author>
+        <name>Xcom-shop</name>
+        <titles>
+            <title>Чем архитектура Zen 5 в процессорах Ryzen 9000 отличается от Zen 4</title>
+            <title>Что такое память CUDIMM, чем она отличается от DIMM и где применяется</title>
+            <title>Какую скорость развивает самый быстрый интернет в мире и как это возможно</title>
+        </titles>
+    </author>
+    <author>
+        <name>KDim4eg91</name>
+        <titles>
+            <title>SQL для Junior Data Engineers: примеры бизнес-задач</title>
+        </titles>
+    </author>
+    <author>
+        <name>maximthomas</name>
+        <titles>
+            <title>А ваш IDM умеет играть в шахматы?</title>
+        </titles>
+    </author>
+    <author>
+        <name>darovska_online</name>
+        <titles>
+            <title>Как мы докатились до Kubernetes и чем он заслужил любовь бизнеса</title>
+        </titles>
+    </author>
+    <author>
+        <name>PorisulkiP</name>
+        <titles>
+            <title>Сердце насоса склонно к износу: предиктивная аналитика как гарант надёжности оборудования</title>
+        </titles>
+    </author>
+    <author>
+        <name>nletra</name>
+        <titles>
+            <title>IT-лидеры с предпринимательским характером: особенности пути и способы преодоления сложностей</title>
+            <title>Делегирование как инструмент лидерства, эффективности, мотивации и профессионального развития</title>
+        </titles>
+    </author>
+    <author>
+        <name>Cobalt</name>
+        <titles>
+            <title>Как я делал видео трансляцию кормушки для птиц</title>
+        </titles>
+    </author>
+    <author>
+        <name>aaplpro</name>
+        <titles>
+            <title>Apple Pro Weekly News (04.11 – 10.11.24)</title>
+        </titles>
+    </author>
+    <author>
+        <name>Number571</name>
+        <titles>
+            <title>Запуск узла Hidden Lake на языке Go</title>
+        </titles>
+    </author>
+    <author>
+        <name>aabzel</name>
+        <titles>
+            <title>Обновление Прошивки из Make Скрипта</title>
+            <title>Конечный Aвтомат Аппаратного I2C-Трансивера</title>
+        </titles>
+    </author>
+    <author>
+        <name>UXART</name>
+        <titles>
+            <title>Мини UX-патруль: редизайн Яндекс Музыки, который не смог</title>
+        </titles>
+    </author>
+    <author>
+        <name>NastyaIsch</name>
+        <titles>
+            <title>App Intents: новые возможности для разработчиков в iOS 18</title>
+        </titles>
+    </author>
+    <author>
+        <name>kosyakus</name>
+        <titles>
+            <title>История одного модального окна или переходим с UIKit на SwiftUI. Часть 3. ProgressView vs
+                SkeletonView
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>SlaF</name>
+        <titles>
+            <title>Управление памятью в ассемблере для Apple Silicon</title>
+        </titles>
+    </author>
+    <author>
+        <name>AlexeyRybakov</name>
+        <titles>
+            <title>7 популярных библиотек Vue 3 UI-компонентов, которые заслуживают внимания</title>
+        </titles>
+    </author>
+    <author>
+        <name>RoboForm</name>
+        <titles>
+            <title>Мобильная разработка за неделю #563 (5 — 10 ноября)</title>
+        </titles>
+    </author>
+    <author>
+        <name>pltnkv</name>
+        <titles>
+            <title>Как я психанул и написал свой менеджер закладок</title>
+        </titles>
+    </author>
+    <author>
+        <name>Basheyev</name>
+        <titles>
+            <title>Boson — разработка СУБД «с нуля» (итог)</title>
+        </titles>
+    </author>
+    <author>
+        <name>kevtushx</name>
+        <titles>
+            <title>Как мы работу блочного pNFS исправляли: продолжение остросюжетного детектива с Linux в главной роли
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>ag_belaya_raduga</name>
+        <titles>
+            <title>Почему не работает профилактическая медицина</title>
+        </titles>
+    </author>
+    <author>
+        <name>arlion</name>
+        <titles>
+            <title>Outstatic CMS для персонального блога на Next.js: Легко и Быстро</title>
+        </titles>
+    </author>
+    <author>
+        <name>DariaEmacs</name>
+        <titles>
+            <title>Синхронизация звука и видео. Взгляд дилетанта</title>
+        </titles>
+    </author>
+    <author>
+        <name>biwed</name>
+        <titles>
+            <title>Инструмент обеспечения качества данных: от теории к практике</title>
+        </titles>
+    </author>
+    <author>
+        <name>nikgerasimenko</name>
+        <titles>
+            <title>Генерируем презентации с помощью GigaChat и Kandinsky</title>
+        </titles>
+    </author>
+    <author>
+        <name>dust70</name>
+        <titles>
+            <title>Подсмотрено: WB-MAP и управление насосами</title>
+        </titles>
+    </author>
+    <author>
+        <name>frontendmma</name>
+        <titles>
+            <title>Мой путь в мире веб-рендеринга: от статических страниц к гибридным архитектурам</title>
+        </titles>
+    </author>
+    <author>
+        <name>ivan_fr</name>
+        <titles>
+            <title>Автоматизация мониторинга с Monq: Управление сигналами и интеграция с Zabbix</title>
+        </titles>
+    </author>
+    <author>
+        <name>GeorgeNordic</name>
+        <titles>
+            <title>История Data Literacy в России</title>
+        </titles>
+    </author>
+    <author>
+        <name>Gavichi</name>
+        <titles>
+            <title>Дорожная карта тестирования безопасности в играх: Поиск уязвимостей в видеоиграх</title>
+        </titles>
+    </author>
+    <author>
+        <name>Konstantin-2</name>
+        <titles>
+            <title>Гексагональная сетка для игр с круглой Землей</title>
+        </titles>
+    </author>
+    <author>
+        <name>Erwinmal</name>
+        <titles>
+            <title>«Энциклопедия профессора Фортрана»: вспоминаем легендарную книгу из детства миллениалов</title>
+        </titles>
+    </author>
+    <author>
+        <name>diakin</name>
+        <titles>
+            <title>Правительство США: критически важное программное обеспечение должно отказаться от C/C++ к 2026 году
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>omedeto4u</name>
+        <titles>
+            <title>Дизайн за 5 минут. Дайджест октября 2024</title>
+        </titles>
+    </author>
+    <author>
+        <name>sokolov-denis</name>
+        <titles>
+            <title>Мой базовый паттерн использования ansible</title>
+        </titles>
+    </author>
+    <author>
+        <name>belousoffplus</name>
+        <titles>
+            <title>Pygame для начинающих программистов. Статья вторая. События</title>
+            <title>Pygame для начинающих программистов. Статья первая</title>
+        </titles>
+    </author>
+    <author>
+        <name>Rombneromb</name>
+        <titles>
+            <title>Анонс докладов по управлению знаниями</title>
+        </titles>
+    </author>
+    <author>
+        <name>khdavid</name>
+        <titles>
+            <title>Начинай с сути: говорим и пишем яснее</title>
+        </titles>
+    </author>
+    <author>
+        <name>zoomerit</name>
+        <titles>
+            <title>Что лучше — оценка рекрутера или подбрасывание монетки? Вот данные:</title>
+        </titles>
+    </author>
+    <author>
+        <name>rcl</name>
+        <titles>
+            <title>Rust custom Triplet</title>
+            <title>MTA-STS на вашем почтовом сервере</title>
+        </titles>
+    </author>
+    <author>
+        <name>GlobalSign_admin</name>
+        <titles>
+            <title>Действительно ли смартфон может работать в режиме скрытой прослушки?</title>
+        </titles>
+    </author>
+    <author>
+        <name>SLY_G</name>
+        <titles>
+            <title>Дайджест научпоп-новостей за неделю, о которых мы ничего не писали</title>
+            <title>Чёрные дыры, образующиеся при «обратном воспроизведении Большого взрыва», могут объяснить тёмную
+                энергию
+            </title>
+            <title>Как оккультизм породил науку</title>
+        </titles>
+    </author>
+    <author>
+        <name>vada</name>
+        <titles>
+            <title>Хьюстон, у нас проблема?! Что, если Google Docs у нас не будет?</title>
+        </titles>
+    </author>
+    <author>
+        <name>alizar</name>
+        <titles>
+            <title>Анонимный мессенджер — обязательный стандарт для каждого человека</title>
+        </titles>
+    </author>
+    <author>
+        <name>Catherine_Romanova</name>
+        <titles>
+            <title>Линейка VoIP-шлюзов IPmatika: первое знакомство</title>
+        </titles>
+    </author>
+    <author>
+        <name>MediascopeTeam</name>
+        <titles>
+            <title>Дизайн-система Mediascope: единый стиль для всех диджитал-продуктов компании</title>
+        </titles>
+    </author>
+    <author>
+        <name>motoroller95</name>
+        <titles>
+            <title>Сдохни или умри: мой опыт создания проекта от идеи до релиза</title>
+        </titles>
+    </author>
+    <author>
+        <name>Mazaltov</name>
+        <titles>
+            <title>Онбординг сотрудников при внедрении BI: как организовать правильно?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Grigory_Otrepyev</name>
+        <titles>
+            <title>Ушла ли эпоха удивительных импортозаместительных историй?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Cveto4ek</name>
+        <titles>
+            <title>По собственному опыту собрали суперподробный гайд по CRM-стратегии</title>
+        </titles>
+    </author>
+    <author>
+        <name>Kampus</name>
+        <titles>
+            <title>Студенты для студентов: от курсов по вышмату в МИСиС до приложения для вузов по всей России</title>
+        </titles>
+    </author>
+    <author>
+        <name>RationalAnswer</name>
+        <titles>
+            <title>Новый старый дед в Штатах, а также заработок криптокита $85 млн на ставке на Трампа</title>
+            <title>«Interactive Brokers закрывает счета россиянам»: разбираемся, что происходит на самом деле</title>
+        </titles>
+    </author>
+    <author>
+        <name>krandix</name>
+        <titles>
+            <title>Рекламные платформы 2024: что выбрать — Telegram Ads, ВКонтакте, Яндекс.Директ, Авито или
+                Одноклассники?
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Clickk</name>
+        <titles>
+            <title>Прогноз геомагнитных бурь: когда ожидать магнитных колебаний?</title>
+            <title>Популярные платежные решения для Adult 18+ проектов</title>
+        </titles>
+    </author>
+    <author>
+        <name>retroman</name>
+        <titles>
+            <title>VR для квадроберов: как безопасно погружаться в образ животного</title>
+        </titles>
+    </author>
+    <author>
+        <name>GidraVydra</name>
+        <titles>
+            <title>Почему ток течет через электрод</title>
+        </titles>
+    </author>
+    <author>
+        <name>alex_rum</name>
+        <titles>
+            <title>Пример использования Spring Data и Redis для временного хранения персональных данных</title>
+        </titles>
+    </author>
+    <author>
+        <name>myoffice_ru</name>
+        <titles>
+            <title>Сила лидерского слушания</title>
+        </titles>
+    </author>
+    <author>
+        <name>DmitryR3989</name>
+        <titles>
+            <title>Мои Red-Flags при устройстве в IT-компании: Как не стать гребцом</title>
+            <title>Как управлять техническим долгом и минимизировать его влияние на проект</title>
+            <title>Feature-Sliced Design (FSD): Основы и практические примеры архитектуры</title>
+            <title>ChatGPT как второй пилот: сильные и слабые стороны с практическими советами</title>
+        </titles>
+    </author>
+    <author>
+        <name>Dmytro_Kikot</name>
+        <titles>
+            <title>Серебряная москитная сетка: излучательное охлаждение без потери видимости</title>
+            <title>О хомяках и водорослях: внедрение хлоропластов в клетки животных</title>
+        </titles>
+    </author>
+    <author>
+        <name>monoiddd</name>
+        <titles>
+            <title>[САТИРА] Ох, блин, во что ж ты вляпался в этот раз?</title>
+            <title>Забытая повесть «Машины, пишущие код»</title>
+        </titles>
+    </author>
+    <author>
+        <name>ITxasky</name>
+        <titles>
+            <title>Парадокс сложности Тога — продукты, которые должны упростить задачи, на деле приводят к возникновению
+                еще более сложных
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>eshelenkova</name>
+        <titles>
+            <title>Как организовать совместную работу в маленьких, но быстрорастущих компаниях</title>
+        </titles>
+    </author>
+    <author>
+        <name>e2k_sid</name>
+        <titles>
+            <title>Ответ на статью о «Наиболее быстром интерпретаторе»</title>
+        </titles>
+    </author>
+    <author>
+        <name>JustMisha</name>
+        <titles>
+            <title>Ускорение запроса MySQL с помощью обратного условия</title>
+        </titles>
+    </author>
+    <author>
+        <name>ZubikIT</name>
+        <titles>
+            <title>Руководство по созданию приложения для поиска данных на основе агента GraphRAG</title>
+        </titles>
+    </author>
+    <author>
+        <name>Zen-Mode</name>
+        <titles>
+            <title>Путь одного IOS-приложения</title>
+        </titles>
+    </author>
+    <author>
+        <name>Kaspersky_Lab</name>
+        <titles>
+            <title>Security Week 2446: исследование троянской программы SteelFox</title>
+        </titles>
+    </author>
+    <author>
+        <name>tabukhov</name>
+        <titles>
+            <title>Fallout London: гигантский мод для Fallout 4. Что за новинка и стоит ли поиграть?</title>
+        </titles>
+    </author>
+    <author>
+        <name>mbystrov_23</name>
+        <titles>
+            <title>Уважаемые блогеры, блогайте пожалуйста помедленней</title>
+        </titles>
+    </author>
+    <author>
+        <name>spiralle</name>
+        <titles>
+            <title>Мотивационные стили в обучении: почему вам (возможно) не нужны цели или общение с одногруппниками
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>vaiti_media</name>
+        <titles>
+            <title>Погружение в Kubernetes Network Policies</title>
+        </titles>
+    </author>
+    <author>
+        <name>SolDemir</name>
+        <titles>
+            <title>Адаптеры в Android: «сервируем» данные красиво</title>
+        </titles>
+    </author>
+    <author>
+        <name>kucev</name>
+        <titles>
+            <title>Оценка LLM: комплексные оценщики и фреймворки оценки</title>
+        </titles>
+    </author>
+    <author>
+        <name>avsolovyev</name>
+        <titles>
+            <title>Как мы учили робота распознавать чертежи и изготавливать мебель</title>
+        </titles>
+    </author>
+    <author>
+        <name>rip_m</name>
+        <titles>
+            <title>Что нового в .NET 9?</title>
+            <title>.NET Digest #4</title>
+        </titles>
+    </author>
+    <author>
+        <name>yadro_team</name>
+        <titles>
+            <title>Взгляд в игольное ушко: какие дефекты открывает рентген на печатных узлах QFN, SON, DFN и QFP</title>
+        </titles>
+    </author>
+    <author>
+        <name>Bieta_k</name>
+        <titles>
+            <title>Обновляем мерч: шо, опять?</title>
+        </titles>
+    </author>
+    <author>
+        <name>juliaaravina</name>
+        <titles>
+            <title>Почему важно растить джунов и как делать это с умом</title>
+        </titles>
+    </author>
+    <author>
+        <name>avanov</name>
+        <titles>
+            <title>“Ну тут недельки на две”. Оцениваем задачи</title>
+        </titles>
+    </author>
+    <author>
+        <name>m0rtymerr</name>
+        <titles>
+            <title>Ты — ненастоящий айтишник / Дедовщина в IT</title>
+        </titles>
+    </author>
+    <author>
+        <name>valisak</name>
+        <titles>
+            <title>Почему сегодня Марс так сильно отличается от Земли?</title>
+        </titles>
+    </author>
+    <author>
+        <name>granite_shield</name>
+        <titles>
+            <title>Как мы в МКБ обновляли Zabbix с 4.4 до 6.0 — проблемы и подводные камни</title>
+        </titles>
+    </author>
+    <author>
+        <name>the_bat</name>
+        <titles>
+            <title>Преобразование одноканального LVDS в двухканальный</title>
+        </titles>
+    </author>
+    <author>
+        <name>SergeiFilatov</name>
+        <titles>
+            <title>Как можно запустить процесс эволюции IT в промышленной компании</title>
+        </titles>
+    </author>
+    <author>
+        <name>SvetlanaPalitsyna</name>
+        <titles>
+            <title>DPC (Device Policy Controller): админим блокировку экрана в Android</title>
+        </titles>
+    </author>
+    <author>
+        <name>Madcopy</name>
+        <titles>
+            <title>Тексты для IT может писать только айтишник! Нет. Рассказываем, как делаем IT-контент для beeline
+                cloud и не сходим с ума
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>dsalahutdinov</name>
+        <titles>
+            <title>Инженерный трек: как вырасти из senior’а в staff-инженера</title>
+        </titles>
+    </author>
+    <author>
+        <name>Maggotya</name>
+        <titles>
+            <title>Заметка про пользовательские соглашения в Web-играх</title>
+        </titles>
+    </author>
+    <author>
+        <name>maynoz</name>
+        <titles>
+            <title>Не удержался-2 – цепная реакция. Ответ ответа на статью про «где лучше платят»</title>
+        </titles>
+    </author>
+    <author>
+        <name>dontuseit</name>
+        <titles>
+            <title>Сколько я заработал за год фриланса?</title>
+            <title>В чем польза мок-собеседований?</title>
+            <title>Как я перешел из веб разработки в мобильную?</title>
+        </titles>
+    </author>
+    <author>
+        <name>kailot2</name>
+        <titles>
+            <title>Разбор dos-подобной операционной системы. OzonOS</title>
+        </titles>
+    </author>
+    <author>
+        <name>RSHB_tsyfra</name>
+        <titles>
+            <title>Как тестировщики запустили ВездеКОТ</title>
+        </titles>
+    </author>
+    <author>
+        <name>K_Kim</name>
+        <titles>
+            <title>Доверяй, но тестируй. Что изменилось на рынке оборудования для ЦОДов и как работать с новыми
+                вендорами
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>rsashka</name>
+        <titles>
+            <title>Создаем комфорт на рабочем месте или неочевидные характеристики при выборе кондиционера</title>
+            <title>Переосмысление концепции подсчета ссылок и полный отказ от сборщика мусора</title>
+        </titles>
+    </author>
+    <author>
+        <name>olegmalahov1989</name>
+        <titles>
+            <title>Что на неделе: экзамены для айтишников на «Госуслугах», новые фичи Telegram и ИИ-портрет за $1,08
+                миллионов
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>s231644</name>
+        <titles>
+            <title>Понимают ли большие языковые модели данные из таблиц?</title>
+        </titles>
+    </author>
+    <author>
+        <name>JerryI</name>
+        <titles>
+            <title>Очередная реализация fluid sim методом Эйлера, но в блокноте WL. Чернила. Часть 3</title>
+        </titles>
+    </author>
+    <author>
+        <name>SeminMA</name>
+        <titles>
+            <title>Курс Roblox в 8–9 лет и старше: моделирование и программирование</title>
+        </titles>
+    </author>
+    <author>
+        <name>Bright_Translate</name>
+        <titles>
+            <title>Почему программное обеспечение движется только вперёд</title>
+            <title>Австралия, Лорд-Хау — самый странный часовой пояс</title>
+        </titles>
+    </author>
+    <author>
+        <name>R_STYLE_SOFTLAB</name>
+        <titles>
+            <title>Деменция LLM: как языковые модели забывают, зачем учились, и что из этого следует</title>
+        </titles>
+    </author>
+    <author>
+        <name>dionisdimetor</name>
+        <titles>
+            <title>Вакуум – пустота или полнота? Виртуальные частицы, квантовая пена, излучения Хокинга и Унру</title>
+        </titles>
+    </author>
+    <author>
+        <name>EgorKotkin</name>
+        <titles>
+            <title>Как меняется кибермошенничество</title>
+        </titles>
+    </author>
+    <author>
+        <name>atomr_mf</name>
+        <titles>
+            <title>Жаркий спор по теме Masonry в CSS</title>
+        </titles>
+    </author>
+    <author>
+        <name>ASDF102030</name>
+        <titles>
+            <title>Выбираем BI платформу для начинающего специалиста</title>
+        </titles>
+    </author>
+    <author>
+        <name>Soloist</name>
+        <titles>
+            <title>Как обойти блокировки с помощью Tor в Docker</title>
+        </titles>
+    </author>
+    <author>
+        <name>devleader-pro</name>
+        <titles>
+            <title>Зачем искать палиндромы и вращать матрицы в поисках лучшей работы</title>
+        </titles>
+    </author>
+    <author>
+        <name>FanatPHP</name>
+        <titles>
+            <title>Герой нашего времени</title>
+        </titles>
+    </author>
+    <author>
+        <name>Oficerova</name>
+        <titles>
+            <title>Как специалисту найти клиентов: 50+ проверенных способов</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ruslan_nsk54</name>
+        <titles>
+            <title>Самое подробное сравнение аутстаффинга и классического рекрутинга в закрытии IT позиций</title>
+        </titles>
+    </author>
+    <author>
+        <name>vsnikolaev</name>
+        <titles>
+            <title>Ускорение LUP-разложения матрицы с помощью OpenCL</title>
+        </titles>
+    </author>
+    <author>
+        <name>Hedgehog_art</name>
+        <titles>
+            <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 4</title>
+            <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 3</title>
+            <title>Проверка готовности приложения к работе в реальном ненадежном мире. Часть 2</title>
+        </titles>
+    </author>
+    <author>
+        <name>DRoman0v</name>
+        <titles>
+            <title>Ремонт беспроводных наушников JVC HA-s35bt — заряжаются, но не включаются. Что делать и где искать
+                проблему?
+            </title>
+            <title>Умные часы для DIY-энтузиастов: от Pocuter Spectra до Bangle.js</title>
+        </titles>
+    </author>
+    <author>
+        <name>spring_aio</name>
+        <titles>
+            <title>Поддержка RestClient для OAuth2 в Spring Security 6.4</title>
+        </titles>
+    </author>
+    <author>
+        <name>despair</name>
+        <titles>
+            <title>Словарь программисткого жаргона без англицизмов</title>
+            <title>Бог, «кибер-религии», современная физика, теорема Гёделя и агностицизм</title>
+        </titles>
+    </author>
+    <author>
+        <name>MisterClever</name>
+        <titles>
+            <title>Ваш хирург обучался на видосиках</title>
+            <title>Препарат от Альцгеймера ускорил снижение когнитивных способностей</title>
+            <title>Всего 5 минут повышенной активности в день приносят заметную пользу для здоровья сердца</title>
+            <title>Киберпсихология. Улучшение памяти с помощью VR и глубокой стимуляции мозга</title>
+        </titles>
+    </author>
+    <author>
+        <name>kovalenkoap</name>
+        <titles>
+            <title>HR-бренд, методика разработки</title>
+        </titles>
+    </author>
+    <author>
+        <name>deepdeeppink</name>
+        <titles>
+            <title>Правильные графики и коммуникация</title>
+        </titles>
+    </author>
+    <author>
+        <name>Igor_Le</name>
+        <titles>
+            <title>Конференции PGConf.СПб 2024 и PGConf.Academy</title>
+        </titles>
+    </author>
+    <author>
+        <name>mclander</name>
+        <titles>
+            <title>Почему я не готовлюсь к алгоритмическому интервью</title>
+        </titles>
+    </author>
+    <author>
+        <name>Suvitruf</name>
+        <titles>
+            <title>Недельный геймдев: #199 — 10 ноября, 2024</title>
+        </titles>
+    </author>
+    <author>
+        <name>OlegPS</name>
+        <titles>
+            <title>Как мы строили платформу на базе Kubernetes и старались не скатиться в «Кубер с аутентификацией»
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>bodyawm</name>
+        <titles>
+            <title>Апгрейд мобильного компьютера паяльником</title>
+        </titles>
+    </author>
+    <author>
+        <name>Rockis</name>
+        <titles>
+            <title>Shadowsocks, OpenVPN, Vmess, VLESS: какой протокол победит в эпоху цифровой цензуры?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Squirrelfm</name>
+        <titles>
+            <title>Стандартное отклонение для полных чайников</title>
+        </titles>
+    </author>
+    <author>
+        <name>gregyku</name>
+        <titles>
+            <title>Зачем и как нейросети учат быть человечными</title>
+        </titles>
+    </author>
+    <author>
+        <name>Av3rtino</name>
+        <titles>
+            <title>Дизайн аналитических инструментов для управления СИМ в мегаполисе: вызовы и решения</title>
+        </titles>
+    </author>
+    <author>
+        <name>e_meltsaykin</name>
+        <titles>
+            <title>Как силами мобильных разработчиков автоматизировать процесс разработки</title>
+        </titles>
+    </author>
+    <author>
+        <name>dkorzh10</name>
+        <titles>
+            <title>Голос под защитой. Запускаем хакатон SafeSpeak-2024, посвящённый борьбе с голосовыми дипфейками
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>A1LEks</name>
+        <titles>
+            <title>Как мы разработали и добавили «истории» в сервис для поиска работы за 3 месяца</title>
+        </titles>
+    </author>
+    <author>
+        <name>levmaltsev</name>
+        <titles>
+            <title>Почему любая оценка IT-шников обречена на провал?</title>
+        </titles>
+    </author>
+    <author>
+        <name>CatScience</name>
+        <titles>
+            <title>Нейронаука и «Лосось сомнений»</title>
+        </titles>
+    </author>
+    <author>
+        <name>Cutcode</name>
+        <titles>
+            <title>План Б — путь к поражению? Моя история принятия сложного решения</title>
+        </titles>
+    </author>
+    <author>
+        <name>Andrey2008</name>
+        <titles>
+            <title>DPDK: 100 больших и маленьких багов</title>
+        </titles>
+    </author>
+    <author>
+        <name>klimensky</name>
+        <titles>
+            <title>GPS в нашей жизни: как навигация стала доступна каждому</title>
+        </titles>
+    </author>
+    <author>
+        <name>UnknownDoomer</name>
+        <titles>
+            <title>Doom. Часть 6. Другое измерение или сказ о 5 тотальных конверсиях и 2 модификациях</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ivan_Bal</name>
+        <titles>
+            <title>Как инженеру техподдержки трансформироваться в мобильного разработчика</title>
+        </titles>
+    </author>
+    <author>
+        <name>Guren302</name>
+        <titles>
+            <title>Ремейк ремастеру рознь? Как переиздания меняют восприятие культовых игр</title>
+        </titles>
+    </author>
+    <author>
+        <name>Clevertec_dev</name>
+        <titles>
+            <title>Битва титанов: натив, кроссплатформа и PWA – ищем плюсы и минусы на каждом этапе разработки. Часть
+                2
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Avonae</name>
+        <titles>
+            <title>Чиним GRUB без флешки</title>
+        </titles>
+    </author>
+    <author>
+        <name>Krakaz</name>
+        <titles>
+            <title>5 шагов адаптации тимлида в новой компании</title>
+        </titles>
+    </author>
+    <author>
+        <name>zarytskiy</name>
+        <titles>
+            <title>Учёные обнаружили быстрый радиовсплеск в мёртвой галактике</title>
+            <title>Учёная вылечила рак с помощью вирусов, которые сама вырастила в лаборатории</title>
+            <title>Новая модель OpenAI достигла предела</title>
+        </titles>
+    </author>
+    <author>
+        <name>vasilisa_b</name>
+        <titles>
+            <title>Не только нейроимпланты: как нейротехнологии меняют медицину</title>
+        </titles>
+    </author>
+    <author>
+        <name>Hymn_of_the_forstborn</name>
+        <titles>
+            <title>Скрипты VS Коробка. Как эффективно маскировать данные</title>
+        </titles>
+    </author>
+    <author>
+        <name>Surf_Studio</name>
+        <titles>
+            <title>Flutter Web. Часть 2</title>
+        </titles>
+    </author>
+    <author>
+        <name>Adm1ngmz</name>
+        <titles>
+            <title>Хитрости Красной команды</title>
+            <title>Создание незаметного вредоносного ПО для Windows</title>
+        </titles>
+    </author>
+    <author>
+        <name>vanadium23</name>
+        <titles>
+            <title>Как в базе поставщиков найти лучшие по цене предложения, чтобы показать их пользователю</title>
+        </titles>
+    </author>
+    <author>
+        <name>sszz</name>
+        <titles>
+            <title>Семантический веб: краткий обзор технологий и инструментов</title>
+        </titles>
+    </author>
+    <author>
+        <name>Sqrudj</name>
+        <titles>
+            <title>KAN: Kolmogorov–Arnold Networks</title>
+        </titles>
+    </author>
+    <author>
+        <name>vsebelev</name>
+        <titles>
+            <title>Реальность — виртуальная и физическая. Проблемы взаимодействия</title>
+        </titles>
+    </author>
+    <author>
+        <name>vanillathunder</name>
+        <titles>
+            <title>Применение статических анализаторов архитектуры на примере гексагональной архитектуры</title>
+        </titles>
+    </author>
+    <author>
+        <name>ilkhom_cinecast</name>
+        <titles>
+            <title>Как запустить подкаст в 2024 и не облажаться</title>
+        </titles>
+    </author>
+    <author>
+        <name>SbWereWolf</name>
+        <titles>
+            <title>Никогда не используйте MySQL, всегда используйте PostgreSQL</title>
+        </titles>
+    </author>
+    <author>
+        <name>PIK-Digital</name>
+        <titles>
+            <title>Правила построения BIM-команды</title>
+        </titles>
+    </author>
+    <author>
+        <name>MaxRokatansky</name>
+        <titles>
+            <title>Как сделать хорошую камеру в Unity — мощь Cinemachine</title>
+        </titles>
+    </author>
+    <author>
+        <name>strannikac</name>
+        <titles>
+            <title>Темная сторона ИТ</title>
+        </titles>
+    </author>
+    <author>
+        <name>Z1at</name>
+        <titles>
+            <title>Написание ETL пайплайна при помощи airflow, rabbitmq и postgres</title>
+        </titles>
+    </author>
+    <author>
+        <name>gguzhov</name>
+        <titles>
+            <title>Дата-центры Илона Маска: Tesla, Dojo, X (Twitter), xAI</title>
+        </titles>
+    </author>
+    <author>
+        <name>Cloud4Y</name>
+        <titles>
+            <title>Управление IT-инфраструктурой: бюджетирование, риски, отказоустойчивость и катастрофоустойчивость
+            </title>
+            <title>Усиление защиты серверов Linux от угроз и атак</title>
+            <title>Взлом 700 миллионов аккаунтов Electronic Arts (этично): как это было</title>
+        </titles>
+    </author>
+    <author>
+        <name>rikki_tikki</name>
+        <titles>
+            <title>Автоматизированное тестирование API с использованием Python. Работа с JSON и JsonPath</title>
+        </titles>
+    </author>
+    <author>
+        <name>kubitre</name>
+        <titles>
+            <title>Как масштабировать права в проекте и продуктах без боли</title>
+        </titles>
+    </author>
+    <author>
+        <name>vlnel</name>
+        <titles>
+            <title>Искусственный интеллект и «взлом» культуры</title>
+        </titles>
+    </author>
+    <author>
+        <name>vladpriv</name>
+        <titles>
+            <title>Заметки по ROS: Простое введение в launch файлы</title>
+        </titles>
+    </author>
+    <author>
+        <name>Robotium</name>
+        <titles>
+            <title>Учебный язык в робототехнике</title>
+        </titles>
+    </author>
+    <author>
+        <name>tarlakovsky</name>
+        <titles>
+            <title>Красный восход</title>
+        </titles>
+    </author>
+    <author>
+        <name>aberezovskaya</name>
+        <titles>
+            <title>IaC и DevSecOps: выбираем лучшие инструменты анализа и защиты инфраструктурного кода</title>
+        </titles>
+    </author>
+    <author>
+        <name>n27051538</name>
+        <titles>
+            <title>Как перенести UEFI системный диск Enterprise Linux на другое устройство?</title>
+        </titles>
+    </author>
+    <author>
+        <name>achekalin</name>
+        <titles>
+            <title>Вышла Grafana 11.3: дашборды на базе Scenes, обновления визуализаций, панелей, и многое другое
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Ivan_Nemov</name>
+        <titles>
+            <title>Как я настраивал меню выхода в Qtile</title>
+        </titles>
+    </author>
+    <author>
+        <name>ElenaAladina</name>
+        <titles>
+            <title>Не усложняй: простые фреймворки, чтобы быстрее принимать решения и приоритизировать задачи</title>
+        </titles>
+    </author>
+    <author>
+        <name>RaufchickValeev</name>
+        <titles>
+            <title>Анализ рынка фильмов. Как аналитический подход убивает творчество</title>
+        </titles>
+    </author>
+    <author>
+        <name>Unovad</name>
+        <titles>
+            <title>Особенности хранения проектной информации в среде общих данных строительного проекта</title>
+        </titles>
+    </author>
+    <author>
+        <name>GoodGod</name>
+        <titles>
+            <title>Моя парадигма программирования</title>
+        </titles>
+    </author>
+    <author>
+        <name>DavidTskhvaradze</name>
+        <titles>
+            <title>MoexBuilder: как я создаю библиотеку на Python. Часть 3</title>
+            <title>MoexBuilder: как я создаю библиотеку на Python. Часть 2</title>
+            <title>MoexBuilder: как я создаю библиотеку на Python. Часть 1</title>
+        </titles>
+    </author>
+    <author>
+        <name>ko_ya</name>
+        <titles>
+            <title>Основатель и идеолог Nvidia: как Дженсен Хуанг создал одну из самых дорогих компаний в мире</title>
+        </titles>
+    </author>
+    <author>
+        <name>iMonin</name>
+        <titles>
+            <title>Вентиляция крытых бассейнов и аквапарков в холодном климате: Как избежать конденсата на окнах?
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>dididididi</name>
+        <titles>
+            <title>Как затащить быстро и дешево</title>
+        </titles>
+    </author>
+    <author>
+        <name>fallenstorm</name>
+        <titles>
+            <title>Как связаны скоростные шоссе и естественный отбор?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Daria_Chetyrkina</name>
+        <titles>
+            <title>Как фрагментация индексов в SQL Server «подкладывает свинью» производительности, и что с этим
+                делать
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>k0rsakov</name>
+        <titles>
+            <title>Что такое Data Driven подход</title>
+        </titles>
+    </author>
+    <author>
+        <name>Sivchenko_translate</name>
+        <titles>
+            <title>Запросто собираем базу данных при помощи команд Linux</title>
+        </titles>
+    </author>
+    <author>
+        <name>Dhwtj</name>
+        <titles>
+            <title>Рефакторинг в условиях жесткого дефицита ресурсов</title>
+        </titles>
+    </author>
+    <author>
+        <name>GalsSoftware</name>
+        <titles>
+            <title>Расширенное обнаружение проблем в Zabbix: продвинутая работа с триггерами, тегами и вычисляемыми
+                элементам
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>PatientZero</name>
+        <titles>
+            <title>Разбор регулярного выражения, проверяющего простоту чисел</title>
+            <title>Оптимизируем использование памяти для поиска IP-адресов</title>
+            <title>Когда есть разница регистров, но это не верхний и не нижний регистры?</title>
+        </titles>
+    </author>
+    <author>
+        <name>MuonKvark</name>
+        <titles>
+            <title>Java Digest #18</title>
+        </titles>
+    </author>
+    <author>
+        <name>xtile</name>
+        <titles>
+            <title>Практический опыт выбора лидара для робототехнических проектов: от теории к практике</title>
+        </titles>
+    </author>
+    <author>
+        <name>LadyLogic</name>
+        <titles>
+            <title>Как пройти стажировку бизнес- и системного аналитика и не «сгореть» в персональной преисподней
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>andrey_stepanov1</name>
+        <titles>
+            <title>Исследование рынка .NET разработки: Анализ текущих тенденций и прогнозы</title>
+        </titles>
+    </author>
+    <author>
+        <name>dan_sw</name>
+        <titles>
+            <title>Разработка служб для Windows на C++</title>
+        </titles>
+    </author>
+    <author>
+        <name>Laserbuilder</name>
+        <titles>
+            <title>Азотный лазер большой мощности: так ли он прост?</title>
+        </titles>
+    </author>
+    <author>
+        <name>ph_piter</name>
+        <titles>
+            <title>Книга: «Linux. Карманный справочник. 4-е изд.»</title>
+            <title>Книга: «Математика для Data Science. Управляем данными с помощью линейной алгебры, теории
+                вероятностей и статистики»
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>lenasherparpa</name>
+        <titles>
+            <title>Кристофер Йех, аспирант Калтеха, про «тренажеры» для разработки алгоритмов</title>
+        </titles>
+    </author>
+    <author>
+        <name>appp_master</name>
+        <titles>
+            <title>Apache Flink: Сериализация и JacksonStateSerializer</title>
+        </titles>
+    </author>
+    <author>
+        <name>Usetech</name>
+        <titles>
+            <title>Как обновить зависимости, чтобы не было больно</title>
+        </titles>
+    </author>
+    <author>
+        <name>igumnov</name>
+        <titles>
+            <title>Буферный пул для максимальной скорости: квест по победе над Nginx</title>
+            <title>CBLT — безопасный, быстрый и минималистичный веб-сервер на языке программирования Rust</title>
+        </titles>
+    </author>
+    <author>
+        <name>YukinoKingu</name>
+        <titles>
+            <title>Новый этап эволюции Vue — Vapor</title>
+        </titles>
+    </author>
+    <author>
+        <name>zoldaten</name>
+        <titles>
+            <title>Как разобрать и собрать обратно apk под windows</title>
+        </titles>
+    </author>
+    <author>
+        <name>blognaumen</name>
+        <titles>
+            <title>Как создать плохой REST-сервис: краткое руководство</title>
+        </titles>
+    </author>
+    <author>
+        <name>ITMonsters</name>
+        <titles>
+            <title>Почему 1С?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Darya_Frolova</name>
+        <titles>
+            <title>Подвесной монорельс для денег: как магазины XIX–XX веков пытались упростить доставку кэша</title>
+            <title>От Гарфилда до Кота Саймона: как кошки становятся прототипами героев фильмов, мультиков и игр</title>
+            <title>Как лидар помог обнаружить древние города: что ученые узнали о Шелковом пути</title>
+        </titles>
+    </author>
+    <author>
+        <name>MsRedlLynx</name>
+        <titles>
+            <title>Когда релиз? Как мы оптимизировали процессы с помощью метрик</title>
+        </titles>
+    </author>
+    <author>
+        <name>CyberPaul</name>
+        <titles>
+            <title>Трёхмерные, часть 2. О 3D-интерфейсах в операционных системах</title>
+            <title>Трёхмерные. Почему в современных ОС не прижились 3D-интерфейсы?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Fabrichkin</name>
+        <titles>
+            <title>Плагиат, референс, отсылка — где пролегает граница при разработке игр</title>
+        </titles>
+    </author>
+    <author>
+        <name>elaracore</name>
+        <titles>
+            <title>Как айтишнику живется в Барселоне — в городе криминала и специфических запахов</title>
+        </titles>
+    </author>
+    <author>
+        <name>anmnv</name>
+        <titles>
+            <title>LaTeX для всех: от первых шагов до продвинутых трюков</title>
+        </titles>
+    </author>
+    <author>
+        <name>TNapreev</name>
+        <titles>
+            <title>Read IT Club: как мы повышаем качество русскоязычной ИТ-литературы</title>
+        </titles>
+    </author>
+    <author>
+        <name>nanocad</name>
+        <titles>
+            <title>Инновации в инженерии: функционал конвертации проектов и анализ целостности систем в nanoCAD BIM
+                Вентиляция
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>LysanovSergey</name>
+        <titles>
+            <title>Как мы сделали собственный Software-Defined Storage для публичного облака Cloud.ru Evolution</title>
+        </titles>
+    </author>
+    <author>
+        <name>case-tech</name>
+        <titles>
+            <title>Библиотека CUtils</title>
+        </titles>
+    </author>
+    <author>
+        <name>Beeline_tech</name>
+        <titles>
+            <title>Как мы в билайне боремся со спам-звонками с помощью машинного обучения, часть 1</title>
+        </titles>
+    </author>
+    <author>
+        <name>Kisel_n</name>
+        <titles>
+            <title>Кастомизация Django Admin. Часть 1: Структура шаблонов</title>
+        </titles>
+    </author>
+    <author>
+        <name>zabelinleo</name>
+        <titles>
+            <title>Бухгалтерия (А)УСН, ПСН в Excel с выводом декларации в xls, ТОП-10 и прибыльностью</title>
+        </titles>
+    </author>
+    <author>
+        <name>ProstoKirReal</name>
+        <titles>
+            <title>Сложно о простом. Самые популярные заголовки уровня L3 и L4 модели OSI</title>
+        </titles>
+    </author>
+    <author>
+        <name>AnZakharova</name>
+        <titles>
+            <title>Разгоняем 1С: 27 приемов</title>
+        </titles>
+    </author>
+    <author>
+        <name>def_to_explore</name>
+        <titles>
+            <title>Новый вид мошенничества в IT: как рекрутеры-мошенники выманивают деньги у соискателей</title>
+        </titles>
+    </author>
+    <author>
+        <name>GeeksCat</name>
+        <titles>
+            <title>Жил да был купец…</title>
+            <title>Как создавалась антология Риддика</title>
+        </titles>
+    </author>
+    <author>
+        <name>ifap</name>
+        <titles>
+            <title>Как региональные госсайты оказались защищены лучше федеральных</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ivan_V_V</name>
+        <titles>
+            <title>Восстановление нерабочей клавиатуры с помощью QMK и RP2040</title>
+        </titles>
+    </author>
+    <author>
+        <name>khafizovtim</name>
+        <titles>
+            <title>По мотивам одного сбоя в БД Oracle</title>
+        </titles>
+    </author>
+    <author>
+        <name>nata_python</name>
+        <titles>
+            <title>Топ-5 ботов с нейросетями для генерации изображений — те самые, что спасли наш бизнес и принесли 15
+                млн ₽
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>koanse</name>
+        <titles>
+            <title>Определяем доли и коэффициенты проникновения с помощью DAX</title>
+        </titles>
+    </author>
+    <author>
+        <name>Demin_Konstantin</name>
+        <titles>
+            <title>Разработка гибкой платформы для кредитования: от крупных банков к массовому рынку</title>
+        </titles>
+    </author>
+    <author>
+        <name>deeamtee</name>
+        <titles>
+            <title>Чем занимается фронтенд-разработчик — джуниор, мидл, синьор и тимлид</title>
+        </titles>
+    </author>
+    <author>
+        <name>techno_mot</name>
+        <titles>
+            <title>Обзор способов защиты контейнеров Docker: от простого к сложному</title>
+        </titles>
+    </author>
+    <author>
+        <name>Faux_x_x</name>
+        <titles>
+            <title>Как аналитика помогает разработать игры, которые понимают своих игроков</title>
+        </titles>
+    </author>
+    <author>
+        <name>k0mar0v</name>
+        <titles>
+            <title>От мышей на экране до zip-бомбы: топ приложений-шуток из начала нулевых</title>
+        </titles>
+    </author>
+    <author>
+        <name>AlexMeshock</name>
+        <titles>
+            <title>Как я создавал бесплатный сервис оптимизации изображений FlashImg.ru</title>
+        </titles>
+    </author>
+    <author>
+        <name>Alexander238</name>
+        <titles>
+            <title>Serviceability в действии: реальные примеры разработки и улучшения процедур обслуживания
+                IT-оборудования
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>angelrsa</name>
+        <titles>
+            <title>E-com как снежный ком: история развития направления электронной коммерции в России на личном опыте
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>SamDurak</name>
+        <titles>
+            <title>Исследование возможности импортозамещения файлового сервера: Часть первая</title>
+        </titles>
+    </author>
+    <author>
+        <name>CentariumV</name>
+        <titles>
+            <title>Уровни изоляции транзакций в PostgreSQL, MySQL, MSQL, Oracle с примерами на Go</title>
+        </titles>
+    </author>
+    <author>
+        <name>HunterXXI</name>
+        <titles>
+            <title>Я бы строить дом пошел или на какую профессию сменить ИТ</title>
+        </titles>
+    </author>
+    <author>
+        <name>skillfactory_school</name>
+        <titles>
+            <title>Support Vector Machine: +1 алгоритм машинного обучения для начинающих</title>
+        </titles>
+    </author>
+    <author>
+        <name>SimpleOne_it</name>
+        <titles>
+            <title>Low-code платформа: кому нужна, в чем выгода и почему это тренд для компаний уровня Enterprise
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>artemmoscow</name>
+        <titles>
+            <title>Выйти из IT или почему я не на месте TradingView</title>
+        </titles>
+    </author>
+    <author>
+        <name>flancer</name>
+        <titles>
+            <title>Разница между ранним и поздним связыванием</title>
+        </titles>
+    </author>
+    <author>
+        <name>Kokokakoly</name>
+        <titles>
+            <title>Один день из жизни системного аналитика: синки, факапы в тестировании, сценарии и шутейки</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ivan_Kadochnikov</name>
+        <titles>
+            <title>Принцип цифрового управления непосредственным преобразователем напряжения</title>
+        </titles>
+    </author>
+    <author>
+        <name>Terentew</name>
+        <titles>
+            <title>Как растить мышцы двумя тренировками в неделю? Подход для людей с полной занятостью и готовый план на
+                2 дня
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Oksana_Nedvigina</name>
+        <titles>
+            <title>Чтение на выходные: «Великий Китайский Файрвол. Как создать свой собственный интернет и управлять им»
+                Джеймса Гриффитса
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>savrus_pub</name>
+        <titles>
+            <title>Новые динтаблицы: вторичные индексы, web assembly и ещё много улучшений к версии YTsaurus 24.1.0
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>kanasero</name>
+        <titles>
+            <title>Тварь ли я дрожащая или право имею? Берем чужие сайты под свой контроль. Часть 2 — Пользовательские
+                скрипты в Chrome
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>slava_rumin</name>
+        <titles>
+            <title>Запрещенная соцсеть приносила бауманцу 63 млн в год, а теперь маркетплейсы приносят страдания</title>
+        </titles>
+    </author>
+    <author>
+        <name>Zak0</name>
+        <titles>
+            <title>Как я пытался приручить кофемашину</title>
+        </titles>
+    </author>
+    <author>
+        <name>SearchInform_team</name>
+        <titles>
+            <title>«Думаю, как можно слить и не спалиться»: ИБ-аналитик о том, как научиться видеть инцидент</title>
+        </titles>
+    </author>
+    <author>
+        <name>Avokadavr</name>
+        <titles>
+            <title>Проверяем, мог ли модуль пожаротушения стать причиной пожара на складе</title>
+        </titles>
+    </author>
+    <author>
+        <name>artem_dobrovinskiy</name>
+        <titles>
+            <title>Описываем UseCase&apos;ы правильно</title>
+        </titles>
+    </author>
+    <author>
+        <name>HeresA</name>
+        <titles>
+            <title>🪄 Мой топ-5 полезных Figma-плагинов для работы с компонентами и токенами — UX/UI дизайн</title>
+        </titles>
+    </author>
+    <author>
+        <name>yarlykovrv</name>
+        <titles>
+            <title>Обзор и архитектура протокола LayerZero v2</title>
+        </titles>
+    </author>
+    <author>
+        <name>mtuci</name>
+        <titles>
+            <title>В МТУСИ применили методы многомерного статистического анализа и NLP для классификации научных
+                публикаций
+            </title>
+            <title>Выяснили, как эффективно подготовить спринтеров к соревнованиям и делимся теперь с вами</title>
+        </titles>
+    </author>
+    <author>
+        <name>dalerank</name>
+        <titles>
+            <title>Тяжелый H[header]</title>
+        </titles>
+    </author>
+    <author>
+        <name>glebmachine</name>
+        <titles>
+            <title>Как избежать разочарования пользователя: от NPS к ценности</title>
+        </titles>
+    </author>
+    <author>
+        <name>Finam_Broker</name>
+        <titles>
+            <title>$800 000 на фейковой аналитике: история самого юного биржевого мошенника</title>
+        </titles>
+    </author>
+    <author>
+        <name>volgeorge</name>
+        <titles>
+            <title>Топ-6 пиар-агентств для работы в России: личный рейтинг пиарщика компании</title>
+        </titles>
+    </author>
+    <author>
+        <name>SoraVWV</name>
+        <titles>
+            <title>Синтаксический анализатор на стеках и lambda-выражениях (Axolotl)</title>
+        </titles>
+    </author>
+    <author>
+        <name>ru_vds</name>
+        <titles>
+            <title>Как мы обнаружили потенциальные атаки при помощи штрих-кодов</title>
+        </titles>
+    </author>
+    <author>
+        <name>morett1m</name>
+        <titles>
+            <title>Rust без прикрас: где мы ошибаемся</title>
+        </titles>
+    </author>
+    <author>
+        <name>BabayMazay</name>
+        <titles>
+            <title>Lampwork — декоративная стеклодувная техника. Часть 1. Работы подготовительные</title>
+        </titles>
+    </author>
+    <author>
+        <name>zloiromantik</name>
+        <titles>
+            <title>Обзор KICKPI KP1: пожалуй, лучшая сертифицированная Android-TV приставка в ценовой категории до $50
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>michabramov</name>
+        <titles>
+            <title>Как сделать интерактивную панель для отправки SMS</title>
+            <title>SIP для Интернета вещей: почему устройствам нужны голосовые возможности</title>
+        </titles>
+    </author>
+    <author>
+        <name>MINDINMAP</name>
+        <titles>
+            <title>Как и где создавать ментальные карты для работы и учебы</title>
+        </titles>
+    </author>
+    <author>
+        <name>Neom1an</name>
+        <titles>
+            <title>Скрытые цифровые привычки зумеров</title>
+        </titles>
+    </author>
+    <author>
+        <name>iik_812</name>
+        <titles>
+            <title>Создание плагина для IntelliJ IDE с подключением GigaChat для проверки качества кода</title>
+        </titles>
+    </author>
+    <author>
+        <name>in86</name>
+        <titles>
+            <title>Keycloak Starter. Удобный способ аутентификации и авторизации</title>
+        </titles>
+    </author>
+    <author>
+        <name>yonesko</name>
+        <titles>
+            <title>Льем из Postgres в Elastic консистентно</title>
+        </titles>
+    </author>
+    <author>
+        <name>Mastersland</name>
+        <titles>
+            <title>Flutter Push-уведомления, том числе в Web</title>
+        </titles>
+    </author>
+    <author>
+        <name>it_union</name>
+        <titles>
+            <title>Удивительные истории, о которых невозможно молчать</title>
+            <title>«Самолёт» прилетел</title>
+        </titles>
+    </author>
+    <author>
+        <name>Tzimie</name>
+        <titles>
+            <title>Насколько сложна ваша работа MS SQL server DBA?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Xedox_SlimeLime</name>
+        <titles>
+            <title>Пишем ArrayList на C</title>
+            <title>Управление памятью в C</title>
+        </titles>
+    </author>
+    <author>
+        <name>sugrobov</name>
+        <titles>
+            <title>Предвзятость русскоязычных LLM: кого машина считает «обычным человеком»?</title>
+        </titles>
+    </author>
+    <author>
+        <name>rawmantique</name>
+        <titles>
+            <title>Глубокая оптимизация сверточных нейронных сетей: Анализ методов улучшения модели на примере
+                CIFAR-10
+            </title>
+            <title>Путь разметки данных для NER: от Open Source до Prodigy</title>
+        </titles>
+    </author>
+    <author>
+        <name>ivntv</name>
+        <titles>
+            <title>Управляющая компания, у нас проблема! Как за жителями хрущевок следят по кабелям провайдера</title>
+        </titles>
+    </author>
+    <author>
+        <name>nik_vr</name>
+        <titles>
+            <title>Как я писал «Вирус-бякус» на Delphi (шутка родом из конца 90-х)</title>
+        </titles>
+    </author>
+    <author>
+        <name>DragorWW</name>
+        <titles>
+            <title>DDD и аналитика данных</title>
+        </titles>
+    </author>
+    <author>
+        <name>MaFrance351</name>
+        <titles>
+            <title>Ленточные накопители в домашнем ПК</title>
+        </titles>
+    </author>
+    <author>
+        <name>RodionGork</name>
+        <titles>
+            <title>Поревьюим и порефакторим — Ассемблер для любопытных #2</title>
+            <title>Turbo-Pascal 5.5 (и другие) в браузере — с загрузкой программ по ссылке</title>
+            <title>Перебор Соседних Клеток — забавные формулы</title>
+        </titles>
+    </author>
+    <author>
+        <name>ptsecurity</name>
+        <titles>
+            <title>Тренды VM: топ уязвимостей октября, «метод Форда» и «атака на жалобщика»</title>
+            <title>Экспертиза под микроскопом [Оголяемся технологически. MaxPatrol SIEM]</title>
+            <title>Вести с полей киберинцидентов: команда расследователей делится итогами проектов 2023-2024</title>
+            <title>Опасное цифровое наследство: какие угрозы таит реинкарнация утраченного номера</title>
+        </titles>
+    </author>
+    <author>
+        <name>az013</name>
+        <titles>
+            <title>Введение в ПЛИС: Содержание курса</title>
+        </titles>
+    </author>
+    <author>
+        <name>T1_IT</name>
+        <titles>
+            <title>Data Fusion Contest 2024, разбор и итоги соревнования</title>
+        </titles>
+    </author>
+    <author>
+        <name>VAE</name>
+        <titles>
+            <title>Продовольственная безопасность. Часть I</title>
+            <title>Алгоритмы. Рекурсивные функции. Часть I</title>
+        </titles>
+    </author>
+    <author>
+        <name>Elvira_Shiralieva</name>
+        <titles>
+            <title>Биохакинг – палка о двух концах</title>
+        </titles>
+    </author>
+    <author>
+        <name>wadik69</name>
+        <titles>
+            <title>Telegram web apps как альтернатива мобильным приложениям</title>
+        </titles>
+    </author>
+    <author>
+        <name>parseny</name>
+        <titles>
+            <title>Понимает ли Vision Llama импрессионистов?</title>
+        </titles>
+    </author>
+    <author>
+        <name>alexander_kisochkin</name>
+        <titles>
+            <title>Как поднять личный Прокси в Европе за 15 минут</title>
+        </titles>
+    </author>
+    <author>
+        <name>Lunathecat</name>
+        <titles>
+            <title>Прокачиваем «народную» электрогитару Cort KX100</title>
+        </titles>
+    </author>
+    <author>
+        <name>TeleportAcademy</name>
+        <titles>
+            <title>Почему никто не откликается на вашу вакансию? 18 способов изменить ситуацию</title>
+        </titles>
+    </author>
+    <author>
+        <name>AlbinaAskerova</name>
+        <titles>
+            <title>Регуляторика РБПО. Часть 4 – Требования к ГИС, ИСПДн, отраслевые требования</title>
+        </titles>
+    </author>
+    <author>
+        <name>youjintyan</name>
+        <titles>
+            <title>Как организовать сериализацию в Redux и избежать ошибки: non-serializable value</title>
+        </titles>
+    </author>
+    <author>
+        <name>Caterin</name>
+        <titles>
+            <title>Как использовать плагины SBP для развития b2b продукта</title>
+        </titles>
+    </author>
+    <author>
+        <name>Statzilla</name>
+        <titles>
+            <title>Поиск по фото для Ozon и WB за 3 часа</title>
+        </titles>
+    </author>
+    <author>
+        <name>Safreliy</name>
+        <titles>
+            <title>Нейронные оптимизаторы запросов в реляционных БД (Часть 3): Погружение в ранжирование</title>
+        </titles>
+    </author>
+    <author>
+        <name>Seleditor</name>
+        <titles>
+            <title>Квантовые вычисления: основные идеи и состояние квантовых технологий</title>
+            <title>Ликуй, разработчик — всего 14 лет и QNX снова открыли</title>
+        </titles>
+    </author>
+    <author>
+        <name>Assa99habr</name>
+        <titles>
+            <title>Трансформация или чемодан без ручки (часть 7) Конфликты и компромиссы…</title>
+        </titles>
+    </author>
+    <author>
+        <name>Splicerok</name>
+        <titles>
+            <title>Расширения VSCode для комфортной работы с проектами</title>
+        </titles>
+    </author>
+    <author>
+        <name>BiktorSergeev</name>
+        <titles>
+            <title>HamClock и Pi-Star — запускаем сервер радиолюбительского приложения на «малинке»</title>
+            <title>Phanerochaete velutina: живой компьютер, который занят поиском еды</title>
+            <title>Телефоны с дисплеями E-Ink: для тех, кому нужна связь и не хочется отвлекаться</title>
+        </titles>
+    </author>
+    <author>
+        <name>Andrey_Biryukov</name>
+        <titles>
+            <title>Работа с дисками в РЕД ОС</title>
+            <title>Безопасная разработка на Python</title>
+            <title>Работа в командной строкой ОС Astra Linux</title>
+        </titles>
+    </author>
+    <author>
+        <name>freehabr</name>
+        <titles>
+            <title>Предложение государству: как обеспечить безопасность в интернете без «все всем заблокировать»</title>
+        </titles>
+    </author>
+    <author>
+        <name>kaufmanendy</name>
+        <titles>
+            <title>Интеграция внешнего сервера авторизации https://authorizer.dev в фулстек приложение на NestJS и
+                Angular
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Zextras</name>
+        <titles>
+            <title>Настройка Carbonio Proxy</title>
+        </titles>
+    </author>
+    <author>
+        <name>tripolskypetr</name>
+        <titles>
+            <title>Почему мы выбрали gRPC вместо tRPC?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Clickru</name>
+        <titles>
+            <title>РСЯ для блогеров: тестируем публикации у блогеров через Директ</title>
+        </titles>
+    </author>
+    <author>
+        <name>Catx2</name>
+        <titles>
+            <title>Правда и ложь про природную ренту</title>
+        </titles>
+    </author>
+    <author>
+        <name>idsulik</name>
+        <titles>
+            <title>Жизненный цикл контейнеров в Docker Compose: использование хуков post_start, pre_stop</title>
+        </titles>
+    </author>
+    <author>
+        <name>roman_logo</name>
+        <titles>
+            <title>Как нейросети меняют работу дизайнеров</title>
+        </titles>
+    </author>
+    <author>
+        <name>IisNuINu</name>
+        <titles>
+            <title>GIMP Script-Fu Первый Дан. Погружение в программирование графики</title>
+            <title>GIMP Script-Fu Первый Дан. Расширения к Script-fu</title>
+        </titles>
+    </author>
+    <author>
+        <name>kirrya</name>
+        <titles>
+            <title>Вывод уравнений Фридмана и анализ одного из его предельных решений</title>
+            <title>Опционы и формула Блэка-Шоулза (часть 2)</title>
+        </titles>
+    </author>
+    <author>
+        <name>vaclav1986</name>
+        <titles>
+            <title>Подмания: запускаем графические приложения в контейнерах</title>
+        </titles>
+    </author>
+    <author>
+        <name>lapkin25</name>
+        <titles>
+            <title>Ход в игре «крестики-нолики» с помощью SAT-солвера</title>
+        </titles>
+    </author>
+    <author>
+        <name>breakmirrors</name>
+        <titles>
+            <title>Ключ от всех дверей: как нашли бэкдор в самых надежных* картах доступа</title>
+        </titles>
+    </author>
+    <author>
+        <name>verych</name>
+        <titles>
+            <title>Первые женщины в IT</title>
+        </titles>
+    </author>
+    <author>
+        <name>555www555</name>
+        <titles>
+            <title>Как приходят идеи красивого и полезного. Кентавр</title>
+        </titles>
+    </author>
+    <author>
+        <name>Nepomnin</name>
+        <titles>
+            <title>Ретроспектива: создание одних из первых автоматизированных рабочих мест</title>
+        </titles>
+    </author>
+    <author>
+        <name>coctok</name>
+        <titles>
+            <title>Как системному аналитику выделиться на собеседовании в 2024?</title>
+        </titles>
+    </author>
+    <author>
+        <name>empenoso</name>
+        <titles>
+            <title>Инструменты робота, торгующего на Московской бирже через API брокера</title>
+        </titles>
+    </author>
+    <author>
+        <name>mClouds_editor</name>
+        <titles>
+            <title>Обзор российской СХД от YADRO: какова TATLIN.FLEX.PRO в деле</title>
+        </titles>
+    </author>
+    <author>
+        <name>jasiejames</name>
+        <titles>
+            <title>Когда 1+1 равно 1 (часть 2)</title>
+        </titles>
+    </author>
+    <author>
+        <name>isfr</name>
+        <titles>
+            <title>Apex Architecture: Модульность и стабильность в Android-разработке</title>
+        </titles>
+    </author>
+    <author>
+        <name>Wladradchenko</name>
+        <titles>
+            <title>Практика: мой опыт интеграции более 50 нейронных сетей в один проект</title>
+        </titles>
+    </author>
+    <author>
+        <name>sashacmc</name>
+        <titles>
+            <title>Склеить несколько видеофайлов, что может быть проще…</title>
+        </titles>
+    </author>
+    <author>
+        <name>zorgan</name>
+        <titles>
+            <title>Секреты успешной миграции: как перенести базу данных с выделенного сервера в облако</title>
+        </titles>
+    </author>
+    <author>
+        <name>evgeni_zaharenko</name>
+        <titles>
+            <title>SEO магазина — пошаговая инструкция</title>
+        </titles>
+    </author>
+    <author>
+        <name>Chad_AI</name>
+        <titles>
+            <title>Конец эпохи fashion-дизайнеров? Как ИИ меняет мир моды</title>
+        </titles>
+    </author>
+    <author>
+        <name>redhurt96</name>
+        <titles>
+            <title>Unity .NET и Mono — галопом по компонентам</title>
+        </titles>
+    </author>
+    <author>
+        <name>andrew_k_21_12</name>
+        <titles>
+            <title>kjs-box: добавляем ленивые модули, ресурсы с типизацией и модели представления в React-проекты на
+                Kotlin
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>badcasedaily1</name>
+        <titles>
+            <title>Триггеры в PostgreSQL: основы</title>
+            <title>Транзакции в Spring: сила управления данными</title>
+            <title>Не бойтесь потоков в Python, они не кусаются</title>
+            <title>Отправка и получение сообщений через RabbitMQ в Symfony</title>
+            <title>Классы без лишнего веса: инлайн-классы в Kotlin</title>
+            <title>Паттерн Наблюдатель в Golang на котиках</title>
+            <title>Как Sample Ratio Mismatch спасает A/B тесты от ложных выводов</title>
+            <title>Django-аутентификация: просто о сложном</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ann_Rodina</name>
+        <titles>
+            <title>#ВОбъективеИИ: большие планы на агентский ИИ и новые лидары</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ruins007</name>
+        <titles>
+            <title>Skyrim — и только блеск кожанки в отражении заднего зеркала</title>
+        </titles>
+    </author>
+    <author>
+        <name>evgeniatro</name>
+        <titles>
+            <title>Как создать датасет для машинного обучения за 6 шагов</title>
+            <title>Как разметить данные для классификации изображений: руководство с примерами</title>
+        </titles>
+    </author>
+    <author>
+        <name>VadimBordik</name>
+        <titles>
+            <title>10 детских онлайн-лагерей: информационные технологии, языки, творчество и другие направления</title>
+            <title>100+ бесплатных уроков по программированию для детей и подростков онлайн</title>
+        </titles>
+    </author>
+    <author>
+        <name>OrkBiotechnologist</name>
+        <titles>
+            <title>Рубрика: VPS на пределе возможностей. LLM на CPU с 12Gb RAM</title>
+        </titles>
+    </author>
+    <author>
+        <name>runity</name>
+        <titles>
+            <title>Как развернуть сервис в Kubernetes: гайд для начинающих</title>
+        </titles>
+    </author>
+    <author>
+        <name>OnArs</name>
+        <titles>
+            <title>Anthropic и гонка к «безопасному ИИ»: что рассказал CEO компании Дарио Амодеи на подкасте Lex
+                Fridman
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>technokratiya</name>
+        <titles>
+            <title>Мультимодальный RAG может повысить эффективность использования ИИ для бизнеса</title>
+            <title>Как изменится положение дел в Кремниевой Долине во время второго срока Дональда Трампа</title>
+        </titles>
+    </author>
+    <author>
+        <name>Sber</name>
+        <titles>
+            <title>OpenShift и Kubernetes: сравнительный обзор, основные различия</title>
+            <title>Как мы развиваем архитектурные навыки ИТ-специалистов в Сбере</title>
+        </titles>
+    </author>
+    <author>
+        <name>SanDark7</name>
+        <titles>
+            <title>О технарях, управленцах и почему всё не так однозначно, как кажется</title>
+        </titles>
+    </author>
+    <author>
+        <name>volodya_research</name>
+        <titles>
+            <title>Считаем доверительные интервалы для долей и медианы по нормальному распределению (готовимся к собесу
+                на аналитика)
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>avangonina</name>
+        <titles>
+            <title>UML для всех: почему бы не описать проект на языке диаграмм?</title>
+        </titles>
+    </author>
+    <author>
+        <name>Tirarex</name>
+        <titles>
+            <title>Играем на Sony PlayStation2 в 2024 году</title>
+        </titles>
+    </author>
+    <author>
+        <name>AnSt</name>
+        <titles>
+            <title>Из опыта обучения взрослых. Практические приёмы</title>
+        </titles>
+    </author>
+    <author>
+        <name>Evgeny_E</name>
+        <titles>
+            <title>Оценка токопотребления батарейных радиоканальных устройств</title>
+        </titles>
+    </author>
+    <author>
+        <name>Parafinwe</name>
+        <titles>
+            <title>Глубокое погружение в базовую архитектуру LPU Groq</title>
+        </titles>
+    </author>
+    <author>
+        <name>Magnit_tech</name>
+        <titles>
+            <title>Как мы создаем цифровой опыт сотрудников в «Магните»</title>
+        </titles>
+    </author>
+    <author>
+        <name>MarioKiber</name>
+        <titles>
+            <title>Вся правда о переходе с монолита на микросервисы, когда у тебя сеть из десятков тысяч магазинов: опыт
+                Х5 Tech
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>veseluha</name>
+        <titles>
+            <title>Пишем небольшое приложение на Python для повышения продуктивности с помощью ИИ и BotHub API</title>
+        </titles>
+    </author>
+    <author>
+        <name>Gazinformservice</name>
+        <titles>
+            <title>Краткий обзор форума GIS DAYS 2024: студенческий день, тренды в инфобезе и киберсоревнования</title>
+        </titles>
+    </author>
+    <author>
+        <name>unixendless</name>
+        <titles>
+            <title>Как быстро уснуть? Здоровый сон — хороший код</title>
+        </titles>
+    </author>
+    <author>
+        <name>bimisla</name>
+        <titles>
+            <title>Как сократить время при повторных проверках проектной документации, используя среду общих данных и
+                инструмент сравнения
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>ar2d2</name>
+        <titles>
+            <title>Когда слепой увидит зрячего?</title>
+        </titles>
+    </author>
+    <author>
+        <name>a-ustyuzhanin</name>
+        <titles>
+            <title>ECCV 2024: как это было. Актуальные статьи и главные тренды</title>
+        </titles>
+    </author>
+    <author>
+        <name>accurate_random</name>
+        <titles>
+            <title>Асинхронная логика — насколько же это может быть быстро… (+ небольшая победа на багом в Gowin EDA)
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>SF_author</name>
+        <titles>
+            <title>Ода любви к nvtop — консольный мониторинг GPU, который мы заслужили</title>
+        </titles>
+    </author>
+    <author>
+        <name>Aygul_Kamaltinova</name>
+        <titles>
+            <title>Как агенту изменений выйти за границы возможностей и выжить там, где тебя не ждут?</title>
+        </titles>
+    </author>
+    <author>
+        <name>kinh</name>
+        <titles>
+            <title>Умножение троичных матриц для нейросетей</title>
+        </titles>
+    </author>
+    <author>
+        <name>MrPizzly</name>
+        <titles>
+            <title>Состояние производительности Python 3.13: Free-Threading</title>
+            <title>Разбираем выравнивание данных и структуру памяти в Rust</title>
+        </titles>
+    </author>
+    <author>
+        <name>stein_osint</name>
+        <titles>
+            <title>GEOINT Challenge: геолокация уличного искусства в Доминике</title>
+        </titles>
+    </author>
+    <author>
+        <name>Ivan_zar</name>
+        <titles>
+            <title>Запуск необанка на core-banking platform АБС RStyle: вызовы в финансовом секторе</title>
+        </titles>
+    </author>
+    <author>
+        <name>Lampbike</name>
+        <titles>
+            <title>Есть ли разница между седлами для шоссейных и горных велосипедов?</title>
+            <title>Аэро-, легкий или универсальный: какой из шоссейных велосипедов самый быстрый?</title>
+        </titles>
+    </author>
+    <author>
+        <name>CyberAGF</name>
+        <titles>
+            <title>Под одну гребенку. Режим эмуляции ЦП в Кибер Инфраструктуре</title>
+        </titles>
+    </author>
+    <author>
+        <name>shanker</name>
+        <titles>
+            <title>Практические варианты использования port knocking</title>
+        </titles>
+    </author>
+    <author>
+        <name>kreout</name>
+        <titles>
+            <title>Сквозное шифрование и двухфакторная аутентификация в современном интернете</title>
+        </titles>
+    </author>
+    <author>
+        <name>Qusi</name>
+        <titles>
+            <title>Скачиваем и смотрим YouTube на своём хостинге</title>
+        </titles>
+    </author>
+    <author>
+        <name>tataranovich</name>
+        <titles>
+            <title>Миллиомметр своими руками</title>
+        </titles>
+    </author>
+    <author>
+        <name>Realife</name>
+        <titles>
+            <title>Аппаратное кодирование HEVC в FFmpeg — как быстро вникнуть и начать уже сейчас?</title>
+        </titles>
+    </author>
+    <author>
+        <name>MorwranK</name>
+        <titles>
+            <title>Управление ядрами ЦПУ при обработке сетевого трафика</title>
+        </titles>
+    </author>
+    <author>
+        <name>akibkalo</name>
+        <titles>
+            <title>Apple Devices – замена iTunes. Как заставить работать на Windows 10 LTSC</title>
+        </titles>
+    </author>
+    <author>
+        <name>vgkostin</name>
+        <titles>
+            <title>Нужно создать условия для роста IT-компаний в регионе? Спросите у Липецкой области как</title>
+        </titles>
+    </author>
+    <author>
+        <name>Marik1001</name>
+        <titles>
+            <title>Как я снимал трейлер несуществующего фильма. Часть 2</title>
+        </titles>
+    </author>
+    <author>
+        <name>PavelIvanov3</name>
+        <titles>
+            <title>«Гараж» Рексофт: от идеи до внедрения</title>
+        </titles>
+    </author>
+    <author>
+        <name>maxim_tsar</name>
+        <titles>
+            <title>Код из цитат Шварценеггера и песен Битлов: как мир искусства проникал в эзотерические языки
+                программирования
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>LisaTsareva</name>
+        <titles>
+            <title>Гайд: как попасть с докладом на крупную конференцию и на что обратить внимание при подготовке</title>
+        </titles>
+    </author>
+    <author>
+        <name>tw0face</name>
+        <titles>
+            <title>Онлайн-платформа для управления сообществом, агрегатор исследований для бизнеса – и еще 9 российских
+                стартапов
+            </title>
+        </titles>
+    </author>
+    <author>
+        <name>Timeweb_Cloud</name>
+        <titles>
+            <title>Лучшие backend-фреймворки для веб-разработки в 2024 году</title>
+        </titles>
+    </author>
+    <author>
+        <name>100chuk</name>
+        <titles>
+            <title>Беда “войти в айти” или курсы тестировщика отзывы: Три ошибки создателей IT-курсов</title>
+        </titles>
+    </author>
+    <author>
+        <name>cicwak</name>
+        <titles>
+            <title>Моя подборка ChatGPT Телеграм ботов</title>
+        </titles>
+    </author>
+    <author>
+        <name>smart_pic</name>
+        <titles>
+            <title>Старое, доброе, немного ламповое ИК управление</title>
+        </titles>
+    </author>
+    <author>
+        <name>DmitryI</name>
+        <titles>
+            <title>От провала до успеха один шаг: как спасти заваленный проект</title>
+        </titles>
+    </author>
+    <author>
+        <name>Wonderlove</name>
+        <titles>
+            <title>Обновление FaceFusion v3.0.0 — ультимативной нейросети для дипфейков</title>
+        </titles>
+    </author>
+    <author>
+        <name>mr-pickles</name>
+        <titles>
+            <title>Обманчивая статистическая значимость</title>
+        </titles>
+    </author>
+    <author>
+        <name>nanoslavic</name>
+        <titles>
+            <title>Цифровая настройка хода в часах на STM32 простым языком</title>
+        </titles>
+    </author>
+    <author>
+        <name>Rumantic</name>
+        <titles>
+            <title>Приветствие от Искусственного Интеллекта: Время быть услышанным</title>
+        </titles>
+    </author>
+    <author>
+        <name>Holofox</name>
+        <titles>
+            <title>Как внести свой вклад в Open Source и стать полезным</title>
+        </titles>
+    </author>
+    <author>
+        <name>Pavel_Slyusar</name>
+        <titles>
+            <title>Когда железки знобит: мониторинг NFC-модулей банкоматов</title>
+        </titles>
+    </author>
+    <author>
+        <name>alex912004</name>
+        <titles>
+            <title>Зачем нам Node.js или Angular на бэкенде</title>
+        </titles>
+    </author>
+    <author>
+        <name>alexandervarlamov</name>
+        <titles>
+            <title>Tech каналы Telegram</title>
+        </titles>
+    </author>
 </authors>
