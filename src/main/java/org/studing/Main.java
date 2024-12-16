@@ -18,7 +18,6 @@ import java.util.List;
 import static org.studing.util.path.HabrArtilcePath.*;
 
 public class Main {
-
     private final static int LIMIT_COUNT_VIEWS = 10000;
     private final static int LIMIT_AGE = 12;
     private final static Date DURATION_LIMIT;
@@ -40,7 +39,6 @@ public class Main {
         List<Performance> performanceList = new PerformanceFromJson().parse(PerformancePath.PERFORMANCES);
         startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
     }
-
 
     private static void startWriteHabrAllTask(AbstractHabrArticleXmlWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);

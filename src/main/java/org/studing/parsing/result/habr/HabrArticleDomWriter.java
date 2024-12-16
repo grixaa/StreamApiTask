@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Map;
 
 public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
-
     private final HabrArticlesFilter filter;
 
     public HabrArticleDomWriter(List<HabrArticle> habrArticles) {
@@ -146,8 +145,6 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     public void method(String filePath) throws Exception {
         try {
             Map<String, List<String>> authorsMap = filter.getAuthorAndHisTitles();
-
-
             Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
             Element rootElement = doc.createElement("authors");
             doc.appendChild(rootElement);
@@ -179,5 +176,4 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             throw new RuntimeException(e);
         }
     }
-
 }

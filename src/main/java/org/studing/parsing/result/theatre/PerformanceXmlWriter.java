@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 public class PerformanceXmlWriter {
-
     private final PerformanceFilter filter;
 
     public PerformanceXmlWriter(List<Performance> performanceList) {

@@ -18,7 +18,6 @@ import java.util.Locale;
 public class Performance {
     public static final DateFormat FORMAT_DATE = new SimpleDateFormat("dd MMMM yyyy' в 'HH:mm", new Locale("ru"));
     public static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
-
     private String title;
 
     @JsonFormat(pattern = "dd MMMM yyyy' в 'HH:mm", timezone = "UTC")

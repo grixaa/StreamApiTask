@@ -14,7 +14,6 @@ import java.util.List;
 @Setter
 public class HabrArticle {
     public static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
-
     private String title;
     private String author;
 
