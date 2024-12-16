@@ -20,8 +20,8 @@ public class HabrParserToJson implements ParserToJson<HabrArticle> {
         mapper.configure(INDENT_OUTPUT, true);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
             writer.write(mapper.writeValueAsString(list));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 }

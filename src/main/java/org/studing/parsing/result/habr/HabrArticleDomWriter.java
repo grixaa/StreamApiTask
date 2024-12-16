@@ -55,8 +55,8 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
 
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 
@@ -86,8 +86,8 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
 
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 
@@ -171,8 +171,8 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
 
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (Exception thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 }

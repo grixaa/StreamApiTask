@@ -25,8 +25,8 @@ public class Main {
     static {
         try {
             DURATION_LIMIT = Performance.FORMAT_DURATION.parse("1:50");
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
+        } catch (ParseException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 

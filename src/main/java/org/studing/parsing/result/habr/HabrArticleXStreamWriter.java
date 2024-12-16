@@ -36,8 +36,8 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(authorsList));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 
