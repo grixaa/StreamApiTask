@@ -1,17 +1,17 @@
 package org.studing;
 
+import lombok.NonNull;
+import lombok.val;
 import org.studing.parsing.flie.java.HabrParserFromJson;
 import org.studing.parsing.flie.java.PerformanceFromJson;
 import org.studing.parsing.result.habr.AbstractHabrArticleXmlWriter;
 import org.studing.parsing.result.habr.HabrArticleDomWriter;
 import org.studing.parsing.result.habr.HabrArticleXStreamWriter;
 import org.studing.parsing.result.theatre.PerformanceXmlWriter;
-import org.studing.type.HabrArticle;
 import org.studing.type.Performance;
 
 import java.text.ParseException;
 import java.util.Date;
-import java.util.List;
 
 import static org.studing.util.path.HabrArtilcePath.*;
 import static org.studing.util.path.PerformancePath.*;
@@ -31,22 +31,22 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        List<HabrArticle> articles = new HabrParserFromJson().parse(HABR_ARTICLES);
+        val articles = new HabrParserFromJson().parse(HABR_ARTICLES);
         startWriteHabrAllTask(new HabrArticleDomWriter(articles));
         startWriteHabrAllTask(new HabrArticleXStreamWriter(articles));
 
-        List<Performance> performanceList = new PerformanceFromJson().parse(PERFORMANCES);
+        val performanceList = new PerformanceFromJson().parse(PERFORMANCES);
         startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
     }
 
-    private static void startWriteHabrAllTask(AbstractHabrArticleXmlWriter writer) throws Exception {
+    private static void startWriteHabrAllTask(final @NonNull AbstractHabrArticleXmlWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_DOM, LIMIT_COUNT_VIEWS);
         writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_DOM);
     }
 
-    private static void startWritePerformanceAllTask(PerformanceXmlWriter writer) throws Exception {
+    private static void startWritePerformanceAllTask(final @NonNull PerformanceXmlWriter writer) throws Exception {
         writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
         writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
         writer.writeUniqueTitlePerformance(UNIQUE_TITLE);

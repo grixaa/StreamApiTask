@@ -1,5 +1,6 @@
 package org.studing.parsing.result.habr;
 
+import lombok.NonNull;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
@@ -19,12 +20,12 @@ import static javax.xml.transform.OutputKeys.INDENT;
 public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     final HabrArticlesFilter filter;
 
-    public HabrArticleDomWriter(List<HabrArticle> habrArticles) {
+    public HabrArticleDomWriter(final @NonNull List<HabrArticle> habrArticles) {
         filter = new HabrArticlesFilter(habrArticles);
     }
 
     @Override
-    public void writeAuthorAndHisTitles(String filePath) {
+    public void writeAuthorAndHisTitles(final @NonNull String filePath) {
         try {
             Map<String, List<String>> authorsMap = filter.getAuthorAndHisTitles();
 
@@ -61,14 +62,14 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeLimitCountViews(String filePath, int limitCount) throws Exception {
+    public void writeLimitCountViews(final @NonNull String filePath, final int limitCount) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesLimitCountView(limitCount),
             filePath);
     }
 
     @Override
-    public void writeUniqueCategories(String filePath) {
+    public void writeUniqueCategories(final @NonNull String filePath) {
         try {
             List<String> categories = filter.getUniqueCategories().stream().toList();
 
@@ -92,13 +93,16 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(String filePath) throws Exception {
+    public void writeHabrArticlesTimeToReadLessThanAverage(final @NonNull String filePath) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
             filePath);
     }
 
-    private void writeOneArticle(Element root, Document doc, HabrArticle article) {
+    private void writeOneArticle(@NonNull Element root,
+                                 @NonNull Document doc,
+                                 final @NonNull HabrArticle article) {
+
         Element articleElement = doc.createElement("article");
         root.appendChild(articleElement);
 
@@ -117,13 +121,18 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
         articleElement.appendChild(categoriesElement);
     }
 
-    private Element createElement(Document document, String name, String value) {
+    private Element createElement(@NonNull Document document,
+                                  final @NonNull String name,
+                                  final @NonNull String value) {
+
         Element element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;
     }
 
-    private void writeHabrArticles(List<HabrArticle> articles, String filePath) throws Exception {
+    private void writeHabrArticles(final @NonNull List<HabrArticle> articles,
+                                   final @NonNull String filePath) throws Exception {
+
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         Element root = doc.createElement("articles");
         doc.appendChild(root);

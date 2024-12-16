@@ -1,5 +1,7 @@
 package org.studing.filter;
 
+import lombok.NonNull;
+import lombok.val;
 import org.studing.type.Performance;
 
 import java.text.ParseException;
@@ -7,7 +9,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class PerformanceFilter {
-    private final List<Performance> performanceList;
+    final List<Performance> performanceList;
     private static final Date DATE_EVENING;
 
     static {
@@ -18,12 +20,12 @@ public class PerformanceFilter {
         }
     }
 
-    public PerformanceFilter(List<Performance> performances) {
+    public PerformanceFilter(final @NonNull List<Performance> performances) {
         this.performanceList = performances;
     }
 
-    public List<Performance> getLimitAgePerformance(int ageLimit) {
-        List<Performance> temp = performanceList.stream()
+    public List<Performance> getLimitAgePerformance(final int ageLimit) {
+        val temp = performanceList.stream()
             .filter(performance -> Integer.parseInt(performance.getAgeLimit()) <= ageLimit)
             .sorted(Comparator.comparing(Performance::getDuration))
             .toList();
@@ -36,12 +38,12 @@ public class PerformanceFilter {
     }
 
     public Map<Performance, List<Date>> getMapTitleListDate() {
-        List<Performance> performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
+        val performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
 
-        Map<String, Performance> uniqueTitleMap = performancesUniqueTitle.stream()
+        val uniqueTitleMap = performancesUniqueTitle.stream()
             .collect(Collectors.toMap(Performance::getTitle, performance -> performance));
 
-        Map<Performance, List<Date>> mapPerformanceListDate = performanceList.stream()
+        val mapPerformanceListDate = performanceList.stream()
             .filter(performance -> uniqueTitleMap.containsKey(performance.getTitle()))
             .collect(Collectors.groupingBy(
                 performance -> uniqueTitleMap.get(performance.getTitle()),
@@ -51,8 +53,8 @@ public class PerformanceFilter {
         return mapPerformanceListDate;
     }
 
-    public List<Performance> getPerformanceListTask4(Date durationLimit) throws Exception {
-        Calendar calendar = Calendar.getInstance();
+    public List<Performance> getPerformanceListTask4(final @NonNull Date durationLimit) throws Exception {
+        val calendar = Calendar.getInstance();
 
         return performanceList.stream()
             .filter(performance -> {
@@ -70,14 +72,14 @@ public class PerformanceFilter {
             })
             .filter(performance -> {
                 calendar.setTime(performance.getDate());
-                Calendar calendar_evening = Calendar.getInstance();
+                val calendar_evening = Calendar.getInstance();
                 calendar_evening.setTime(DATE_EVENING);
                 return (calendar.get(Calendar.HOUR_OF_DAY) >= calendar_evening.get(Calendar.HOUR_OF_DAY));
             })
             .toList();
     }
 
-    private List<Performance> getListPerformanceUniqueTitle(List<Performance> performanceList) {
+    private List<Performance> getListPerformanceUniqueTitle(final @NonNull List<Performance> performanceList) {
         List<Performance> temp = new ArrayList<>();
         List<String> titles = new ArrayList<>();
 

@@ -1,5 +1,6 @@
 package org.studing.parsing.result.theatre;
 
+import lombok.NonNull;
 import org.studing.filter.PerformanceFilter;
 import org.studing.type.Performance;
 import org.w3c.dom.Document;
@@ -20,11 +21,11 @@ import static javax.xml.transform.OutputKeys.INDENT;
 public class PerformanceXmlWriter {
     final PerformanceFilter filter;
 
-    public PerformanceXmlWriter(List<Performance> performanceList) {
+    public PerformanceXmlWriter(final @NonNull List<Performance> performanceList) {
         filter = new PerformanceFilter(performanceList);
     }
 
-    public void writePerformanceAgeLimit(String filePath, int ageLimit) throws Exception {
+    public void writePerformanceAgeLimit(final @NonNull String filePath, final int ageLimit) throws Exception {
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         Element root = doc.createElement("performanceList");
         doc.appendChild(root);
@@ -39,7 +40,7 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeUniqueTitlePerformance(String filePath) throws Exception {
+    public void writeUniqueTitlePerformance(final @NonNull String filePath) throws Exception {
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         Element root = doc.createElement("performanceList");
         doc.appendChild(root);
@@ -54,7 +55,7 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeMapPerformanceListDate(String filePath) throws Exception {
+    public void writeMapPerformanceListDate(final @NonNull String filePath) throws Exception {
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         Element root = doc.createElement("performanceList");
         doc.appendChild(root);
@@ -69,7 +70,9 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeTask4(String filePath, Date durationLimit) throws Exception {
+    public void writeTask4(final @NonNull String filePath,
+                           final @NonNull Date durationLimit) throws Exception {
+
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         Element root = doc.createElement("performanceList");
         doc.appendChild(root);
@@ -85,12 +88,12 @@ public class PerformanceXmlWriter {
     }
 
     private void writeOnePerformanceWithListDate(
-        Element root,
-        Document doc,
-        Performance performance,
-        List<Date> dateList) {
-        Element articleElement = writeAllWithoutDate(root, doc, performance);
+        @NonNull Element root,
+        @NonNull Document doc,
+        final @NonNull Performance performance,
+        final @NonNull  List<Date> dateList) {
 
+        Element articleElement = writeAllWithoutDate(root, doc, performance);
         Element dateElement = doc.createElement("date");
         for (Date date : dateList) {
             dateElement.appendChild(createElement(doc, "d", Performance.FORMAT_DATE.format(date)));
@@ -98,12 +101,17 @@ public class PerformanceXmlWriter {
         articleElement.appendChild(dateElement);
     }
 
-    private void writeOnePerformance(Element root, Document doc, Performance performance) {
+    private void writeOnePerformance(@NonNull Element root,
+                                     @NonNull Document doc,
+                                     final @NonNull Performance performance) {
+
         Element articleElement = writeAllWithoutDate(root, doc, performance);
         articleElement.appendChild(createElement(doc, "date", Performance.FORMAT_DATE.format(performance.getDate())));
     }
 
-    private Element writeAllWithoutDate(Element root, Document doc, Performance performance) {
+    private Element writeAllWithoutDate(@NonNull Element root,
+                                        @NonNull Document doc,
+                                        final @NonNull Performance performance) {
         Element articleElement = doc.createElement("performance");
         root.appendChild(articleElement);
 
@@ -115,7 +123,10 @@ public class PerformanceXmlWriter {
         return articleElement;
     }
 
-    private Element createElement(Document document, String name, String value) {
+    private Element createElement(@NonNull Document document,
+                                  final @NonNull  String name,
+                                  final @NonNull String value) {
+
         Element element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;

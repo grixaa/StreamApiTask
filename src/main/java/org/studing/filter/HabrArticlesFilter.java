@@ -1,14 +1,16 @@
 package org.studing.filter;
 
+import lombok.NonNull;
+import lombok.val;
 import org.studing.type.HabrArticle;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class HabrArticlesFilter {
-    private List<HabrArticle> articles;
+    final List<HabrArticle> articles;
 
-    public HabrArticlesFilter(List<HabrArticle> habrArticles) {
+    public HabrArticlesFilter(final @NonNull List<HabrArticle> habrArticles) {
         this.articles = habrArticles;
     }
 
@@ -19,7 +21,7 @@ public class HabrArticlesFilter {
                 Collectors.mapping(HabrArticle::getTitle, Collectors.toList())));
     }
 
-    public List<HabrArticle> getHabrArticlesLimitCountView(int limitCountView) throws Exception {
+    public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) throws Exception {
         return articles.stream()
             .filter(article -> Integer.parseInt(article.getCountViews()) > limitCountView)
             .sorted(Comparator.comparing(HabrArticle::getTitle))
@@ -33,11 +35,11 @@ public class HabrArticlesFilter {
     }
 
     public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() throws Exception {
-        List<Integer> timeToRead = articles.stream()
+        val timeToRead = articles.stream()
             .map(article -> Integer.parseInt(article.getTimeToRead()))
             .toList();
 
-        int averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
+        final int averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
 
         return articles.stream().
             filter(article -> Integer.parseInt(article.getTimeToRead()) < averageTime).

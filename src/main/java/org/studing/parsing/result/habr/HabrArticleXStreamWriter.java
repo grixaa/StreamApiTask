@@ -1,6 +1,7 @@
 package org.studing.parsing.result.habr;
 
 import com.thoughtworks.xstream.XStream;
+import lombok.NonNull;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.wrapper.AuthorWrapper;
 import org.studing.type.HabrArticle;
@@ -16,12 +17,12 @@ import java.util.Set;
 public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
     final HabrArticlesFilter filter;
 
-    public HabrArticleXStreamWriter(List<HabrArticle> articles) {
+    public HabrArticleXStreamWriter(final @NonNull List<HabrArticle> articles) {
         this.filter = new HabrArticlesFilter(articles);
     }
 
     @Override
-    public void writeAuthorAndHisTitles(String filePath) {
+    public void writeAuthorAndHisTitles(final @NonNull String filePath) {
         Map<String, List<String>> authorAndHisTitles = filter.getAuthorAndHisTitles();
 
         XStream xstream = new XStream();
@@ -42,13 +43,13 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeLimitCountViews(String filePath, int limitCount) throws Exception {
+    public void writeLimitCountViews(final @NonNull String filePath, final int limitCount) throws Exception {
         List<HabrArticle> articles = filter.getHabrArticlesLimitCountView(limitCount);
         write(filePath, articles);
     }
 
     @Override
-    public void writeUniqueCategories(String filePath) {
+    public void writeUniqueCategories(final @NonNull String filePath) {
         Set<String> uniqueCategories = filter.getUniqueCategories();
 
         XStream xstream = new XStream();
@@ -63,12 +64,14 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(String filePath) throws Exception {
+    public void writeHabrArticlesTimeToReadLessThanAverage(final @NonNull String filePath) throws Exception {
         List<HabrArticle> articles = filter.getHabrArticlesWhereTimeToReadLessThanAverage();
         write(filePath, articles);
     }
 
-    private void write(String filePath, List<HabrArticle> articles) throws IOException {
+    private void write(final @NonNull String filePath,
+                       final @NonNull List<HabrArticle> articles) throws IOException {
+
         XStream xstream = new XStream();
         xstream.alias("articles", List.class);
         xstream.alias("article", HabrArticle.class);

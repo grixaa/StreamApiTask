@@ -1,6 +1,7 @@
 package org.studing.parsing.flie.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.NonNull;
 import org.studing.type.HabrArticle;
 
 import java.io.BufferedWriter;
@@ -14,7 +15,7 @@ import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 public class HabrParserToJson implements ParserToJson<HabrArticle> {
 
     @Override
-    public void parse(List<HabrArticle> list, String path) {
+    public void parse(final @NonNull List<HabrArticle> list, final @NonNull String path) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(ADJUST_DATES_TO_CONTEXT_TIME_ZONE);
         mapper.configure(INDENT_OUTPUT, true);
