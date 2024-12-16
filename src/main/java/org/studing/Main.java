@@ -8,14 +8,14 @@ import org.studing.parsing.result.habr.HabrArticleXStreamWriter;
 import org.studing.parsing.result.theatre.PerformanceXmlWriter;
 import org.studing.type.HabrArticle;
 import org.studing.type.Performance;
-import org.studing.util.path.HabrArtilcePath;
-import org.studing.util.path.PerformancePath;
 
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
 import static org.studing.util.path.HabrArtilcePath.*;
+import static org.studing.util.path.PerformancePath.*;
+import static org.studing.util.path.PerformancePath.MAP_PERFORMANCE_DATE;
 
 public class Main {
     private final static int LIMIT_COUNT_VIEWS = 10000;
@@ -31,11 +31,11 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        List<HabrArticle> articles = new HabrParserFromJson().parse(HabrArtilcePath.HABR_ARTICLES);
+        List<HabrArticle> articles = new HabrParserFromJson().parse(HABR_ARTICLES);
         startWriteHabrAllTask(new HabrArticleDomWriter(articles));
         startWriteHabrAllTask(new HabrArticleXStreamWriter(articles));
 
-        List<Performance> performanceList = new PerformanceFromJson().parse(PerformancePath.PERFORMANCES);
+        List<Performance> performanceList = new PerformanceFromJson().parse(PERFORMANCES);
         startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
     }
 
@@ -47,10 +47,10 @@ public class Main {
     }
 
     private static void startWritePerformanceAllTask(PerformanceXmlWriter writer) throws Exception {
-        writer.writeMapPerformanceListDate(PerformancePath.MAP_PERFORMANCE_DATE);
-        writer.writePerformanceAgeLimit(PerformancePath.AGE_LIMIT, LIMIT_AGE);
-        writer.writeUniqueTitlePerformance(PerformancePath.UNIQUE_TITLE);
-        writer.writeTask4(PerformancePath.TASK_4, DURATION_LIMIT);
+        writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
+        writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
+        writer.writeUniqueTitlePerformance(UNIQUE_TITLE);
+        writer.writeTask4(TASK_4, DURATION_LIMIT);
     }
 }
 
