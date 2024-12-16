@@ -17,7 +17,7 @@ import java.util.Map;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
-    private final HabrArticlesFilter filter;
+    final HabrArticlesFilter filter;
 
     public HabrArticleDomWriter(List<HabrArticle> habrArticles) {
         filter = new HabrArticlesFilter(habrArticles);

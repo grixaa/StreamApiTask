@@ -8,6 +8,6 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 public class AuthorWrapper {
-    private String name;
-    private List<String> titles;
+    String name;
+    List<String> titles;
 }

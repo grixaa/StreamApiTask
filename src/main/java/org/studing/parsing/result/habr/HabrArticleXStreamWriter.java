@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
-    private final HabrArticlesFilter filter;
+    final HabrArticlesFilter filter;
 
     public HabrArticleXStreamWriter(List<HabrArticle> articles) {
         this.filter = new HabrArticlesFilter(articles);

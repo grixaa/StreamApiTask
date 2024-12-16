@@ -14,17 +14,16 @@ import java.util.List;
 @Setter
 public class HabrArticle {
     public static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
-    private String title;
-    private String author;
 
     @JsonFormat(pattern = "dd.MM.yyyy HH:mm", timezone = "UTC")
-    private Date datePublished;
-
-    private String timeToRead;
-    private String countViews;
-    private String imageUrl;
-    private List<String> categories;
-    private String textPreview;
+    Date datePublished;
+    String title;
+    String author;
+    String timeToRead;
+    String countViews;
+    String imageUrl;
+    List<String> categories;
+    String textPreview;
 
     @Override
     public String toString() {

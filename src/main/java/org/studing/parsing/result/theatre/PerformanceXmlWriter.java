@@ -18,7 +18,7 @@ import java.util.Map;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class PerformanceXmlWriter {
-    private final PerformanceFilter filter;
+    final PerformanceFilter filter;
 
     public PerformanceXmlWriter(List<Performance> performanceList) {
         filter = new PerformanceFilter(performanceList);
