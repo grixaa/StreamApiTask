@@ -63,8 +63,7 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     public void writeLimitCountViews(String filePath, int limitCount) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesLimitCountView(limitCount),
-            filePath
-        );
+            filePath);
     }
 
     @Override
@@ -95,8 +94,7 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     public void writeHabrArticlesTimeToReadLessThanAverage(String filePath) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
-            filePath
-        );
+            filePath);
     }
 
     private void writeOneArticle(Element root, Document doc, HabrArticle article) {

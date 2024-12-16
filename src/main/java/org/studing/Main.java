@@ -31,7 +31,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-
         List<HabrArticle> articles = new HabrParserFromJson().parse(HabrArtilcePath.HABR_ARTICLES);
         startWriteHabrAllTask(new HabrArticleDomWriter(articles));
         startWriteHabrAllTask(new HabrArticleXStreamWriter(articles));
