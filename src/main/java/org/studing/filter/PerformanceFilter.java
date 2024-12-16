@@ -13,8 +13,8 @@ public class PerformanceFilter {
     static {
         try {
             DATE_EVENING = Performance.FORMAT_DURATION.parse("17:00");
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
+        } catch (ParseException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 
@@ -24,7 +24,7 @@ public class PerformanceFilter {
 
     public List<Performance> getLimitAgePerformance(int ageLimit) {
         List<Performance> temp = performanceList.stream()
-            .filter(p -> Integer.parseInt(p.getAgeLimit()) <= ageLimit)
+            .filter(performance -> Integer.parseInt(performance.getAgeLimit()) <= ageLimit)
             .sorted(Comparator.comparing(Performance::getDuration))
             .toList();
 
@@ -45,11 +45,9 @@ public class PerformanceFilter {
             .filter(performance -> uniqueTitleMap.containsKey(performance.getTitle()))
             .collect(Collectors.groupingBy(
                 performance -> uniqueTitleMap.get(performance.getTitle()),
-                Collectors.mapping(Performance::getDate, Collectors.toList())
-            ));
+                Collectors.mapping(Performance::getDate, Collectors.toList())));
 
         mapPerformanceListDate.values().removeIf(List::isEmpty);
-
         return mapPerformanceListDate;
     }
 
@@ -57,24 +55,23 @@ public class PerformanceFilter {
         Calendar calendar = Calendar.getInstance();
 
         return performanceList.stream()
-            .filter(p -> {
-                calendar.setTime(p.getDate());
+            .filter(performance -> {
+                calendar.setTime(performance.getDate());
                 return calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY ||
                     calendar.get(Calendar.DAY_OF_WEEK) == Calendar.TUESDAY ||
                     calendar.get(Calendar.DAY_OF_WEEK) == Calendar.THURSDAY;
             })
-            .filter(p -> {
+            .filter(performance -> {
                 try {
-                    return Performance.FORMAT_DURATION.parse(p.getDuration()).after(durationLimit);
-                } catch (ParseException e) {
-                    throw new RuntimeException(e);
+                    return Performance.FORMAT_DURATION.parse(performance.getDuration()).after(durationLimit);
+                } catch (ParseException thrown) {
+                    throw new RuntimeException(thrown);
                 }
             })
-            .filter(p -> {
-                calendar.setTime(p.getDate());
+            .filter(performance -> {
+                calendar.setTime(performance.getDate());
                 Calendar calendar_evening = Calendar.getInstance();
                 calendar_evening.setTime(DATE_EVENING);
-
                 return (calendar.get(Calendar.HOUR_OF_DAY) >= calendar_evening.get(Calendar.HOUR_OF_DAY));
             })
             .toList();
@@ -84,10 +81,10 @@ public class PerformanceFilter {
         List<Performance> temp = new ArrayList<>();
         List<String> titles = new ArrayList<>();
 
-        performanceList.forEach(p -> {
-            if (!titles.contains(p.getTitle())) {
-                titles.add(p.getTitle());
-                temp.add(p);
+        performanceList.forEach(performance -> {
+            if (!titles.contains(performance.getTitle())) {
+                titles.add(performance.getTitle());
+                temp.add(performance);
             }
         });
 

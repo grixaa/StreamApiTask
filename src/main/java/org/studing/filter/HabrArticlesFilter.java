@@ -16,13 +16,12 @@ public class HabrArticlesFilter {
         return articles.stream().collect(
             Collectors.groupingBy(
                 HabrArticle::getAuthor,
-                Collectors.mapping(HabrArticle::getTitle, Collectors.toList())
-            ));
+                Collectors.mapping(HabrArticle::getTitle, Collectors.toList())));
     }
 
-    public List<HabrArticle> getHabrArticlesLimitCountView(int n) throws Exception {
+    public List<HabrArticle> getHabrArticlesLimitCountView(int limitCountView) throws Exception {
         return articles.stream()
-            .filter(article -> Integer.parseInt(article.getCountViews()) > n)
+            .filter(article -> Integer.parseInt(article.getCountViews()) > limitCountView)
             .sorted(Comparator.comparing(HabrArticle::getTitle))
             .collect(Collectors.toList());
     }
@@ -35,13 +34,13 @@ public class HabrArticlesFilter {
 
     public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() throws Exception {
         List<Integer> timeToRead = articles.stream()
-            .map(x -> Integer.parseInt(x.getTimeToRead()))
+            .map(article -> Integer.parseInt(article.getTimeToRead()))
             .toList();
 
         int averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
 
         return articles.stream().
-            filter(x -> Integer.parseInt(x.getTimeToRead()) < averageTime).
+            filter(article -> Integer.parseInt(article.getTimeToRead()) < averageTime).
             collect(Collectors.toList());
     }
 
@@ -49,7 +48,6 @@ public class HabrArticlesFilter {
         return articles.stream().collect(
             Collectors.groupingBy(
                 HabrArticle::getAuthor,
-                Collectors.mapping(HabrArticle::getTitle, Collectors.toList())
-            ));
+                Collectors.mapping(HabrArticle::getTitle, Collectors.toList())));
     }
 }
