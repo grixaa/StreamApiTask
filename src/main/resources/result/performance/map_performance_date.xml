@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <performanceList>
     <performance>
-        <title>УДАЧИ, МАРК!</title>
-        <duration>1:40</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2517_0c6a3809470e7987f124716219c3d8.jpg</imageUrl>
-        <date>
-            <d>23 октября 2024 в 15:00</d>
-            <d>24 октября 2024 в 15:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ФЕСТИВАЛЬ СОВРЕМЕННОГО ТАНЦА «3DВИГ»</title>
-        <duration>2:30</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2528_9dfa865b0e309226c374441320c8c1.jpg</imageUrl>
-        <date>
-            <d>27 ноября 2024 в 18:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Иван-царевич и Серый волк</title>
-        <duration>0:50</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Ivan Zarevish/ivancarevichafishaa-1pechat.jpg
-        </imageUrl>
-        <date>
-            <d>26 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ПЛИХ И ПЛЮХ</title>
+        <title>МАЛЬЧИКИ НЕ ПЛАЧУТ</title>
         <duration>1:30</duration>
         <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2514_2a65f0c4ad863c9b5ae128da4ba506.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2439_ad24023be9525af30a5d9a428f1a23.jpg</imageUrl>
         <date>
-            <d>28 октября 2024 в 14:00</d>
-            <d>27 октября 2024 в 14:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Судьба человека (Показ в г. Уржум)</title>
-        <duration>1:10</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/342_f377387764b169dc45e8f6e8473566.jpg</imageUrl>
-        <date>
-            <d>25 октября 2024 в 13:00</d>
+            <d>22 октября 2024 в 14:00</d>
+            <d>23 октября 2024 в 14:00</d>
         </date>
     </performance>
     <performance>
@@ -59,84 +21,97 @@
         </date>
     </performance>
     <performance>
-        <title>Уроки французского</title>
-        <duration>1:10</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/47_c52d983c3df5b6cf666387c67c250c.jpg</imageUrl>
-        <date>
-            <d>10 ноября 2024 в 18:30</d>
-            <d>13 ноября 2024 в 18:30</d>
-            <d>15 ноября 2024 в 18:30</d>
-            <d>16 ноября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>СОЛНЫШКО В ЛАДОШКАХ</title>
-        <duration>1:40</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2495_8706352e4036a3e68f2a811ff3628a.jpg</imageUrl>
-        <date>
-            <d>27 октября 2024 в 11:00</d>
-            <d>26 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Хлынов. Сага о городе и его жителях</title>
-        <duration>3:00</duration>
+        <title>Монарх</title>
+        <duration>2:50</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/303_647cb5206e33ff2fdda27337c07293.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/225_e95cc32223ae5de7de1f4efbc978ff.jpg</imageUrl>
         <date>
-            <d>02 ноября 2024 в 18:30</d>
-            <d>01 ноября 2024 в 18:30</d>
+            <d>30 ноября 2024 в 17:00</d>
         </date>
     </performance>
     <performance>
-        <title>ПОСЛЕДНИЕ ДНИ БАЗАРОВА</title>
-        <duration>1:50</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2239_c7abdf2091d85133ad4754e45cad5b.jpg</imageUrl>
-        <date>
-            <d>30 октября 2024 в 18:00</d>
-            <d>31 октября 2024 в 18:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>КАШТАНКА</title>
-        <duration>1:00</duration>
+        <title>Конёк-горбунок</title>
+        <duration>1:15</duration>
         <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2330_15d54352a119d09da49eee5d1aa6a9.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/265_852fdc0cb162f61efe2605efcb5003.jpg</imageUrl>
         <date>
-            <d>30 октября 2024 в 11:00</d>
-            <d>31 октября 2024 в 11:00</d>
+            <d>25 октября 2024 в 11:00</d>
+            <d>27 октября 2024 в 11:00</d>
         </date>
     </performance>
     <performance>
-        <title>Стивен Хокинг. Мир в ореховой скорлупе</title>
-        <duration>0:45</duration>
+        <title>Свидание на четверых</title>
+        <duration>2:15</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/338_7da94dcf368543b55096a712112a70.jpg</imageUrl>
+        <date>
+            <d>30 октября 2024 в 19:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ОСТРОВ СОКРОВИЩ</title>
+        <duration>1:30</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1706_80c5a7141f0f46fb3bac5201731cb7.jpg</imageUrl>
+        <date>
+            <d>02 ноября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ДЖИНЖИК</title>
+        <duration>0:50</duration>
         <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Hoking/stivenhockinga-1pechat.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2502_dadc9a47c7557f5faacd54f3ff6864.jpg</imageUrl>
         <date>
-            <d>25 октября 2024 в 18:00</d>
+            <d>26 октября 2024 в 15:00</d>
+            <d>26 октября 2024 в 15:00</d>
         </date>
     </performance>
     <performance>
-        <title>Судьба человека</title>
-        <duration>1:10</duration>
+        <title>#Я_Раскольников</title>
+        <duration>1:20</duration>
         <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/99_a801a3043eff4dbc9656027a094b35.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/145_c40ab7dfe907e4a833eac140fbb2fb.jpg</imageUrl>
         <date>
-            <d>21 ноября 2024 в 15:00</d>
-            <d>22 ноября 2024 в 15:00</d>
+            <d>30 октября 2024 в 18:30</d>
+            <d>31 октября 2024 в 18:30</d>
         </date>
     </performance>
     <performance>
-        <title>Не доверяй мужчинам!</title>
+        <title>Ку-би-ки</title>
+        <duration>0:35</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/images/kubikia-1.jpg</imageUrl>
+        <date>
+            <d>23 октября 2024 в 11:00</d>
+            <d>24 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Юбилейный вечер Кировской школы балета</title>
+        <duration>1:30</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/340_06aee5f1070b6c42d0c013ebb26bc0.jpg</imageUrl>
+        <date>
+            <d>24 октября 2024 в 18:30</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Сказка о ёжике и медвежонке</title>
+        <duration>0:35</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Skazka o ezhike i medvede/ezh.jpg</imageUrl>
+        <date>
+            <d>19 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Тайна замка Рейвенскрофт</title>
         <duration>2:20</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/274_6544fc55bc9f981dc13f416f54f70a.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/113_b21021fe630cc66b6193cc94d18d01.jpg</imageUrl>
         <date>
-            <d>27 октября 2024 в 17:00</d>
-            <d>28 октября 2024 в 17:00</d>
+            <d>29 ноября 2024 в 18:30</d>
         </date>
     </performance>
     <performance>
@@ -153,165 +128,12 @@
         </date>
     </performance>
     <performance>
-        <title>Юбилейный вечер Кировской школы балета</title>
+        <title>ИВАН - БОГАТЫРСКИЙ СЫН</title>
         <duration>1:30</duration>
         <ageLimit>6</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/340_06aee5f1070b6c42d0c013ebb26bc0.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1401_b3c55bc3b7ff3d6ce14d12fd927204.jpg</imageUrl>
         <date>
-            <d>24 октября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Вечер балета</title>
-        <duration>2:00</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/335_47e39c323d3aae9aeeedb9c45525a1.jpg</imageUrl>
-        <date>
-            <d>23 октября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Терем — Теремок</title>
-        <duration>0:35</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/images/afisha/teremok.jpg</imageUrl>
-        <date>
-            <d>20 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>На всякого мудреца довольно простоты</title>
-        <duration>1:50</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/263_6d2be1facbd0ebb3a97b4240dfe2ff.jpg</imageUrl>
-        <date>
-            <d>26 октября 2024 в 17:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Ку-би-ки</title>
-        <duration>0:35</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/images/kubikia-1.jpg</imageUrl>
-        <date>
-            <d>23 октября 2024 в 11:00</d>
-            <d>24 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>МАЛЬЧИКИ НЕ ПЛАЧУТ</title>
-        <duration>1:30</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2439_ad24023be9525af30a5d9a428f1a23.jpg</imageUrl>
-        <date>
-            <d>22 октября 2024 в 14:00</d>
-            <d>23 октября 2024 в 14:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ЭТО Я ТЕБЕ УХО ОТКУСИЛА!</title>
-        <duration>1:15</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1490_af32a7c94623ca01e51970ff53d1e6.jpg</imageUrl>
-        <date>
-            <d>21 ноября 2024 в 19:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Серебряное копытце</title>
-        <duration>0:45</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Serebryanoe kopito/imj7o87or1a.jpg</imageUrl>
-        <date>
-            <d>20 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>СЕРАЯ ШЕЙКА</title>
-        <duration>0:50</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2508_08d751ff109467597d9864b9e46457.jpg</imageUrl>
-        <date>
-            <d>28 октября 2024 в 11:00</d>
-            <d>27 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Дядя Ваня</title>
-        <duration>2:15</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/188_58c9205a286214b81811b0c5a89566.jpg</imageUrl>
-        <date>
-            <d>17 октября 2024 в 18:30</d>
-            <d>18 октября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Судьба человека (Показ в г. Малмыж)</title>
-        <duration>1:10</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/341_187493998cdbeec8e32cfb88d0cef0.jpg</imageUrl>
-        <date>
-            <d>23 октября 2024 в 13:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Золотой ключик, или Приключения Буратино</title>
-        <duration>0:55</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Zolotoy kluchik/buratino.jpg</imageUrl>
-        <date>
-            <d>27 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Семейка Краузе</title>
-        <duration>2:20</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/27_d88dcfb9bef9eb18788ae177faac6e.jpg</imageUrl>
-        <date>
-            <d>25 октября 2024 в 18:30</d>
-            <d>26 октября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ЛЕГЕНДА О ВИТБЕРГЕ</title>
-        <duration>1:30</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2392_05946807718b0b5d888574e58f9259.jpg</imageUrl>
-        <date>
-            <d>02 ноября 2024 в 18:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ДЖИНЖИК</title>
-        <duration>0:50</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2502_dadc9a47c7557f5faacd54f3ff6864.jpg</imageUrl>
-        <date>
-            <d>26 октября 2024 в 15:00</d>
-            <d>26 октября 2024 в 15:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Тайна замка Рейвенскрофт</title>
-        <duration>2:20</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/113_b21021fe630cc66b6193cc94d18d01.jpg</imageUrl>
-        <date>
-            <d>29 ноября 2024 в 18:30</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Первая любовь</title>
-        <duration>1:15</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/149_e7d3285536c6d8246e4f6dea7bd846.jpg</imageUrl>
-        <date>
-            <d>17 октября 2024 в 18:30</d>
-            <d>18 октября 2024 в 18:30</d>
-            <d>19 октября 2024 в 18:30</d>
-            <d>20 октября 2024 в 18:30</d>
+            <d>29 октября 2024 в 11:00</d>
         </date>
     </performance>
     <performance>
@@ -324,58 +146,41 @@
         </date>
     </performance>
     <performance>
-        <title>Монарх</title>
-        <duration>2:50</duration>
+        <title>ПРОСТЫЕ ВЕЩИ</title>
+        <duration>1:10</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/225_e95cc32223ae5de7de1f4efbc978ff.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2412_48e15a076806e88ee22f4a20cd1b50.jpg</imageUrl>
         <date>
-            <d>30 ноября 2024 в 17:00</d>
+            <d>17 октября 2024 в 19:00</d>
+            <d>18 октября 2024 в 19:00</d>
         </date>
     </performance>
     <performance>
-        <title>Лекарь поневоле</title>
+        <title>Пиковая дама</title>
+        <duration>2:45</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/339_c6b39f57656b1907620a0ccc69592f.jpg</imageUrl>
+        <date>
+            <d>16 ноября 2024 в 17:00</d>
+            <d>17 ноября 2024 в 17:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Всё можно… или как прожить без взрослых</title>
         <duration>1:00</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/35_6cf016064c11b5df6c8c187c04ac1d.jpg</imageUrl>
-        <date>
-            <d>03 ноября 2024 в 17:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Конёк-горбунок</title>
-        <duration>1:15</duration>
         <ageLimit>6</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/265_852fdc0cb162f61efe2605efcb5003.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/28_f32d08ba84a81f01b6b8cee52201e5.jpg</imageUrl>
         <date>
-            <d>25 октября 2024 в 11:00</d>
-            <d>27 октября 2024 в 11:00</d>
+            <d>03 ноября 2024 в 11:00</d>
         </date>
     </performance>
     <performance>
-        <title>КОШКИН ДОМ</title>
-        <duration>0:45</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1696_2c0cc1e7039660ad303473fa00de12.jpg</imageUrl>
+        <title>Шукшин. Рассказы</title>
+        <duration>2:20</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/214_15d6dd0fcde141e10dc6d83121f2dd.jpg</imageUrl>
         <date>
-            <d>30 ноября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Сказка о ёжике и медвежонке</title>
-        <duration>0:35</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Skazka o ezhike i medvede/ezh.jpg</imageUrl>
-        <date>
-            <d>19 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ВЕЧЕР ОДНОАКТНЫХ ХОРЕОГРАФИЧЕСКИХ СПЕКТАКЛЕЙ</title>
-        <duration>1:30</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2524_b0f238185e3bf7ba50e11c93fa08cb.jpg</imageUrl>
-        <date>
-            <d>26 ноября 2024 в 18:00</d>
+            <d>19 октября 2024 в 17:00</d>
         </date>
     </performance>
     <performance>
@@ -393,60 +198,136 @@
         </date>
     </performance>
     <performance>
-        <title>ПРИНЦ И ДОЧЬ ВЕЛИКАНА</title>
-        <duration>0:50</duration>
+        <title>ПЛИХ И ПЛЮХ</title>
+        <duration>1:30</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2514_2a65f0c4ad863c9b5ae128da4ba506.jpg</imageUrl>
+        <date>
+            <d>28 октября 2024 в 14:00</d>
+            <d>27 октября 2024 в 14:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>СКАЗКА О МЁРТВОЙ ЦАРЕВНЕ И СЕМИ БОГАТЫРЯХ</title>
+        <duration>1:15 мин </duration>
         <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2467_8903d4bae8accb1138441362746029.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2481_e2c87e4cf26ac1e2a8418120f50ed6.jpg</imageUrl>
         <date>
             <d>24 октября 2024 в 14:00</d>
             <d>25 октября 2024 в 14:00</d>
         </date>
     </performance>
     <performance>
-        <title>#Я_Раскольников</title>
-        <duration>1:20</duration>
+        <title>Терем — Теремок</title>
+        <duration>0:35</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/images/afisha/teremok.jpg</imageUrl>
+        <date>
+            <d>20 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Серебряное копытце</title>
+        <duration>0:45</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Serebryanoe kopito/imj7o87or1a.jpg</imageUrl>
+        <date>
+            <d>20 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Я С ТОБОЙ</title>
+        <duration>0:30</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2458_ec59484e281c37010ca3b5b200aebf.jpg</imageUrl>
+        <date>
+            <d>22 октября 2024 в 13:00</d>
+            <d>24 октября 2024 в 13:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>«БАРЫШНЯ-КРЕСТЬЯНКА» (ВЫЕЗДНОЙ СПЕКТАКЛЬ)</title>
+        <duration>0:50</duration>
         <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/145_c40ab7dfe907e4a833eac140fbb2fb.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru</imageUrl>
         <date>
-            <d>30 октября 2024 в 18:30</d>
-            <d>31 октября 2024 в 18:30</d>
+            <d>30 октября 2024 в 16:00</d>
+            <d>31 октября 2024 в 16:00</d>
         </date>
     </performance>
     <performance>
-        <title>ОСТРОВ СОКРОВИЩ</title>
+        <title>СОЛНЫШКО В ЛАДОШКАХ</title>
+        <duration>1:40</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2495_8706352e4036a3e68f2a811ff3628a.jpg</imageUrl>
+        <date>
+            <d>27 октября 2024 в 11:00</d>
+            <d>26 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ВЕЧЕР ОДНОАКТНЫХ ХОРЕОГРАФИЧЕСКИХ СПЕКТАКЛЕЙ</title>
         <duration>1:30</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1706_80c5a7141f0f46fb3bac5201731cb7.jpg</imageUrl>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2524_b0f238185e3bf7ba50e11c93fa08cb.jpg</imageUrl>
         <date>
-            <d>02 ноября 2024 в 11:00</d>
+            <d>26 ноября 2024 в 18:00</d>
         </date>
     </performance>
     <performance>
-        <title>ИВАН - БОГАТЫРСКИЙ СЫН</title>
-        <duration>1:30</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1401_b3c55bc3b7ff3d6ce14d12fd927204.jpg</imageUrl>
-        <date>
-            <d>29 октября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Шукшин. Рассказы</title>
+        <title>Не доверяй мужчинам!</title>
         <duration>2:20</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/214_15d6dd0fcde141e10dc6d83121f2dd.jpg</imageUrl>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/274_6544fc55bc9f981dc13f416f54f70a.jpg</imageUrl>
         <date>
-            <d>19 октября 2024 в 17:00</d>
+            <d>27 октября 2024 в 17:00</d>
+            <d>28 октября 2024 в 17:00</d>
         </date>
     </performance>
     <performance>
-        <title>БОГ ЕЗДИТ НА ВЕЛОСИПЕДЕ</title>
-        <duration>1:5</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1759_caf477e75e24032a80a69318e0ab0c.jpg</imageUrl>
+        <title>ЗОЛУШКА</title>
+        <duration>1:35</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1286_7392bb37f7efe357cc7cfcc908068b.jpg</imageUrl>
         <date>
-            <d>18 октября 2024 в 18:00</d>
-            <d>19 октября 2024 в 18:00</d>
+            <d>03 ноября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Вечер балета</title>
+        <duration>2:00</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/335_47e39c323d3aae9aeeedb9c45525a1.jpg</imageUrl>
+        <date>
+            <d>23 октября 2024 в 18:30</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Золотой ключик, или Приключения Буратино</title>
+        <duration>0:55</duration>
+        <ageLimit>0</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Zolotoy kluchik/buratino.jpg</imageUrl>
+        <date>
+            <d>27 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>КАШТАНКА</title>
+        <duration>1:00</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2330_15d54352a119d09da49eee5d1aa6a9.jpg</imageUrl>
+        <date>
+            <d>30 октября 2024 в 11:00</d>
+            <d>31 октября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Иван-царевич и Серый волк</title>
+        <duration>0:50</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Ivan Zarevish/ivancarevichafishaa-1pechat.jpg</imageUrl>
+        <date>
+            <d>26 октября 2024 в 11:00</d>
         </date>
     </performance>
     <performance>
@@ -459,31 +340,128 @@
         </date>
     </performance>
     <performance>
-        <title>БОЛЬШАЯ ЛЮБОВЬ РОБИН ГУДА</title>
-        <duration>1:40</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1927_844798d5fd21b022f892214aea56d3.jpg</imageUrl>
-        <date>
-            <d>29 октября 2024 в 18:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>СКАЗКА О МЁРТВОЙ ЦАРЕВНЕ И СЕМИ БОГАТЫРЯХ</title>
-        <duration>1:15 мин</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2481_e2c87e4cf26ac1e2a8418120f50ed6.jpg</imageUrl>
-        <date>
-            <d>24 октября 2024 в 14:00</d>
-            <d>25 октября 2024 в 14:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ПРОЩАНИЕ С МАТЁРОЙ</title>
+        <title>ЗДЕСЬ БЫЛ КАЙ</title>
         <duration>1:20</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2331_4154f97a982a2b8bb8ad39a01472de.jpg</imageUrl>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2420_e9aa4cd7b6292f4755469ebd807580.jpg</imageUrl>
         <date>
-            <d>20 ноября 2024 в 19:00</d>
+            <d>22 октября 2024 в 14:00</d>
+            <d>21 октября 2024 в 14:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Судьба человека (Показ в г. Малмыж)</title>
+        <duration>1:10</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/341_187493998cdbeec8e32cfb88d0cef0.jpg</imageUrl>
+        <date>
+            <d>23 октября 2024 в 13:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Женщины Сергея Есенина, или Любовь хулигана</title>
+        <duration>1:40</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/164_f0eefd04bbfd4c85706758da94a553.jpg</imageUrl>
+        <date>
+            <d>29 октября 2024 в 18:30</d>
+            <d>30 октября 2024 в 18:30</d>
+            <d>31 октября 2024 в 18:30</d>
+        </date>
+    </performance>
+    <performance>
+        <title>На всякого мудреца довольно простоты</title>
+        <duration>1:50</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/263_6d2be1facbd0ebb3a97b4240dfe2ff.jpg</imageUrl>
+        <date>
+            <d>26 октября 2024 в 17:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ЗАПИСКИ ЮНОГО ВРАЧА</title>
+        <duration>1:50</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2347_749cb24d0b13b7275661d8085268cc.jpg</imageUrl>
+        <date>
+            <d>01 ноября 2024 в 18:00</d>
+            <d>05 ноября 2024 в 21:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Отдам бывшего в хорошие руки</title>
+        <duration>1:40</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/337_1859e428f6d40a549f01d4d6ee81d4.jpg</imageUrl>
+        <date>
+            <d>17 октября 2024 в 19:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>БУРЯ</title>
+        <duration>2:10</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2079_d30b1fcafb226364f441bd4270d59c.jpg</imageUrl>
+        <date>
+            <d>22 ноября 2024 в 18:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Уроки французского</title>
+        <duration>1:10</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/47_c52d983c3df5b6cf666387c67c250c.jpg</imageUrl>
+        <date>
+            <d>10 ноября 2024 в 18:30</d>
+            <d>13 ноября 2024 в 18:30</d>
+            <d>15 ноября 2024 в 18:30</d>
+            <d>16 ноября 2024 в 18:30</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Лекарь поневоле</title>
+        <duration>1:00</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/35_6cf016064c11b5df6c8c187c04ac1d.jpg</imageUrl>
+        <date>
+            <d>03 ноября 2024 в 17:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Судьба человека (Показ в г. Уржум)</title>
+        <duration>1:10</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/342_f377387764b169dc45e8f6e8473566.jpg</imageUrl>
+        <date>
+            <d>25 октября 2024 в 13:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ФЕСТИВАЛЬ СОВРЕМЕННОГО ТАНЦА «3DВИГ»</title>
+        <duration>2:30</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2528_9dfa865b0e309226c374441320c8c1.jpg</imageUrl>
+        <date>
+            <d>27 ноября 2024 в 18:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Стивен Хокинг. Мир в ореховой скорлупе</title>
+        <duration>0:45</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovkukla.ru//assets/mgr/performances/Hoking/stivenhockinga-1pechat.jpg</imageUrl>
+        <date>
+            <d>25 октября 2024 в 18:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>БОГ ЕЗДИТ НА ВЕЛОСИПЕДЕ</title>
+        <duration>1:5</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1759_caf477e75e24032a80a69318e0ab0c.jpg</imageUrl>
+        <date>
+            <d>18 октября 2024 в 18:00</d>
+            <d>19 октября 2024 в 18:00</d>
         </date>
     </performance>
     <performance>
@@ -508,52 +486,92 @@
         </date>
     </performance>
     <performance>
-        <title>ЗОЛУШКА</title>
-        <duration>1:35</duration>
-        <ageLimit>6</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1286_7392bb37f7efe357cc7cfcc908068b.jpg</imageUrl>
+        <title>Первая любовь</title>
+        <duration>1:15</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/149_e7d3285536c6d8246e4f6dea7bd846.jpg</imageUrl>
         <date>
-            <d>03 ноября 2024 в 11:00</d>
+            <d>17 октября 2024 в 18:30</d>
+            <d>18 октября 2024 в 18:30</d>
+            <d>19 октября 2024 в 18:30</d>
+            <d>20 октября 2024 в 18:30</d>
         </date>
     </performance>
     <performance>
-        <title>ЗАПИСКИ ЮНОГО ВРАЧА</title>
+        <title>ПРОЩАНИЕ С МАТЁРОЙ</title>
+        <duration>1:20</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2331_4154f97a982a2b8bb8ad39a01472de.jpg</imageUrl>
+        <date>
+            <d>20 ноября 2024 в 19:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>КОШКИН ДОМ</title>
+        <duration>0:45</duration>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1696_2c0cc1e7039660ad303473fa00de12.jpg</imageUrl>
+        <date>
+            <d>30 ноября 2024 в 11:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Судьба человека</title>
+        <duration>1:10</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/99_a801a3043eff4dbc9656027a094b35.jpg</imageUrl>
+        <date>
+            <d>21 ноября 2024 в 15:00</d>
+            <d>22 ноября 2024 в 15:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>Семейка Краузе</title>
+        <duration>2:20</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/27_d88dcfb9bef9eb18788ae177faac6e.jpg</imageUrl>
+        <date>
+            <d>25 октября 2024 в 18:30</d>
+            <d>26 октября 2024 в 18:30</d>
+        </date>
+    </performance>
+    <performance>
+        <title>УДАЧИ, МАРК!</title>
+        <duration>1:40</duration>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2517_0c6a3809470e7987f124716219c3d8.jpg</imageUrl>
+        <date>
+            <d>23 октября 2024 в 15:00</d>
+            <d>24 октября 2024 в 15:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ПОСЛЕДНИЕ ДНИ БАЗАРОВА</title>
         <duration>1:50</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2347_749cb24d0b13b7275661d8085268cc.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2239_c7abdf2091d85133ad4754e45cad5b.jpg</imageUrl>
         <date>
-            <d>01 ноября 2024 в 18:00</d>
-            <d>05 ноября 2024 в 21:00</d>
+            <d>30 октября 2024 в 18:00</d>
+            <d>31 октября 2024 в 18:00</d>
         </date>
     </performance>
     <performance>
-        <title>БУРЯ</title>
-        <duration>2:10</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2079_d30b1fcafb226364f441bd4270d59c.jpg</imageUrl>
-        <date>
-            <d>22 ноября 2024 в 18:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Женщины Сергея Есенина, или Любовь хулигана</title>
+        <title>БОЛЬШАЯ ЛЮБОВЬ РОБИН ГУДА</title>
         <duration>1:40</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/164_f0eefd04bbfd4c85706758da94a553.jpg</imageUrl>
+        <ageLimit>12</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1927_844798d5fd21b022f892214aea56d3.jpg</imageUrl>
         <date>
-            <d>29 октября 2024 в 18:30</d>
-            <d>30 октября 2024 в 18:30</d>
-            <d>31 октября 2024 в 18:30</d>
+            <d>29 октября 2024 в 18:00</d>
         </date>
     </performance>
     <performance>
-        <title>«БАРЫШНЯ-КРЕСТЬЯНКА» (ВЫЕЗДНОЙ СПЕКТАКЛЬ)</title>
+        <title>СЕРАЯ ШЕЙКА</title>
         <duration>0:50</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru</imageUrl>
+        <ageLimit>6</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2508_08d751ff109467597d9864b9e46457.jpg</imageUrl>
         <date>
-            <d>30 октября 2024 в 16:00</d>
-            <d>31 октября 2024 в 16:00</d>
+            <d>28 октября 2024 в 11:00</d>
+            <d>27 октября 2024 в 11:00</d>
         </date>
     </performance>
     <performance>
@@ -569,60 +587,41 @@
         </date>
     </performance>
     <performance>
-        <title>Отдам бывшего в хорошие руки</title>
-        <duration>1:40</duration>
+        <title>Хлынов. Сага о городе и его жителях</title>
+        <duration>3:00</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/337_1859e428f6d40a549f01d4d6ee81d4.jpg</imageUrl>
+        <imageUrl>https://kirovdramteatr.ru/media/show/303_647cb5206e33ff2fdda27337c07293.jpg</imageUrl>
         <date>
-            <d>17 октября 2024 в 19:00</d>
+            <d>02 ноября 2024 в 18:30</d>
+            <d>01 ноября 2024 в 18:30</d>
         </date>
     </performance>
     <performance>
-        <title>РОМЕО И ДЖУЛЬЕТТА</title>
+        <title>ЭТО Я ТЕБЕ УХО ОТКУСИЛА!</title>
+        <duration>1:15</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/1490_af32a7c94623ca01e51970ff53d1e6.jpg</imageUrl>
+        <date>
+            <d>21 ноября 2024 в 19:00</d>
+        </date>
+    </performance>
+    <performance>
+        <title>ЛЕГЕНДА О ВИТБЕРГЕ</title>
         <duration>1:30</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2450_a24da0df353c47b6807ebdd4b27277.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2392_05946807718b0b5d888574e58f9259.jpg</imageUrl>
         <date>
-            <d>23 октября 2024 в 16:00</d>
-            <d>24 октября 2024 в 16:00</d>
+            <d>02 ноября 2024 в 18:00</d>
         </date>
     </performance>
     <performance>
-        <title>Всё можно… или как прожить без взрослых</title>
-        <duration>1:00</duration>
+        <title>ПРИНЦ И ДОЧЬ ВЕЛИКАНА</title>
+        <duration>0:50</duration>
         <ageLimit>6</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/28_f32d08ba84a81f01b6b8cee52201e5.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2467_8903d4bae8accb1138441362746029.jpg</imageUrl>
         <date>
-            <d>03 ноября 2024 в 11:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Пиковая дама</title>
-        <duration>2:45</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/339_c6b39f57656b1907620a0ccc69592f.jpg</imageUrl>
-        <date>
-            <d>16 ноября 2024 в 17:00</d>
-            <d>17 ноября 2024 в 17:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>ЗДЕСЬ БЫЛ КАЙ</title>
-        <duration>1:20</duration>
-        <ageLimit>12</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2420_e9aa4cd7b6292f4755469ebd807580.jpg</imageUrl>
-        <date>
-            <d>22 октября 2024 в 14:00</d>
-            <d>21 октября 2024 в 14:00</d>
-        </date>
-    </performance>
-    <performance>
-        <title>Свидание на четверых</title>
-        <duration>2:15</duration>
-        <ageLimit>16</ageLimit>
-        <imageUrl>https://kirovdramteatr.ru/media/show/338_7da94dcf368543b55096a712112a70.jpg</imageUrl>
-        <date>
-            <d>30 октября 2024 в 19:00</d>
+            <d>24 октября 2024 в 14:00</d>
+            <d>25 октября 2024 в 14:00</d>
         </date>
     </performance>
     <performance>
@@ -636,23 +635,23 @@
         </date>
     </performance>
     <performance>
-        <title>ПРОСТЫЕ ВЕЩИ</title>
-        <duration>1:10</duration>
+        <title>РОМЕО И ДЖУЛЬЕТТА</title>
+        <duration>1:30</duration>
         <ageLimit>16</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2412_48e15a076806e88ee22f4a20cd1b50.jpg</imageUrl>
+        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2450_a24da0df353c47b6807ebdd4b27277.jpg</imageUrl>
         <date>
-            <d>17 октября 2024 в 19:00</d>
-            <d>18 октября 2024 в 19:00</d>
+            <d>23 октября 2024 в 16:00</d>
+            <d>24 октября 2024 в 16:00</d>
         </date>
     </performance>
     <performance>
-        <title>Я С ТОБОЙ</title>
-        <duration>0:30</duration>
-        <ageLimit>0</ageLimit>
-        <imageUrl>https://ekvus-kirov.ru/media/photo/org/2458_ec59484e281c37010ca3b5b200aebf.jpg</imageUrl>
+        <title>Дядя Ваня</title>
+        <duration>2:15</duration>
+        <ageLimit>16</ageLimit>
+        <imageUrl>https://kirovdramteatr.ru/media/show/188_58c9205a286214b81811b0c5a89566.jpg</imageUrl>
         <date>
-            <d>22 октября 2024 в 13:00</d>
-            <d>24 октября 2024 в 13:00</d>
+            <d>17 октября 2024 в 18:30</d>
+            <d>18 октября 2024 в 18:30</d>
         </date>
     </performance>
 </performanceList>
