@@ -9,7 +9,7 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.ADJUST_DATES
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
 public abstract class ParserToJson<T> {
-    final static ObjectMapper mapper = new ObjectMapper();
+    static final ObjectMapper mapper = new ObjectMapper();
 
     static {
         mapper.disable(ADJUST_DATES_TO_CONTEXT_TIME_ZONE);

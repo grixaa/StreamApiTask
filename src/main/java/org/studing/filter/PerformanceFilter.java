@@ -83,8 +83,8 @@ public class PerformanceFilter {
     }
 
     private List<Performance> getListPerformanceUniqueTitle(final @NonNull List<Performance> performanceList) {
-        List<Performance> temp = new ArrayList<>();
-        List<String> titles = new ArrayList<>();
+        val temp = new ArrayList<Performance>();
+        val titles = new ArrayList<>();
 
         performanceList.forEach(performance -> {
             if (!titles.contains(performance.getTitle())) {

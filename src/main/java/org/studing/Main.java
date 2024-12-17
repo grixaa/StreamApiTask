@@ -18,9 +18,9 @@ import static org.studing.util.path.HabrArtilcePath.*;
 import static org.studing.util.path.PerformancePath.*;
 
 public class Main {
-    private final static int LIMIT_COUNT_VIEWS = 10000;
-    private final static int LIMIT_AGE = 12;
-    private final static Date DURATION_LIMIT;
+    private static final int LIMIT_COUNT_VIEWS = 10000;
+    private static final int LIMIT_AGE = 12;
+    private static final Date DURATION_LIMIT;
     private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
 
     static {
