@@ -12,13 +12,17 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class PerformanceXmlWriter {
+    private static final DateFormat FORMAT_DATE = new SimpleDateFormat("dd MMMM yyyy' в 'HH:mm", new Locale("ru"));
     final PerformanceFilter filter;
 
     public PerformanceXmlWriter(final @NonNull List<Performance> performanceList) {
@@ -87,16 +91,15 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    private void writeOnePerformanceWithListDate(
-        @NonNull Element root,
-        @NonNull Document doc,
-        final @NonNull Performance performance,
-        final @NonNull  List<Date> dateList) {
+    private void writeOnePerformanceWithListDate(@NonNull Element root,
+                                                 @NonNull Document doc,
+                                                 final @NonNull Performance performance,
+                                                 final @NonNull  List<Date> dateList) {
 
         Element articleElement = writeAllWithoutDate(root, doc, performance);
         Element dateElement = doc.createElement("date");
         for (Date date : dateList) {
-            dateElement.appendChild(createElement(doc, "d", Performance.FORMAT_DATE.format(date)));
+            dateElement.appendChild(createElement(doc, "d", FORMAT_DATE.format(date)));
         }
         articleElement.appendChild(dateElement);
     }
@@ -106,7 +109,7 @@ public class PerformanceXmlWriter {
                                      final @NonNull Performance performance) {
 
         Element articleElement = writeAllWithoutDate(root, doc, performance);
-        articleElement.appendChild(createElement(doc, "date", Performance.FORMAT_DATE.format(performance.getDate())));
+        articleElement.appendChild(createElement(doc, "date", FORMAT_DATE.format(performance.getDate())));
     }
 
     private Element writeAllWithoutDate(@NonNull Element root,

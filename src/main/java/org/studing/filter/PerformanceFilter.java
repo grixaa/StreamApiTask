@@ -4,17 +4,20 @@ import lombok.NonNull;
 import lombok.val;
 import org.studing.type.Performance;
 
+import java.text.DateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class PerformanceFilter {
     final List<Performance> performanceList;
+    private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
     private static final Date DATE_EVENING;
 
     static {
         try {
-            DATE_EVENING = Performance.FORMAT_DURATION.parse("17:00");
+            DATE_EVENING = FORMAT_DURATION.parse("17:00");
         } catch (ParseException thrown) {
             throw new RuntimeException(thrown);
         }
@@ -65,7 +68,7 @@ public class PerformanceFilter {
             })
             .filter(performance -> {
                 try {
-                    return Performance.FORMAT_DURATION.parse(performance.getDuration()).after(durationLimit);
+                    return FORMAT_DURATION.parse(performance.getDuration()).after(durationLimit);
                 } catch (ParseException thrown) {
                     throw new RuntimeException(thrown);
                 }

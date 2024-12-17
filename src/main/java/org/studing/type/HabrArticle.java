@@ -1,10 +1,10 @@
 package org.studing.type;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -12,10 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class HabrArticle {
-    public static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
-
-    @JsonFormat(pattern = "dd.MM.yyyy HH:mm", timezone = "UTC")
-    Date datePublished;
     String title;
     String author;
     String timeToRead;
@@ -23,4 +19,7 @@ public class HabrArticle {
     String imageUrl;
     List<String> categories;
     String textPreview;
+
+    @JsonFormat(pattern = "dd.MM.yyyy HH:mm", timezone = "UTC")
+    Date datePublished;
 }

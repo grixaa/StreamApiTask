@@ -12,12 +12,15 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
 
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
+    private static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
     final HabrArticlesFilter filter;
 
     public HabrArticleDomWriter(final @NonNull List<HabrArticle> habrArticles) {
@@ -108,7 +111,7 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
 
         articleElement.appendChild(createElement(doc, "title", article.getTitle()));
         articleElement.appendChild(createElement(doc, "author", article.getAuthor()));
-        articleElement.appendChild(createElement(doc, "datePublished", article.getDatePublished().toString()));
+        articleElement.appendChild(createElement(doc, "datePublished", FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
         articleElement.appendChild(createElement(doc, "timeToRead", article.getTimeToRead()));
         articleElement.appendChild(createElement(doc, "countViews", article.getCountViews()));
         articleElement.appendChild(createElement(doc, "imageUrl", article.getImageUrl()));
