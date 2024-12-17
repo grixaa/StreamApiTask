@@ -1,6 +1,7 @@
 package org.studing.parsing.result.habr;
 
 import lombok.NonNull;
+import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
@@ -30,34 +31,28 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     @Override
     public void writeAuthorAndHisTitles(final @NonNull String filePath) {
         try {
-            Map<String, List<String>> authorsMap = filter.getAuthorAndHisTitles();
-
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-            Element rootElement = doc.createElement("authors");
+            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            val rootElement = doc.createElement("authors");
             doc.appendChild(rootElement);
 
-            for (Map.Entry<String, List<String>> entry : authorsMap.entrySet()) {
-                String author = entry.getKey();
-                List<String> titles = entry.getValue();
-
-                Element authorElement = doc.createElement("author");
+            for (val entry : filter.getAuthorAndHisTitles().entrySet()) {
+                val authorElement = doc.createElement("author");
                 rootElement.appendChild(authorElement);
 
-                authorElement.setAttribute("name", author);
+                authorElement.setAttribute("name", entry.getKey());
 
-                Element titlesElement = doc.createElement("titles");
+                val titlesElement = doc.createElement("titles");
                 authorElement.appendChild(titlesElement);
 
-                for (String title : titles) {
-                    Element titleElement = doc.createElement("title");
+                for (val title : entry.getValue()) {
+                    val titleElement = doc.createElement("title");
                     titleElement.appendChild(doc.createTextNode(title));
                     titlesElement.appendChild(titleElement);
                 }
             }
 
-            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            val transformer = TransformerFactory.newInstance().newTransformer();
             transformer.setOutputProperty(INDENT, "yes");
-
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
             throw new RuntimeException(thrown);
@@ -74,21 +69,18 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     @Override
     public void writeUniqueCategories(final @NonNull String filePath) {
         try {
-            List<String> categories = filter.getUniqueCategories().stream().toList();
-
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-            Element root = doc.createElement("categories");
+            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            val root = doc.createElement("categories");
             doc.appendChild(root);
 
-            for (String category : categories) {
-                Element categoryElement = doc.createElement("category");
+            for (val category : filter.getUniqueCategories().stream().toList()) {
+                val categoryElement = doc.createElement("category");
                 categoryElement.appendChild(doc.createTextNode(category));
                 root.appendChild(categoryElement);
             }
 
-            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            val transformer = TransformerFactory.newInstance().newTransformer();
             transformer.setOutputProperty(INDENT, "yes");
-
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
             throw new RuntimeException(thrown);
@@ -102,11 +94,11 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             filePath);
     }
 
-    private void writeOneArticle(@NonNull Element root,
-                                 @NonNull Document doc,
+    private void writeOneArticle(final @NonNull Element root,
+                                 final @NonNull Document doc,
                                  final @NonNull HabrArticle article) {
 
-        Element articleElement = doc.createElement("article");
+        val articleElement = doc.createElement("article");
         root.appendChild(articleElement);
 
         articleElement.appendChild(createElement(doc, "title", article.getTitle()));
@@ -117,18 +109,18 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
         articleElement.appendChild(createElement(doc, "imageUrl", article.getImageUrl()));
         articleElement.appendChild(createElement(doc, "textPreview", article.getTextPreview()));
 
-        Element categoriesElement = doc.createElement("categories");
-        for (String category : article.getCategories()) {
+        val categoriesElement = doc.createElement("categories");
+        for (val category : article.getCategories()) {
             categoriesElement.appendChild(createElement(doc, "category", category));
         }
         articleElement.appendChild(categoriesElement);
     }
 
-    private Element createElement(@NonNull Document document,
+    private Element createElement(final @NonNull Document document,
                                   final @NonNull String name,
                                   final @NonNull String value) {
 
-        Element element = document.createElement(name);
+        val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;
     }
@@ -136,17 +128,16 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     private void writeHabrArticles(final @NonNull List<HabrArticle> articles,
                                    final @NonNull String filePath) throws Exception {
 
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-        Element root = doc.createElement("articles");
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val root = doc.createElement("articles");
         doc.appendChild(root);
 
-        for (HabrArticle article : articles) {
+        for (val article : articles) {
             writeOneArticle(root, doc, article);
         }
 
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        val transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(INDENT, "yes");
-
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 

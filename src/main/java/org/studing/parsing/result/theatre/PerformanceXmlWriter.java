@@ -1,13 +1,13 @@
 package org.studing.parsing.result.theatre;
 
 import lombok.NonNull;
+import lombok.val;
 import org.studing.filter.PerformanceFilter;
 import org.studing.type.Performance;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -17,7 +17,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 import static javax.xml.transform.OutputKeys.INDENT;
 
@@ -29,93 +28,93 @@ public class PerformanceXmlWriter {
         filter = new PerformanceFilter(performanceList);
     }
 
-    public void writePerformanceAgeLimit(final @NonNull String filePath, final int ageLimit) throws Exception {
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-        Element root = doc.createElement("performanceList");
+    public void writePerformanceAgeLimit(final @NonNull String filePath,
+                                         final int ageLimit) throws Exception {
+
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val root = doc.createElement("performanceList");
         doc.appendChild(root);
 
-        for (Performance performance : filter.getLimitAgePerformance(ageLimit)) {
+        for (val performance : filter.getLimitAgePerformance(ageLimit)) {
             writeOnePerformance(root, doc, performance);
         }
 
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        val transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(INDENT, "yes");
-
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
     public void writeUniqueTitlePerformance(final @NonNull String filePath) throws Exception {
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-        Element root = doc.createElement("performanceList");
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val root = doc.createElement("performanceList");
         doc.appendChild(root);
 
-        for (Performance performance : filter.getListPerformanceUniqueTitle()) {
+        for (val performance : filter.getListPerformanceUniqueTitle()) {
             writeOnePerformance(root, doc, performance);
         }
 
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        val transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(INDENT, "yes");
-
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
     public void writeMapPerformanceListDate(final @NonNull String filePath) throws Exception {
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-        Element root = doc.createElement("performanceList");
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val root = doc.createElement("performanceList");
         doc.appendChild(root);
 
-        for (Map.Entry<Performance, List<Date>> entry : filter.getMapTitleListDate().entrySet()) {
+        for (val entry : filter.getMapTitleListDate().entrySet()) {
             writeOnePerformanceWithListDate(root, doc, entry.getKey(), entry.getValue());
         }
 
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        val transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(INDENT, "yes");
-
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
     public void writeTask4(final @NonNull String filePath,
                            final @NonNull Date durationLimit) throws Exception {
 
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-        Element root = doc.createElement("performanceList");
+        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val root = doc.createElement("performanceList");
         doc.appendChild(root);
 
-        for (Performance performance : filter.getPerformanceListTask4(durationLimit)) {
+        for (val performance : filter.getPerformanceListTask4(durationLimit)) {
             writeOnePerformance(root, doc, performance);
         }
 
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        val transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(INDENT, "yes");
-
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    private void writeOnePerformanceWithListDate(@NonNull Element root,
-                                                 @NonNull Document doc,
+    private void writeOnePerformanceWithListDate(final @NonNull Element root,
+                                                 final @NonNull Document doc,
                                                  final @NonNull Performance performance,
-                                                 final @NonNull  List<Date> dateList) {
+                                                 final @NonNull List<Date> dateList) {
 
-        Element articleElement = writeAllWithoutDate(root, doc, performance);
-        Element dateElement = doc.createElement("date");
-        for (Date date : dateList) {
+        val articleElement = writeAllWithoutDate(root, doc, performance);
+        val dateElement = doc.createElement("date");
+
+        for (val date : dateList) {
             dateElement.appendChild(createElement(doc, "d", FORMAT_DATE.format(date)));
         }
         articleElement.appendChild(dateElement);
     }
 
-    private void writeOnePerformance(@NonNull Element root,
-                                     @NonNull Document doc,
+    private void writeOnePerformance(final @NonNull Element root,
+                                     final @NonNull Document doc,
                                      final @NonNull Performance performance) {
 
-        Element articleElement = writeAllWithoutDate(root, doc, performance);
+        val articleElement = writeAllWithoutDate(root, doc, performance);
         articleElement.appendChild(createElement(doc, "date", FORMAT_DATE.format(performance.getDate())));
     }
 
-    private Element writeAllWithoutDate(@NonNull Element root,
-                                        @NonNull Document doc,
+    private Element writeAllWithoutDate(final @NonNull Element root,
+                                        final @NonNull Document doc,
                                         final @NonNull Performance performance) {
-        Element articleElement = doc.createElement("performance");
+
+        val articleElement = doc.createElement("performance");
         root.appendChild(articleElement);
 
         articleElement.appendChild(createElement(doc, "title", performance.getTitle()));
@@ -126,11 +125,11 @@ public class PerformanceXmlWriter {
         return articleElement;
     }
 
-    private Element createElement(@NonNull Document document,
-                                  final @NonNull  String name,
+    private Element createElement(final @NonNull Document document,
+                                  final @NonNull String name,
                                   final @NonNull String value) {
 
-        Element element = document.createElement(name);
+        val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;
     }
