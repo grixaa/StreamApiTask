@@ -140,42 +140,4 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
         transformer.setOutputProperty(INDENT, "yes");
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
-
-    /***
-     * CHANGE METHOD
-     */
-    public void method(String filePath) throws Exception {
-        try {
-            Map<String, List<String>> authorsMap = filter.getAuthorAndHisTitles();
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-            Element rootElement = doc.createElement("authors");
-            doc.appendChild(rootElement);
-
-            for (Map.Entry<String, List<String>> entry : authorsMap.entrySet()) {
-                String author = entry.getKey();
-                List<String> titles = entry.getValue();
-
-                Element authorElement = doc.createElement("author");
-                rootElement.appendChild(authorElement);
-
-                authorElement.setAttribute("name", author);
-
-                Element titlesElement = doc.createElement("titles");
-                authorElement.appendChild(titlesElement);
-
-                for (String title : titles) {
-                    Element titleElement = doc.createElement("title");
-                    titleElement.appendChild(doc.createTextNode(title));
-                    titlesElement.appendChild(titleElement);
-                }
-            }
-
-            Transformer transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
-        } catch (Exception thrown) {
-            throw new RuntimeException(thrown);
-        }
-    }
 }
