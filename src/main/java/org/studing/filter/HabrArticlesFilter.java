@@ -2,10 +2,13 @@ package org.studing.filter;
 
 import lombok.NonNull;
 import lombok.val;
+import org.apache.commons.lang3.tuple.Pair;
 import org.studing.type.HabrArticle;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.groupingBy;
 
 public class HabrArticlesFilter {
     final List<HabrArticle> articles;
@@ -14,11 +17,13 @@ public class HabrArticlesFilter {
         this.articles = habrArticles;
     }
 
-    public Map<String, List<String>> getAuthorAndHisTitles() {
+    public Map<String, List<Pair<String, String>>> getAuthorAndHisTitles() {
         return articles.stream().collect(
-            Collectors.groupingBy(
+            groupingBy(
                 HabrArticle::getAuthor,
-                Collectors.mapping(HabrArticle::getTitle, Collectors.toList())));
+                Collectors.mapping(
+                    article -> Pair.of(article.getTitle(), article.getTextPreview()),
+                    Collectors.toList())));
     }
 
     public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) throws Exception {
@@ -48,7 +53,7 @@ public class HabrArticlesFilter {
 
     public Map<String, List<String>> getAuthorAndHisPublications() {
         return articles.stream().collect(
-            Collectors.groupingBy(
+            groupingBy(
                 HabrArticle::getAuthor,
                 Collectors.mapping(HabrArticle::getTitle, Collectors.toList())));
     }

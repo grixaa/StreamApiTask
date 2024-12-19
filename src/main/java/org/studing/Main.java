@@ -32,29 +32,29 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        val articles = new HabrParserFromJson().parse(HABR_ARTICLES);
-        startWriteHabrAllTask(new HabrArticleDomWriter(articles));
-        startWriteHabrAllTask(new HabrArticleXStreamWriter(articles));
-
-        val performanceList = new PerformanceFromJson().parse(PERFORMANCES);
-        startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
+        //startTask11();
+        startTask12();
+        /*startTask2();*/
     }
 
-    private static void startWriteHabrAllTask(final @NonNull HabrArticleDomWriter writer) throws Exception {
+    private static void startTask11() throws Exception {
+        val writer = new HabrArticleDomWriter(new HabrParserFromJson().parse(HABR_ARTICLES));
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_DOM, LIMIT_COUNT_VIEWS);
         writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_DOM);
     }
 
-    private static void startWriteHabrAllTask(final @NonNull HabrArticleXStreamWriter writer) throws Exception {
+    private static void startTask12() throws Exception {
+        val writer = new HabrArticleXStreamWriter(new HabrParserFromJson().parse(HABR_ARTICLES));
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_XSTREAM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_XSTREAM, LIMIT_COUNT_VIEWS);
         writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_XSTREAM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_XSTREAM);
     }
 
-    private static void startWritePerformanceAllTask(final @NonNull PerformanceXmlWriter writer) throws Exception {
+    private static void startTask2() throws Exception {
+        val writer = new PerformanceXmlWriter(new PerformanceFromJson().parse(PERFORMANCES));
         writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
         writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
         writer.writeUniqueTitlePerformance(UNIQUE_TITLE);

@@ -39,13 +39,21 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
 
                 authorElement.setAttribute("name", entry.getKey());
 
-                val titlesElement = doc.createElement("titles");
-                authorElement.appendChild(titlesElement);
+                val artilcesElement = doc.createElement("articles");
+                authorElement.appendChild(artilcesElement);
 
-                for (val title : entry.getValue()) {
+                for (val pair : entry.getValue()) {
+                    val articleElement = doc.createElement("article");
+
                     val titleElement = doc.createElement("title");
-                    titleElement.appendChild(doc.createTextNode(title));
-                    titlesElement.appendChild(titleElement);
+                    titleElement.appendChild(doc.createTextNode(pair.getLeft()));
+                    articleElement.appendChild(titleElement);
+
+                    val textPreview = doc.createElement("textPreview");
+                    textPreview.appendChild(doc.createTextNode(pair.getRight()));
+                    articleElement.appendChild(textPreview);
+
+                    artilcesElement.appendChild(articleElement);
                 }
             }
 
@@ -92,16 +100,20 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             filePath);
     }
 
-    private void writeOneArticle(final @NonNull Element root,
-                                 final @NonNull Document doc,
-                                 final @NonNull HabrArticle article) {
+    private void writeOneArticle(
+        final @NonNull Element root,
+        final @NonNull Document doc,
+        final @NonNull HabrArticle article) {
 
         val articleElement = doc.createElement("article");
         root.appendChild(articleElement);
 
         articleElement.appendChild(createElement(doc, "title", article.getTitle()));
         articleElement.appendChild(createElement(doc, "author", article.getAuthor()));
-        articleElement.appendChild(createElement(doc, "datePublished", FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
+        articleElement.appendChild(createElement(
+            doc,
+            "datePublished",
+            FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
         articleElement.appendChild(createElement(doc, "timeToRead", article.getTimeToRead()));
         articleElement.appendChild(createElement(doc, "countViews", article.getCountViews()));
         articleElement.appendChild(createElement(doc, "imageUrl", article.getImageUrl()));
@@ -114,17 +126,19 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
         articleElement.appendChild(categoriesElement);
     }
 
-    private Element createElement(final @NonNull Document document,
-                                  final @NonNull String name,
-                                  final @NonNull String value) {
+    private Element createElement(
+        final @NonNull Document document,
+        final @NonNull String name,
+        final @NonNull String value) {
 
         val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;
     }
 
-    private void writeHabrArticles(final @NonNull List<HabrArticle> articles,
-                                   final @NonNull String filePath) throws Exception {
+    private void writeHabrArticles(
+        final @NonNull List<HabrArticle> articles,
+        final @NonNull String filePath) throws Exception {
 
         val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("articles");

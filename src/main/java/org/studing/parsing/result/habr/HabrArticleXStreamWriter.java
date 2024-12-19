@@ -4,13 +4,14 @@ import com.thoughtworks.xstream.XStream;
 import lombok.NonNull;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
+import org.studing.parsing.wrapper.ArticleWrapper;
 import org.studing.parsing.wrapper.AuthorWrapper;
+import org.studing.parsing.wrapper.AuthorsWrapper;
 import org.studing.type.HabrArticle;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -23,21 +24,26 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
 
     @Override
     public void writeAuthorAndHisTitles(final @NonNull String filePath) {
+        val authorsList = filter.getAuthorAndHisTitles()
+            .entrySet()
+            .stream()
+            .map(entry -> new AuthorWrapper(
+                entry.getKey(),
+                entry.getValue().stream()
+                    .map(pair -> new ArticleWrapper(pair.getLeft(), pair.getRight()))
+                    .toList()
+            ))
+            .toList();
+
         val xstream = new XStream();
-        xstream.alias("authors", List.class);
-        xstream.alias("author", AuthorWrapper.class);
+        xstream.processAnnotations(AuthorsWrapper.class);
+        xstream.processAnnotations(AuthorWrapper.class);
+        xstream.processAnnotations(ArticleWrapper.class);
 
-        xstream.alias("title", String.class);
-        xstream.useAttributeFor(AuthorWrapper.class, "titles");
-
-        val authorsList = new ArrayList<>();
-        filter.getAuthorAndHisTitles()
-            .forEach((k, v) -> authorsList.add(new AuthorWrapper(k, v)));
-
-        try (val writer = new BufferedWriter(new FileWriter(filePath))) {
-            writer.write(xstream.toXML(authorsList));
-        } catch (IOException thrown) {
-            throw new RuntimeException(thrown);
+        try (val writer = new FileWriter(filePath)) {
+            writer.write(xstream.toXML(new AuthorsWrapper(authorsList)));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -64,8 +70,9 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
         write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
     }
 
-    private void write(final @NonNull String filePath,
-                       final @NonNull List<HabrArticle> articles) throws IOException {
+    private void write(
+        final @NonNull String filePath,
+        final @NonNull List<HabrArticle> articles) throws IOException {
 
         val xstream = new XStream();
         xstream.alias("articles", List.class);
