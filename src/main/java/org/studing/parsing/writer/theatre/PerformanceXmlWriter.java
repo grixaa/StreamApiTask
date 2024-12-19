@@ -1,4 +1,4 @@
-package org.studing.parsing.result.theatre;
+package org.studing.parsing.writer.theatre;
 
 import lombok.NonNull;
 import lombok.val;
@@ -28,8 +28,9 @@ public class PerformanceXmlWriter {
         filter = new PerformanceFilter(performanceList);
     }
 
-    public void writePerformanceAgeLimit(final @NonNull String filePath,
-                                         final int ageLimit) throws Exception {
+    public void writePerformanceAgeLimit(
+        final @NonNull String filePath,
+        final int ageLimit) throws Exception {
 
         val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("performanceList");
@@ -72,8 +73,9 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeTask4(final @NonNull String filePath,
-                           final @NonNull Date durationLimit) throws Exception {
+    public void writeTask4(
+        final @NonNull String filePath,
+        final @NonNull Date durationLimit) throws Exception {
 
         val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("performanceList");
@@ -88,10 +90,11 @@ public class PerformanceXmlWriter {
         transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    private void writeOnePerformanceWithListDate(final @NonNull Element root,
-                                                 final @NonNull Document doc,
-                                                 final @NonNull Performance performance,
-                                                 final @NonNull List<Date> dateList) {
+    private void writeOnePerformanceWithListDate(
+        final @NonNull Element root,
+        final @NonNull Document doc,
+        final @NonNull Performance performance,
+        final @NonNull List<Date> dateList) {
 
         val articleElement = writeAllWithoutDate(root, doc, performance);
         val dateElement = doc.createElement("date");
@@ -102,17 +105,19 @@ public class PerformanceXmlWriter {
         articleElement.appendChild(dateElement);
     }
 
-    private void writeOnePerformance(final @NonNull Element root,
-                                     final @NonNull Document doc,
-                                     final @NonNull Performance performance) {
+    private void writeOnePerformance(
+        final @NonNull Element root,
+        final @NonNull Document doc,
+        final @NonNull Performance performance) {
 
         val articleElement = writeAllWithoutDate(root, doc, performance);
         articleElement.appendChild(createElement(doc, "date", FORMAT_DATE.format(performance.getDate())));
     }
 
-    private Element writeAllWithoutDate(final @NonNull Element root,
-                                        final @NonNull Document doc,
-                                        final @NonNull Performance performance) {
+    private Element writeAllWithoutDate(
+        final @NonNull Element root,
+        final @NonNull Document doc,
+        final @NonNull Performance performance) {
 
         val articleElement = doc.createElement("performance");
         root.appendChild(articleElement);
@@ -125,9 +130,10 @@ public class PerformanceXmlWriter {
         return articleElement;
     }
 
-    private Element createElement(final @NonNull Document document,
-                                  final @NonNull String name,
-                                  final @NonNull String value) {
+    private Element createElement(
+        final @NonNull Document document,
+        final @NonNull String name,
+        final @NonNull String value) {
 
         val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));

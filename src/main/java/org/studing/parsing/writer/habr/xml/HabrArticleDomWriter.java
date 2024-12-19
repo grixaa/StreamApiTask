@@ -1,4 +1,4 @@
-package org.studing.parsing.result.habr;
+package org.studing.parsing.writer.habr.xml;
 
 import lombok.NonNull;
 import lombok.val;
@@ -92,16 +92,20 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             filePath);
     }
 
-    private void writeOneArticle(final @NonNull Element root,
-                                 final @NonNull Document doc,
-                                 final @NonNull HabrArticle article) {
+    private void writeOneArticle(
+        final @NonNull Element root,
+        final @NonNull Document doc,
+        final @NonNull HabrArticle article) {
 
         val articleElement = doc.createElement("article");
         root.appendChild(articleElement);
 
         articleElement.appendChild(createElement(doc, "title", article.getTitle()));
         articleElement.appendChild(createElement(doc, "author", article.getAuthor()));
-        articleElement.appendChild(createElement(doc, "datePublished", FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
+        articleElement.appendChild(createElement(
+            doc,
+            "datePublished",
+            FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
         articleElement.appendChild(createElement(doc, "timeToRead", article.getTimeToRead()));
         articleElement.appendChild(createElement(doc, "countViews", article.getCountViews()));
         articleElement.appendChild(createElement(doc, "imageUrl", article.getImageUrl()));
@@ -114,17 +118,19 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
         articleElement.appendChild(categoriesElement);
     }
 
-    private Element createElement(final @NonNull Document document,
-                                  final @NonNull String name,
-                                  final @NonNull String value) {
+    private Element createElement(
+        final @NonNull Document document,
+        final @NonNull String name,
+        final @NonNull String value) {
 
         val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
         return element;
     }
 
-    private void writeHabrArticles(final @NonNull List<HabrArticle> articles,
-                                   final @NonNull String filePath) throws Exception {
+    private void writeHabrArticles(
+        final @NonNull List<HabrArticle> articles,
+        final @NonNull String filePath) throws Exception {
 
         val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("articles");

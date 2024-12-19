@@ -1,4 +1,4 @@
-package org.studing.parsing.result.habr;
+package org.studing.parsing.writer.habr.xml;
 
 import lombok.NonNull;
 

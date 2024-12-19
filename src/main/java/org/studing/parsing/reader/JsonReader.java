@@ -1,4 +1,4 @@
-package org.studing.parsing.flie.java;
+package org.studing.parsing.reader;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,7 +6,7 @@ import lombok.NonNull;
 
 import java.util.List;
 
-public abstract class ParserFromJson<T> {
+public abstract class JsonReader<T> {
     static final ObjectMapper mapper = new ObjectMapper();
 
     static {

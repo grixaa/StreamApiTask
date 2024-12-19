@@ -1,4 +1,4 @@
-package org.studing.parsing.flie.json;
+package org.studing.parsing.writer.habr.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.NonNull;
@@ -8,7 +8,7 @@ import java.util.List;
 import static com.fasterxml.jackson.databind.DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
-public abstract class ParserToJson<T> {
+public abstract class JsonWriter<T> {
     static final ObjectMapper mapper = new ObjectMapper();
 
     static {

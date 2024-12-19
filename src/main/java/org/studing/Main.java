@@ -2,11 +2,11 @@ package org.studing;
 
 import lombok.NonNull;
 import lombok.val;
-import org.studing.parsing.flie.java.HabrParserFromJson;
-import org.studing.parsing.flie.java.PerformanceFromJson;
-import org.studing.parsing.result.habr.HabrArticleDomWriter;
-import org.studing.parsing.result.habr.HabrArticleXStreamWriter;
-import org.studing.parsing.result.theatre.PerformanceXmlWriter;
+import org.studing.parsing.reader.HabrArticleJsonReader;
+import org.studing.parsing.reader.PerformanceJsonReader;
+import org.studing.parsing.writer.habr.xml.HabrArticleDomWriter;
+import org.studing.parsing.writer.habr.xml.HabrArticleXStreamWriter;
+import org.studing.parsing.writer.theatre.PerformanceXmlWriter;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -32,11 +32,11 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        val articles = new HabrParserFromJson().parse(HABR_ARTICLES);
+        val articles = new HabrArticleJsonReader().parse(HABR_ARTICLES);
         startWriteHabrAllTask(new HabrArticleDomWriter(articles));
         startWriteHabrAllTask(new HabrArticleXStreamWriter(articles));
 
-        val performanceList = new PerformanceFromJson().parse(PERFORMANCES);
+        val performanceList = new PerformanceJsonReader().parse(PERFORMANCES);
         startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
     }
 

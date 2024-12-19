@@ -1,4 +1,4 @@
-package org.studing.parsing.result.habr;
+package org.studing.parsing.writer.habr.xml;
 
 import com.thoughtworks.xstream.XStream;
 import lombok.NonNull;
@@ -64,8 +64,9 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
         write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
     }
 
-    private void write(final @NonNull String filePath,
-                       final @NonNull List<HabrArticle> articles) throws IOException {
+    private void write(
+        final @NonNull String filePath,
+        final @NonNull List<HabrArticle> articles) throws IOException {
 
         val xstream = new XStream();
         xstream.alias("articles", List.class);
