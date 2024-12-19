@@ -2,6 +2,7 @@ package org.studing.parsing.writer.habr.xml;
 
 import com.thoughtworks.xstream.XStream;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.wrapper.AuthorWrapper;
@@ -14,15 +15,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+@RequiredArgsConstructor
 public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
     final HabrArticlesFilter filter;
 
-    public HabrArticleXStreamWriter(final @NonNull List<HabrArticle> articles) {
+    public HabrArticleXStreamWriter(@NonNull final List<HabrArticle> articles) {
         this.filter = new HabrArticlesFilter(articles);
     }
 
     @Override
-    public void writeAuthorAndHisTitles(final @NonNull String filePath) {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) {
         val xstream = new XStream();
         xstream.alias("authors", List.class);
         xstream.alias("author", AuthorWrapper.class);
@@ -42,31 +44,31 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeLimitCountViews(final @NonNull String filePath, final int limitCount) throws Exception {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
         write(filePath, filter.getHabrArticlesLimitCountView(limitCount));
     }
 
     @Override
-    public void writeUniqueCategories(final @NonNull String filePath) {
+    public void writeUniqueCategories(@NonNull final String filePath) {
         val xstream = new XStream();
         xstream.alias("categories", Set.class);
         xstream.alias("category", String.class);
 
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(filter.getUniqueCategories()));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(final @NonNull String filePath) throws Exception {
+    public void writeHabrArticlesTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
         write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
     }
 
     private void write(
-        final @NonNull String filePath,
-        final @NonNull List<HabrArticle> articles) throws IOException {
+        @NonNull final String filePath,
+        @NonNull final List<HabrArticle> articles) throws IOException {
 
         val xstream = new XStream();
         xstream.alias("articles", List.class);

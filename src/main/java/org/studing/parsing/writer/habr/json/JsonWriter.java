@@ -16,5 +16,5 @@ public abstract class JsonWriter<T> {
         mapper.configure(INDENT_OUTPUT, true);
     }
 
-    abstract void parse(final @NonNull List<T> list, final @NonNull String path);
+    abstract void parse(@NonNull final List<T> list, @NonNull final String path);
 }

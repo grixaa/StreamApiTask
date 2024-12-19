@@ -11,7 +11,7 @@ import java.util.List;
 
 public class HabrArticleJsonWriter extends JsonWriter<HabrArticle> {
     @Override
-    public void parse(final @NonNull List<HabrArticle> list, final @NonNull String path) {
+    public void parse(@NonNull final List<HabrArticle> list, final @NonNull String path) {
         try (val writer = new BufferedWriter(new FileWriter(path))) {
             writer.write(mapper.writeValueAsString(list));
         } catch (IOException thrown) {

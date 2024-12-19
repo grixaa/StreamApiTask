@@ -40,21 +40,21 @@ public class Main {
         startWritePerformanceAllTask(new PerformanceXmlWriter(performanceList));
     }
 
-    private static void startWriteHabrAllTask(final @NonNull HabrArticleDomWriter writer) throws Exception {
+    private static void startWriteHabrAllTask(@NonNull final HabrArticleDomWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_DOM, LIMIT_COUNT_VIEWS);
         writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_DOM);
     }
 
-    private static void startWriteHabrAllTask(final @NonNull HabrArticleXStreamWriter writer) throws Exception {
+    private static void startWriteHabrAllTask(@NonNull final HabrArticleXStreamWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_XSTREAM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_XSTREAM, LIMIT_COUNT_VIEWS);
         writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_XSTREAM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_XSTREAM);
     }
 
-    private static void startWritePerformanceAllTask(final @NonNull PerformanceXmlWriter writer) throws Exception {
+    private static void startWritePerformanceAllTask(@NonNull final PerformanceXmlWriter writer) throws Exception {
         writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
         writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
         writer.writeUniqueTitlePerformance(UNIQUE_TITLE);

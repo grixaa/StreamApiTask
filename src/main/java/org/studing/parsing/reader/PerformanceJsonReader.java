@@ -9,13 +9,13 @@ import java.util.List;
 
 public class PerformanceJsonReader extends JsonReader<Performance> {
     @Override
-    public List<Performance> parse(final @NonNull String path) {
+    public List<Performance> parse(@NonNull final String path) {
         try {
             return mapper.readValue(
                 new File(path),
                 mapper.getTypeFactory().constructCollectionType(List.class, Performance.class));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException thrown) {
+            throw new RuntimeException(thrown);
         }
     }
 }

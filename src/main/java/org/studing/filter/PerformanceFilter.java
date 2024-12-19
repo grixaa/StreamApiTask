@@ -1,6 +1,7 @@
 package org.studing.filter;
 
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.studing.type.Performance;
 
@@ -10,6 +11,12 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.lang.Integer.parseInt;
+import static java.util.Calendar.*;
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.*;
+
+@RequiredArgsConstructor
 public class PerformanceFilter {
     final List<Performance> performanceList;
     private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
@@ -23,14 +30,10 @@ public class PerformanceFilter {
         }
     }
 
-    public PerformanceFilter(final @NonNull List<Performance> performances) {
-        this.performanceList = performances;
-    }
-
     public List<Performance> getLimitAgePerformance(final int ageLimit) {
         val temp = performanceList.stream()
-            .filter(performance -> Integer.parseInt(performance.getAgeLimit()) <= ageLimit)
-            .sorted(Comparator.comparing(Performance::getDuration))
+            .filter(performance -> parseInt(performance.getAgeLimit()) <= ageLimit)
+            .sorted(comparing(Performance::getDuration))
             .toList();
 
         return getListPerformanceUniqueTitle(temp);
@@ -44,27 +47,27 @@ public class PerformanceFilter {
         val performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
 
         val uniqueTitleMap = performancesUniqueTitle.stream()
-            .collect(Collectors.toMap(Performance::getTitle, performance -> performance));
+            .collect(toMap(Performance::getTitle, performance -> performance));
 
         val mapPerformanceListDate = performanceList.stream()
             .filter(performance -> uniqueTitleMap.containsKey(performance.getTitle()))
-            .collect(Collectors.groupingBy(
+            .collect(groupingBy(
                 performance -> uniqueTitleMap.get(performance.getTitle()),
-                Collectors.mapping(Performance::getDate, Collectors.toList())));
+                mapping(Performance::getDate, toList())));
 
         mapPerformanceListDate.values().removeIf(List::isEmpty);
         return mapPerformanceListDate;
     }
 
-    public List<Performance> getPerformanceListTask4(final @NonNull Date durationLimit) throws Exception {
-        val calendar = Calendar.getInstance();
+    public List<Performance> getPerformanceListTask4(@NonNull final Date durationLimit) throws Exception {
+        val calendar = getInstance();
 
         return performanceList.stream()
             .filter(performance -> {
                 calendar.setTime(performance.getDate());
-                return calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY ||
-                    calendar.get(Calendar.DAY_OF_WEEK) == Calendar.TUESDAY ||
-                    calendar.get(Calendar.DAY_OF_WEEK) == Calendar.THURSDAY;
+                return calendar.get(DAY_OF_WEEK) == SATURDAY ||
+                    calendar.get(DAY_OF_WEEK) == TUESDAY ||
+                    calendar.get(DAY_OF_WEEK) == THURSDAY;
             })
             .filter(performance -> {
                 try {
@@ -75,14 +78,14 @@ public class PerformanceFilter {
             })
             .filter(performance -> {
                 calendar.setTime(performance.getDate());
-                val calendar_evening = Calendar.getInstance();
-                calendar_evening.setTime(DATE_EVENING);
-                return (calendar.get(Calendar.HOUR_OF_DAY) >= calendar_evening.get(Calendar.HOUR_OF_DAY));
+                val calendarEvening = getInstance();
+                calendarEvening.setTime(DATE_EVENING);
+                return (calendar.get(HOUR_OF_DAY) >= calendarEvening.get(HOUR_OF_DAY));
             })
             .toList();
     }
 
-    private List<Performance> getListPerformanceUniqueTitle(final @NonNull List<Performance> performanceList) {
+    private List<Performance> getListPerformanceUniqueTitle(@NonNull final List<Performance> performanceList) {
         val temp = new ArrayList<Performance>();
         val titles = new ArrayList<>();
 

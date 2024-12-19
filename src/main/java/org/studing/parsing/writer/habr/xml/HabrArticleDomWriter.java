@@ -7,7 +7,6 @@ import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -16,20 +15,21 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
+import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     private static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
     final HabrArticlesFilter filter;
 
-    public HabrArticleDomWriter(final @NonNull List<HabrArticle> habrArticles) {
+    public HabrArticleDomWriter(@NonNull final List<HabrArticle> habrArticles) {
         filter = new HabrArticlesFilter(habrArticles);
     }
 
     @Override
-    public void writeAuthorAndHisTitles(final @NonNull String filePath) {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) {
         try {
-            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            val doc = newInstance().newDocumentBuilder().newDocument();
             val rootElement = doc.createElement("authors");
             doc.appendChild(rootElement);
 
@@ -58,16 +58,16 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeLimitCountViews(final @NonNull String filePath, final int limitCount) throws Exception {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesLimitCountView(limitCount),
             filePath);
     }
 
     @Override
-    public void writeUniqueCategories(final @NonNull String filePath) {
+    public void writeUniqueCategories(@NonNull final String filePath) {
         try {
-            val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+            val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("categories");
             doc.appendChild(root);
 
@@ -86,16 +86,16 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(final @NonNull String filePath) throws Exception {
+    public void writeHabrArticlesTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
         writeHabrArticles(
             filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
             filePath);
     }
 
     private void writeOneArticle(
-        final @NonNull Element root,
-        final @NonNull Document doc,
-        final @NonNull HabrArticle article) {
+        @NonNull final Element root,
+        @NonNull final Document doc,
+        @NonNull final HabrArticle article) {
 
         val articleElement = doc.createElement("article");
         root.appendChild(articleElement);
@@ -119,9 +119,9 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     private Element createElement(
-        final @NonNull Document document,
-        final @NonNull String name,
-        final @NonNull String value) {
+        @NonNull final Document document,
+        @NonNull final String name,
+        @NonNull final String value) {
 
         val element = document.createElement(name);
         element.appendChild(document.createTextNode(value));
@@ -129,10 +129,10 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
     }
 
     private void writeHabrArticles(
-        final @NonNull List<HabrArticle> articles,
-        final @NonNull String filePath) throws Exception {
+        @NonNull final List<HabrArticle> articles,
+        @NonNull final String filePath) throws Exception {
 
-        val doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+        val doc = newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("articles");
         doc.appendChild(root);
 
