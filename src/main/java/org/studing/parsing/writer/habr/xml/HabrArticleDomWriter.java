@@ -7,6 +7,10 @@ import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import javax.naming.ConfigurationException;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -18,7 +22,7 @@ import java.util.List;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
-public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
+public class HabrArticleDomWriter implements HabrArticleXmlWriter {
     private static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
     final HabrArticlesFilter filter;
 
@@ -53,15 +57,19 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            throw new RuntimeException(thrown);
+            System.out.println(thrown.getMessage());
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
-        writeHabrArticles(
-            filter.getHabrArticlesLimitCountView(limitCount),
-            filePath);
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) {
+        try {
+            writeHabrArticles(
+                filter.getHabrArticlesLimitCountView(limitCount),
+                filePath);
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
+        }
     }
 
     @Override
@@ -81,15 +89,19 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            throw new RuntimeException(thrown);
+            System.out.println(thrown.getMessage());
         }
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
-        writeHabrArticles(
-            filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
-            filePath);
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) {
+        try {
+            writeHabrArticles(
+                filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
+                filePath);
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
+        }
     }
 
     private void writeOneArticle(
@@ -130,7 +142,7 @@ public class HabrArticleDomWriter extends AbstractHabrArticleXmlWriter {
 
     private void writeHabrArticles(
         @NonNull final List<HabrArticle> articles,
-        @NonNull final String filePath) throws Exception {
+        @NonNull final String filePath) throws ParserConfigurationException, TransformerException {
 
         val doc = newInstance().newDocumentBuilder().newDocument();
         val root = doc.createElement("articles");

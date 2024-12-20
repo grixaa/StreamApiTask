@@ -9,7 +9,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
 import static java.util.Calendar.*;
@@ -59,7 +58,7 @@ public class PerformanceFilter {
         return mapPerformanceListDate;
     }
 
-    public List<Performance> getPerformanceListTask4(@NonNull final Date durationLimit) throws Exception {
+    public List<Performance> getPerformanceListTask4(@NonNull final Date durationLimit) {
         val calendar = getInstance();
 
         return performanceList.stream()

@@ -1,6 +1,6 @@
 package org.studing.util.path;
 
-public class HabrArtilcePath {
+public class HabrArticlePath {
     public static final String HABR_ARTICLES = "src/main/resources/start/habrArticles.json";
     public static final String AUTHORS_TITLES_DOM = "src/main/resources/result/dom/authors_titles.xml";
     public static final String LIMIT_COUNT_VIEWS_DOM = "src/main/resources/result/dom/limit_count_views.xml";

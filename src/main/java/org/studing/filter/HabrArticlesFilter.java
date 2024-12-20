@@ -23,7 +23,7 @@ public class HabrArticlesFilter {
                 mapping(HabrArticle::getTitle, toList())));
     }
 
-    public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) throws Exception {
+    public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) {
         return articles.stream()
             .filter(article -> parseInt(article.getCountViews()) > limitCountView)
             .sorted(comparing(HabrArticle::getTitle))
@@ -36,7 +36,7 @@ public class HabrArticlesFilter {
             .collect(toSet());
     }
 
-    public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() throws Exception {
+    public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() {
         val timeToRead = articles.stream()
             .map(article -> parseInt(article.getTimeToRead()))
             .toList();

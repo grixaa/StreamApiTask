@@ -9,8 +9,8 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class HabrArticle {
     String title;
     String author;

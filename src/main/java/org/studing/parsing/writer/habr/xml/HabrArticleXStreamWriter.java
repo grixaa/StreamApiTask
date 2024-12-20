@@ -2,7 +2,6 @@ package org.studing.parsing.writer.habr.xml;
 
 import com.thoughtworks.xstream.XStream;
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.wrapper.AuthorWrapper;
@@ -15,8 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-@RequiredArgsConstructor
-public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
+public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
     final HabrArticlesFilter filter;
 
     public HabrArticleXStreamWriter(@NonNull final List<HabrArticle> articles) {
@@ -39,13 +37,17 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(authorsList));
         } catch (IOException thrown) {
-            throw new RuntimeException(thrown);
+            System.out.println(thrown.getMessage());
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
-        write(filePath, filter.getHabrArticlesLimitCountView(limitCount));
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) {
+        try {
+            write(filePath, filter.getHabrArticlesLimitCountView(limitCount));
+        } catch (IOException thrown) {
+            System.out.println(thrown.getMessage());
+        }
     }
 
     @Override
@@ -57,13 +59,17 @@ public class HabrArticleXStreamWriter extends AbstractHabrArticleXmlWriter {
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(filter.getUniqueCategories()));
         } catch (IOException thrown) {
-            throw new RuntimeException(thrown);
+            System.out.println(thrown.getMessage());
         }
     }
 
     @Override
-    public void writeHabrArticlesTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
-        write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) {
+        try {
+            write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
+        } catch (IOException thrown) {
+            System.out.println(thrown.getMessage());
+        }
     }
 
     private void write(

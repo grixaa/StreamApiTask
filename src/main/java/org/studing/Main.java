@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.studing.util.path.HabrArtilcePath.*;
+import static org.studing.util.path.HabrArticlePath.*;
 import static org.studing.util.path.PerformancePath.*;
 
 public class Main {
@@ -43,14 +43,14 @@ public class Main {
     private static void startWriteHabrAllTask(@NonNull final HabrArticleDomWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_DOM, LIMIT_COUNT_VIEWS);
-        writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
+        writer.writeTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_DOM);
     }
 
     private static void startWriteHabrAllTask(@NonNull final HabrArticleXStreamWriter writer) throws Exception {
         writer.writeAuthorAndHisTitles(AUTHORS_TITLES_XSTREAM);
         writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_XSTREAM, LIMIT_COUNT_VIEWS);
-        writer.writeHabrArticlesTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_XSTREAM);
+        writer.writeTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_XSTREAM);
         writer.writeUniqueCategories(UNIQUE_CATEGORIES_XSTREAM);
     }
 

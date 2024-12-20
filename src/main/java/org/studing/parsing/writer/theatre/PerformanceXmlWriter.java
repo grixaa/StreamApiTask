@@ -30,64 +30,80 @@ public class PerformanceXmlWriter {
 
     public void writePerformanceAgeLimit(
         @NonNull final String filePath,
-        final int ageLimit) throws Exception {
+        final int ageLimit) {
 
-        val doc = newInstance().newDocumentBuilder().newDocument();
-        val root = doc.createElement("performanceList");
-        doc.appendChild(root);
+        try {
+            val doc = newInstance().newDocumentBuilder().newDocument();
+            val root = doc.createElement("performanceList");
+            doc.appendChild(root);
 
-        for (val performance : filter.getLimitAgePerformance(ageLimit)) {
-            writeOnePerformance(root, doc, performance);
+            for (val performance : filter.getLimitAgePerformance(ageLimit)) {
+                writeOnePerformance(root, doc, performance);
+            }
+
+            val transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(INDENT, "yes");
+            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
         }
-
-        val transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty(INDENT, "yes");
-        transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeUniqueTitlePerformance(@NonNull final String filePath) throws Exception {
-        val doc = newInstance().newDocumentBuilder().newDocument();
-        val root = doc.createElement("performanceList");
-        doc.appendChild(root);
+    public void writeUniqueTitlePerformance(@NonNull final String filePath) {
+        try {
+            val doc = newInstance().newDocumentBuilder().newDocument();
+            val root = doc.createElement("performanceList");
+            doc.appendChild(root);
 
-        for (val performance : filter.getListPerformanceUniqueTitle()) {
-            writeOnePerformance(root, doc, performance);
+            for (val performance : filter.getListPerformanceUniqueTitle()) {
+                writeOnePerformance(root, doc, performance);
+            }
+
+            val transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(INDENT, "yes");
+            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
         }
-
-        val transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty(INDENT, "yes");
-        transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
-    public void writeMapPerformanceListDate(@NonNull final String filePath) throws Exception {
-        val doc = newInstance().newDocumentBuilder().newDocument();
-        val root = doc.createElement("performanceList");
-        doc.appendChild(root);
+    public void writeMapPerformanceListDate(@NonNull final String filePath) {
+        try {
+            val doc = newInstance().newDocumentBuilder().newDocument();
+            val root = doc.createElement("performanceList");
+            doc.appendChild(root);
 
-        for (val entry : filter.getMapTitleListDate().entrySet()) {
-            writeOnePerformanceWithListDate(root, doc, entry.getKey(), entry.getValue());
+            for (val entry : filter.getMapTitleListDate().entrySet()) {
+                writeOnePerformanceWithListDate(root, doc, entry.getKey(), entry.getValue());
+            }
+
+            val transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(INDENT, "yes");
+            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
         }
-
-        val transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty(INDENT, "yes");
-        transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
     public void writeTask4(
         @NonNull final String filePath,
-        @NonNull final Date durationLimit) throws Exception {
+        @NonNull final Date durationLimit) {
 
-        val doc = newInstance().newDocumentBuilder().newDocument();
-        val root = doc.createElement("performanceList");
-        doc.appendChild(root);
+        try {
+            val doc = newInstance().newDocumentBuilder().newDocument();
+            val root = doc.createElement("performanceList");
+            doc.appendChild(root);
 
-        for (val performance : filter.getPerformanceListTask4(durationLimit)) {
-            writeOnePerformance(root, doc, performance);
+            for (val performance : filter.getPerformanceListTask4(durationLimit)) {
+                writeOnePerformance(root, doc, performance);
+            }
+
+            val transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(INDENT, "yes");
+            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+        } catch (Exception thrown) {
+            System.out.println(thrown.getMessage());
         }
-
-        val transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty(INDENT, "yes");
-        transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
     }
 
     private void writeOnePerformanceWithListDate(
