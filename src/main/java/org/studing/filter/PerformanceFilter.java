@@ -8,10 +8,15 @@ import org.studing.type.Performance;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 import static java.lang.Integer.parseInt;
-import static java.util.Calendar.*;
+import static java.time.DayOfWeek.*;
+import static java.time.ZoneId.systemDefault;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
@@ -19,11 +24,11 @@ import static java.util.stream.Collectors.*;
 public class PerformanceFilter {
     final List<Performance> performanceList;
     private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
-    private static final Date DATE_EVENING;
+    private static final LocalDate DATE_EVENING;
 
     static {
         try {
-            DATE_EVENING = FORMAT_DURATION.parse("17:00");
+            DATE_EVENING = FORMAT_DURATION.parse("17:00").toInstant().atZone(systemDefault()).toLocalDate();
         } catch (ParseException thrown) {
             throw new RuntimeException(thrown);
         }
@@ -59,42 +64,38 @@ public class PerformanceFilter {
     }
 
     public List<Performance> getPerformanceListTask4(@NonNull final Date durationLimit) {
-        val calendar = getInstance();
-
         return performanceList.stream()
             .filter(performance -> {
-                calendar.setTime(performance.getDate());
-                return calendar.get(DAY_OF_WEEK) == SATURDAY ||
-                    calendar.get(DAY_OF_WEEK) == TUESDAY ||
-                    calendar.get(DAY_OF_WEEK) == THURSDAY;
-            })
-            .filter(performance -> {
                 try {
-                    return FORMAT_DURATION.parse(performance.getDuration()).after(durationLimit);
+                    val performanceDuration = FORMAT_DURATION.parse(performance.getDuration());
+                    val durationLocalDate = performanceDuration.toInstant().atZone(systemDefault()).toLocalDate();
+                    return durationLocalDate.isAfter(durationLimit.toInstant().atZone(systemDefault()).toLocalDate());
                 } catch (ParseException thrown) {
                     throw new RuntimeException(thrown);
                 }
             })
             .filter(performance -> {
-                calendar.setTime(performance.getDate());
-                val calendarEvening = getInstance();
-                calendarEvening.setTime(DATE_EVENING);
-                return (calendar.get(HOUR_OF_DAY) >= calendarEvening.get(HOUR_OF_DAY));
+                val dayOfWeek = performance.getDate()
+                    .toInstant()
+                    .atZone(systemDefault())
+                    .toLocalDate()
+                    .getDayOfWeek();
+                return dayOfWeek == SATURDAY || dayOfWeek == TUESDAY || dayOfWeek == THURSDAY;
+            })
+            .filter(performance -> {
+                val performanceLocalDate = performance.getDate().toInstant().atZone(systemDefault()).toLocalDate();
+                return performanceLocalDate.isEqual(DATE_EVENING) || performanceLocalDate.isAfter(DATE_EVENING);
             })
             .toList();
     }
 
     private List<Performance> getListPerformanceUniqueTitle(@NonNull final List<Performance> performanceList) {
-        val temp = new ArrayList<Performance>();
-        val titles = new ArrayList<>();
-
-        performanceList.forEach(performance -> {
-            if (!titles.contains(performance.getTitle())) {
-                titles.add(performance.getTitle());
-                temp.add(performance);
-            }
-        });
-
-        return temp;
+        return performanceList.stream()
+            .filter(performance -> performanceList.stream()
+                .map(Performance::getTitle)
+                .distinct()
+                .anyMatch(title -> title.equals(performance.getTitle())))
+            .distinct()
+            .toList();
     }
 }

@@ -7,9 +7,7 @@ import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import javax.naming.ConfigurationException;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;

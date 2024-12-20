@@ -8,7 +8,7 @@ import java.util.List;
 import static com.fasterxml.jackson.databind.DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
 
 public abstract class JsonReader<T> {
-    static final ObjectMapper mapper = new ObjectMapper();
+    protected static final ObjectMapper mapper = new ObjectMapper();
 
     static {
         mapper.disable(ADJUST_DATES_TO_CONTEXT_TIME_ZONE);
