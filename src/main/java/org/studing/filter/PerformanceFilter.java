@@ -1,23 +1,20 @@
 package org.studing.filter;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.studing.type.Performance;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
-import java.util.stream.Collectors;
 
+import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.lang.Integer.parseInt;
 import static java.time.DayOfWeek.*;
+import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
@@ -25,13 +22,11 @@ import static java.util.stream.Collectors.*;
 @RequiredArgsConstructor
 public class PerformanceFilter {
     final List<Performance> performanceList;
-    private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
-    private static final LocalTime DATE_EVENING;
+    private static final LocalTime TIME_EVENING;
 
     static {
-        var dotenv = Dotenv.load();
-        DATE_EVENING = LocalTime.parse(dotenv.get("DATE_EVENING"), ofPattern("HH:mm:ss"));
-        System.out.println(DATE_EVENING);
+        val dotenv = load();
+        TIME_EVENING = parse(dotenv.get("TIME_EVENING"), ofPattern(dotenv.get("LOCAL_TIME_FORMAT")));
     }
 
     public List<Performance> getLimitAgePerformance(final int ageLimit) {
@@ -63,14 +58,14 @@ public class PerformanceFilter {
         return mapPerformanceListDate;
     }
 
-    public List<Performance> getPerformanceListTask4(@NonNull final LocalTime durationLimit) throws Exception {
+    public List<Performance> getPerformanceListTask4(@NonNull final LocalTime durationLimit) {
         return performanceList.stream()
             .filter(performance -> performance.getDuration().isBefore(durationLimit))
             .filter(performance -> {
                 val dayOfWeek = performance.getDate().getDayOfWeek();
                 return dayOfWeek == SATURDAY || dayOfWeek == TUESDAY || dayOfWeek == THURSDAY;
             })
-            .filter(performance -> performance.getDate().getHour() >= DATE_EVENING.getHour())
+            .filter(performance -> performance.getDate().getHour() >= TIME_EVENING.getHour())
             .toList();
     }
 

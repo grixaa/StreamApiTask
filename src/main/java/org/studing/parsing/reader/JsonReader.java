@@ -6,8 +6,6 @@ import lombok.NonNull;
 
 import java.util.List;
 
-import static com.fasterxml.jackson.databind.DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
-
 public abstract class JsonReader<T> {
     protected static final ObjectMapper mapper = new ObjectMapper();
 

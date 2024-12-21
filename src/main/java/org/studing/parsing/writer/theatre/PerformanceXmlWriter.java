@@ -17,15 +17,19 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
+import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class PerformanceXmlWriter {
-    private static final DateTimeFormatter FORMAT_DATE = ofPattern("dd MMMM yyyy' в 'HH:mm", new Locale("ru"));
-
-
+    private static final DateTimeFormatter FORMAT_DATE;
     final PerformanceFilter filter;
+
+    static {
+        val dotenv = load();
+        FORMAT_DATE = ofPattern(dotenv.get("PERFORMANCE_DATE_FORMAT"), new Locale("ru"));
+    }
 
     public PerformanceXmlWriter(@NonNull final List<Performance> performanceList) {
         filter = new PerformanceFilter(performanceList);

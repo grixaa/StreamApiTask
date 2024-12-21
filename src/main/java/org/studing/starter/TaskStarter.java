@@ -1,6 +1,5 @@
 package org.studing.starter;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import lombok.val;
 import org.studing.parsing.reader.HabrArticleJsonReader;
 import org.studing.parsing.reader.PerformanceJsonReader;
@@ -10,6 +9,8 @@ import org.studing.parsing.writer.theatre.PerformanceXmlWriter;
 
 import java.time.LocalTime;
 
+import static io.github.cdimascio.dotenv.Dotenv.load;
+import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.studing.util.path.HabrArticlePath.*;
 import static org.studing.util.path.PerformancePath.*;
@@ -20,8 +21,8 @@ public class TaskStarter {
     private static final LocalTime DURATION_LIMIT;
 
     static {
-        var dotenv = Dotenv.load();
-        DURATION_LIMIT = LocalTime.parse(dotenv.get("DURATION_LIMIT"), ofPattern("HH:mm:ss"));
+        var dotenv = load();
+        DURATION_LIMIT = parse(dotenv.get("DURATION_LIMIT"), ofPattern("HH:mm"));
     }
 
     public static void startTask11() {

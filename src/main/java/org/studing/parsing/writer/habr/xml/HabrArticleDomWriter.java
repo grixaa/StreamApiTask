@@ -16,12 +16,18 @@ import java.io.File;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import static io.github.cdimascio.dotenv.Dotenv.load;
+import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class HabrArticleDomWriter implements HabrArticleXmlWriter {
-    private static final DateTimeFormatter FORMAT_DATE_PUBLISHED = DateTimeFormatter.ofPattern("yyyy-MM-dd, HH:mm");
+    private static final DateTimeFormatter FORMAT_DATE_PUBLISHED;
     final HabrArticlesFilter filter;
+
+    static {
+        FORMAT_DATE_PUBLISHED = ofPattern(load().get("HABR_ARTICLE_DATE_FORMAT"));
+    }
 
     public HabrArticleDomWriter(@NonNull final List<HabrArticle> habrArticles) {
         filter = new HabrArticlesFilter(habrArticles);
