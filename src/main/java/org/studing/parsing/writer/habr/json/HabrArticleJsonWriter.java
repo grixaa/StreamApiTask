@@ -11,11 +11,12 @@ import java.util.List;
 
 public class HabrArticleJsonWriter extends JsonWriter<HabrArticle> {
     @Override
-    public void parse(@NonNull final List<HabrArticle> list, final @NonNull String path) {
+    public void parse(@NonNull final List<HabrArticle> list, final @NonNull String path) throws IOException {
         try (val writer = new BufferedWriter(new FileWriter(path))) {
             writer.write(mapper.writeValueAsString(list));
-        } catch (IOException thrown) {
-            throw new RuntimeException(thrown);
+        } catch (final IOException thrown) {
+            System.err.println("Failed to write json file: " + thrown);
+            throw thrown;
         }
     }
 }

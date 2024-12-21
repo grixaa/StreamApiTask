@@ -34,7 +34,7 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
     }
 
     @Override
-    public void writeAuthorAndHisTitles(@NonNull final String filePath) {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws Exception {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val rootElement = doc.createElement("authors");
@@ -60,23 +60,25 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write author and his Habr article titles to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
         try {
             writeHabrArticles(
                 filter.getHabrArticlesLimitCountView(limitCount),
                 filePath);
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle limit count view to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeUniqueCategories(@NonNull final String filePath) {
+    public void writeUniqueCategories(@NonNull final String filePath) throws Exception {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("categories");
@@ -92,18 +94,20 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle unique categories to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) {
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
         try {
             writeHabrArticles(
                 filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
                 filePath);
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle with time to read less then average to: " + filePath);
+            throw thrown;
         }
     }
 

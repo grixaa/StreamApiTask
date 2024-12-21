@@ -3,6 +3,7 @@ package org.studing.parsing.writer.habr.json;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.NonNull;
 
+import java.io.IOException;
 import java.util.List;
 
 import static com.fasterxml.jackson.databind.DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE;
@@ -16,5 +17,5 @@ public abstract class JsonWriter<T> {
         mapper.configure(INDENT_OUTPUT, true);
     }
 
-    abstract void parse(@NonNull final List<T> list, @NonNull final String path);
+    abstract void parse(@NonNull final List<T> list, @NonNull final String path) throws IOException;
 }

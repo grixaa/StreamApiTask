@@ -37,7 +37,7 @@ public class PerformanceXmlWriter {
 
     public void writePerformanceAgeLimit(
         @NonNull final String filePath,
-        final int ageLimit) {
+        final int ageLimit) throws Exception {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
@@ -52,11 +52,12 @@ public class PerformanceXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write list performance age-limit to " + filePath);
+            throw thrown;
         }
     }
 
-    public void writeUniqueTitlePerformance(@NonNull final String filePath) {
+    public void writeUniqueTitlePerformance(@NonNull final String filePath) throws Exception {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("performanceList");
@@ -70,11 +71,12 @@ public class PerformanceXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write unique-title performance to " + filePath);
+            throw thrown;
         }
     }
 
-    public void writeMapPerformanceListDate(@NonNull final String filePath) {
+    public void writeMapPerformanceListDate(@NonNull final String filePath) throws Exception {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("performanceList");
@@ -88,13 +90,14 @@ public class PerformanceXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write map (performance, list date) to " + filePath);
+            throw thrown;
         }
     }
 
     public void writeTask4(
         @NonNull final String filePath,
-        @NonNull final LocalTime durationLimit) {
+        @NonNull final LocalTime durationLimit) throws Exception {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
@@ -109,7 +112,8 @@ public class PerformanceXmlWriter {
             transformer.setOutputProperty(INDENT, "yes");
             transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write task4 to " + filePath);
+            throw thrown;
         }
     }
 

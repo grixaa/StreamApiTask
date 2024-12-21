@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.NonNull;
 
+import java.io.IOException;
 import java.util.List;
 
 public abstract class JsonReader<T> {
@@ -13,5 +14,5 @@ public abstract class JsonReader<T> {
         mapper.registerModule(new JavaTimeModule());
     }
 
-    abstract List<T> parse(@NonNull final String path);
+    abstract List<T> parse(@NonNull final String path) throws IOException;
 }

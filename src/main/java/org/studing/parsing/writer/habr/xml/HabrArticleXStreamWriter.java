@@ -22,7 +22,7 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
     }
 
     @Override
-    public void writeAuthorAndHisTitles(@NonNull final String filePath) {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws Exception {
         val xstream = new XStream();
         xstream.alias("authors", List.class);
         xstream.alias("author", AuthorWrapper.class);
@@ -37,21 +37,23 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(authorsList));
         } catch (IOException thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write author and his Habr article titles to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
         try {
             write(filePath, filter.getHabrArticlesLimitCountView(limitCount));
         } catch (IOException thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle limit count view to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeUniqueCategories(@NonNull final String filePath) {
+    public void writeUniqueCategories(@NonNull final String filePath) throws Exception {
         val xstream = new XStream();
         xstream.alias("categories", Set.class);
         xstream.alias("category", String.class);
@@ -59,16 +61,18 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(filter.getUniqueCategories()));
         } catch (IOException thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle unique categories to: " + filePath);
+            throw thrown;
         }
     }
 
     @Override
-    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) {
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
         try {
             write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
         } catch (IOException thrown) {
-            System.out.println(thrown.getMessage());
+            System.err.println("Failed to write HabrArticle with time to read less then average to: " + filePath);
+            throw thrown;
         }
     }
 
