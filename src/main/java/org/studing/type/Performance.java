@@ -5,18 +5,21 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Performance {
     String title;
-    String duration;
     String ageLimit;
     String imageUrl;
 
-    @JsonFormat(pattern = "dd MMMM yyyy' в 'HH:mm", timezone = "UTC")
-    Date date;
+    @JsonFormat(pattern = "HH:mm")
+    LocalTime duration;
+
+    @JsonFormat(pattern = "dd MMMM yyyy' в 'HH:mm")
+    LocalDateTime date;
 }
 

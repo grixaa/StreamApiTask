@@ -1,22 +1,24 @@
 package org.studing.filter;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.studing.type.Performance;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
 import static java.time.DayOfWeek.*;
-import static java.time.ZoneId.systemDefault;
+import static java.time.format.DateTimeFormatter.ofPattern;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
@@ -24,14 +26,12 @@ import static java.util.stream.Collectors.*;
 public class PerformanceFilter {
     final List<Performance> performanceList;
     private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
-    private static final LocalDate DATE_EVENING;
+    private static final LocalTime DATE_EVENING;
 
     static {
-        try {
-            DATE_EVENING = FORMAT_DURATION.parse("17:00").toInstant().atZone(systemDefault()).toLocalDate();
-        } catch (ParseException thrown) {
-            throw new RuntimeException(thrown);
-        }
+        var dotenv = Dotenv.load();
+        DATE_EVENING = LocalTime.parse(dotenv.get("DATE_EVENING"), ofPattern("HH:mm:ss"));
+        System.out.println(DATE_EVENING);
     }
 
     public List<Performance> getLimitAgePerformance(final int ageLimit) {
@@ -47,7 +47,7 @@ public class PerformanceFilter {
         return getListPerformanceUniqueTitle(performanceList);
     }
 
-    public Map<Performance, List<Date>> getMapTitleListDate() {
+    public Map<Performance, List<LocalDateTime>> getMapTitleListDate() {
         val performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
 
         val uniqueTitleMap = performancesUniqueTitle.stream()
@@ -63,39 +63,23 @@ public class PerformanceFilter {
         return mapPerformanceListDate;
     }
 
-    public List<Performance> getPerformanceListTask4(@NonNull final Date durationLimit) {
+    public List<Performance> getPerformanceListTask4(@NonNull final LocalTime durationLimit) throws Exception {
         return performanceList.stream()
+            .filter(performance -> performance.getDuration().isBefore(durationLimit))
             .filter(performance -> {
-                try {
-                    val performanceDuration = FORMAT_DURATION.parse(performance.getDuration());
-                    val durationLocalDate = performanceDuration.toInstant().atZone(systemDefault()).toLocalDate();
-                    return durationLocalDate.isAfter(durationLimit.toInstant().atZone(systemDefault()).toLocalDate());
-                } catch (ParseException thrown) {
-                    throw new RuntimeException(thrown);
-                }
-            })
-            .filter(performance -> {
-                val dayOfWeek = performance.getDate()
-                    .toInstant()
-                    .atZone(systemDefault())
-                    .toLocalDate()
-                    .getDayOfWeek();
+                val dayOfWeek = performance.getDate().getDayOfWeek();
                 return dayOfWeek == SATURDAY || dayOfWeek == TUESDAY || dayOfWeek == THURSDAY;
             })
-            .filter(performance -> {
-                val performanceLocalDate = performance.getDate().toInstant().atZone(systemDefault()).toLocalDate();
-                return performanceLocalDate.isEqual(DATE_EVENING) || performanceLocalDate.isAfter(DATE_EVENING);
-            })
+            .filter(performance -> performance.getDate().getHour() >= DATE_EVENING.getHour())
             .toList();
     }
 
     private List<Performance> getListPerformanceUniqueTitle(@NonNull final List<Performance> performanceList) {
-        return performanceList.stream()
-            .filter(performance -> performanceList.stream()
-                .map(Performance::getTitle)
-                .distinct()
-                .anyMatch(title -> title.equals(performance.getTitle())))
-            .distinct()
-            .toList();
+        return new ArrayList<>(performanceList.stream()
+            .collect(toMap(
+                Performance::getTitle,
+                performance -> performance,
+                (existing, replacement) -> existing))
+            .values());
     }
 }

@@ -11,17 +11,20 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
+import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class PerformanceXmlWriter {
-    private static final DateFormat FORMAT_DATE = new SimpleDateFormat("dd MMMM yyyy' в 'HH:mm", new Locale("ru"));
+    private static final DateTimeFormatter FORMAT_DATE = ofPattern("dd MMMM yyyy' в 'HH:mm", new Locale("ru"));
+
+
     final PerformanceFilter filter;
 
     public PerformanceXmlWriter(@NonNull final List<Performance> performanceList) {
@@ -87,7 +90,7 @@ public class PerformanceXmlWriter {
 
     public void writeTask4(
         @NonNull final String filePath,
-        @NonNull final Date durationLimit) {
+        @NonNull final LocalTime durationLimit) {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
@@ -110,7 +113,7 @@ public class PerformanceXmlWriter {
         @NonNull final Element root,
         @NonNull final Document doc,
         @NonNull final Performance performance,
-        @NonNull final List<Date> dateList) {
+        @NonNull final List<LocalDateTime> dateList) {
 
         val articleElement = writeAllWithoutDate(root, doc, performance);
         val dateElement = doc.createElement("date");
@@ -139,7 +142,7 @@ public class PerformanceXmlWriter {
         root.appendChild(articleElement);
 
         articleElement.appendChild(createElement(doc, "title", performance.getTitle()));
-        articleElement.appendChild(createElement(doc, "duration", performance.getDuration()));
+        articleElement.appendChild(createElement(doc, "duration", performance.getDuration().toString()));
         articleElement.appendChild(createElement(doc, "ageLimit", performance.getAgeLimit()));
         articleElement.appendChild(createElement(doc, "imageUrl", performance.getImageUrl()));
 

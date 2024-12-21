@@ -13,15 +13,14 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import static javax.xml.transform.OutputKeys.INDENT;
 
 public class HabrArticleDomWriter implements HabrArticleXmlWriter {
-    private static final DateFormat FORMAT_DATE_PUBLISHED = new SimpleDateFormat("yyyy-MM-dd, HH:mm");
+    private static final DateTimeFormatter FORMAT_DATE_PUBLISHED = DateTimeFormatter.ofPattern("yyyy-MM-dd, HH:mm");
     final HabrArticlesFilter filter;
 
     public HabrArticleDomWriter(@NonNull final List<HabrArticle> habrArticles) {

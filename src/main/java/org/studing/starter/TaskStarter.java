@@ -1,5 +1,6 @@
 package org.studing.starter;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import lombok.val;
 import org.studing.parsing.reader.HabrArticleJsonReader;
 import org.studing.parsing.reader.PerformanceJsonReader;
@@ -7,27 +8,20 @@ import org.studing.parsing.writer.habr.xml.HabrArticleDomWriter;
 import org.studing.parsing.writer.habr.xml.HabrArticleXStreamWriter;
 import org.studing.parsing.writer.theatre.PerformanceXmlWriter;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+import java.time.LocalTime;
 
+import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.studing.util.path.HabrArticlePath.*;
 import static org.studing.util.path.PerformancePath.*;
 
 public class TaskStarter {
     private static final int LIMIT_COUNT_VIEWS = 10000;
     private static final int LIMIT_AGE = 12;
-    private static final Date DURATION_LIMIT;
-    private static final DateFormat FORMAT_DURATION = new SimpleDateFormat("H:mm", new Locale("ru"));
+    private static final LocalTime DURATION_LIMIT;
 
     static {
-        try {
-            DURATION_LIMIT = FORMAT_DURATION.parse("1:50");
-        } catch (ParseException thrown) {
-            throw new RuntimeException(thrown);
-        }
+        var dotenv = Dotenv.load();
+        DURATION_LIMIT = LocalTime.parse(dotenv.get("DURATION_LIMIT"), ofPattern("HH:mm:ss"));
     }
 
     public static void startTask11() {

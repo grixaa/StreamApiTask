@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -20,6 +20,6 @@ public class HabrArticle {
     List<String> categories;
     String textPreview;
 
-    @JsonFormat(pattern = "dd.MM.yyyy HH:mm", timezone = "UTC")
-    Date datePublished;
+    @JsonFormat(pattern = "dd.MM.yyyy HH:mm")
+    LocalDateTime datePublished;
 }
