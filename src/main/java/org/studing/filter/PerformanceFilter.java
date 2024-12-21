@@ -2,6 +2,7 @@ package org.studing.filter;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.studing.type.Performance;
 
@@ -20,8 +21,9 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 @RequiredArgsConstructor
+@FieldDefaults(makeFinal = true)
 public class PerformanceFilter {
-    final List<Performance> performanceList;
+    List<Performance> performanceList;
     private static final LocalTime TIME_EVENING;
 
     static {

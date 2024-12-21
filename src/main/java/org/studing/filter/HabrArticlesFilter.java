@@ -1,6 +1,7 @@
 package org.studing.filter;
 
 import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.studing.type.HabrArticle;
 
@@ -13,8 +14,9 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 @RequiredArgsConstructor
+@FieldDefaults(makeFinal = true)
 public class HabrArticlesFilter {
-    final List<HabrArticle> articles;
+    List<HabrArticle> articles;
 
     public Map<String, List<String>> getAuthorAndHisTitles() {
         return articles.stream().collect(
@@ -27,7 +29,7 @@ public class HabrArticlesFilter {
         return articles.stream()
             .filter(article -> parseInt(article.countViews()) > limitCountView)
             .sorted(comparing(HabrArticle::title))
-            .collect(toList());
+            .toList();
     }
 
     public Set<String> getUniqueCategories() {
