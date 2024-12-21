@@ -115,19 +115,19 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
         val articleElement = doc.createElement("article");
         root.appendChild(articleElement);
 
-        articleElement.appendChild(createElement(doc, "title", article.getTitle()));
-        articleElement.appendChild(createElement(doc, "author", article.getAuthor()));
+        articleElement.appendChild(createElement(doc, "title", article.title()));
+        articleElement.appendChild(createElement(doc, "author", article.author()));
         articleElement.appendChild(createElement(
             doc,
             "datePublished",
-            FORMAT_DATE_PUBLISHED.format(article.getDatePublished())));
-        articleElement.appendChild(createElement(doc, "timeToRead", article.getTimeToRead()));
-        articleElement.appendChild(createElement(doc, "countViews", article.getCountViews()));
-        articleElement.appendChild(createElement(doc, "imageUrl", article.getImageUrl()));
-        articleElement.appendChild(createElement(doc, "textPreview", article.getTextPreview()));
+            FORMAT_DATE_PUBLISHED.format(article.datePublished())));
+        articleElement.appendChild(createElement(doc, "timeToRead", article.timeToRead()));
+        articleElement.appendChild(createElement(doc, "countViews", article.countViews()));
+        articleElement.appendChild(createElement(doc, "imageUrl", article.imageUrl()));
+        articleElement.appendChild(createElement(doc, "textPreview", article.textPreview()));
 
         val categoriesElement = doc.createElement("categories");
-        for (val category : article.getCategories()) {
+        for (val category : article.categories()) {
             categoriesElement.appendChild(createElement(doc, "category", category));
         }
         articleElement.appendChild(categoriesElement);

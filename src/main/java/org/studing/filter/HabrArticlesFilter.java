@@ -19,32 +19,32 @@ public class HabrArticlesFilter {
     public Map<String, List<String>> getAuthorAndHisTitles() {
         return articles.stream().collect(
             groupingBy(
-                HabrArticle::getAuthor,
-                mapping(HabrArticle::getTitle, toList())));
+                HabrArticle::author,
+                mapping(HabrArticle::title, toList())));
     }
 
     public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) {
         return articles.stream()
-            .filter(article -> parseInt(article.getCountViews()) > limitCountView)
-            .sorted(comparing(HabrArticle::getTitle))
+            .filter(article -> parseInt(article.countViews()) > limitCountView)
+            .sorted(comparing(HabrArticle::title))
             .collect(toList());
     }
 
     public Set<String> getUniqueCategories() {
         return articles.stream()
-            .flatMap(article -> article.getCategories().stream())
+            .flatMap(article -> article.categories().stream())
             .collect(toSet());
     }
 
     public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() {
         val timeToRead = articles.stream()
-            .map(article -> parseInt(article.getTimeToRead()))
+            .map(article -> parseInt(article.timeToRead()))
             .toList();
 
         final int averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
 
         return articles.stream().
-            filter(article -> parseInt(article.getTimeToRead()) < averageTime).
+            filter(article -> parseInt(article.timeToRead()) < averageTime).
             collect(toList());
     }
 }

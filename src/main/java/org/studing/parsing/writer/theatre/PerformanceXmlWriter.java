@@ -134,7 +134,7 @@ public class PerformanceXmlWriter {
         @NonNull final Performance performance) {
 
         val articleElement = writeAllWithoutDate(root, doc, performance);
-        articleElement.appendChild(createElement(doc, "date", FORMAT_DATE.format(performance.getDate())));
+        articleElement.appendChild(createElement(doc, "date", FORMAT_DATE.format(performance.date())));
     }
 
     private Element writeAllWithoutDate(
@@ -145,10 +145,10 @@ public class PerformanceXmlWriter {
         val articleElement = doc.createElement("performance");
         root.appendChild(articleElement);
 
-        articleElement.appendChild(createElement(doc, "title", performance.getTitle()));
-        articleElement.appendChild(createElement(doc, "duration", performance.getDuration().toString()));
-        articleElement.appendChild(createElement(doc, "ageLimit", performance.getAgeLimit()));
-        articleElement.appendChild(createElement(doc, "imageUrl", performance.getImageUrl()));
+        articleElement.appendChild(createElement(doc, "title", performance.title()));
+        articleElement.appendChild(createElement(doc, "duration", performance.duration().toString()));
+        articleElement.appendChild(createElement(doc, "ageLimit", performance.ageLimit()));
+        articleElement.appendChild(createElement(doc, "imageUrl", performance.imageUrl()));
 
         return articleElement;
     }
