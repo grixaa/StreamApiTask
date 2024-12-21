@@ -5,6 +5,8 @@ import lombok.NonNull;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.wrapper.AuthorWrapper;
+import org.studing.parsing.writer.habr.converter.CategoriesListConverter;
+import org.studing.parsing.writer.habr.converter.HabrArticlesListConverter;
 import org.studing.type.HabrArticle;
 
 import java.io.BufferedWriter;
@@ -12,7 +14,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
     final HabrArticlesFilter filter;
@@ -55,8 +56,7 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
     @Override
     public void writeUniqueCategories(@NonNull final String filePath) throws Exception {
         val xstream = new XStream();
-        xstream.alias("categories", Set.class);
-        xstream.alias("category", String.class);
+        xstream.registerConverter(new CategoriesListConverter(true));
 
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(filter.getUniqueCategories()));
@@ -81,10 +81,10 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
         @NonNull final List<HabrArticle> articles) throws IOException {
 
         val xstream = new XStream();
+        xstream.registerConverter(new HabrArticlesListConverter());
+        xstream.processAnnotations(HabrArticle.class);
         xstream.alias("articles", List.class);
         xstream.alias("article", HabrArticle.class);
-        xstream.alias("category", String.class);
-        xstream.useAttributeFor(HabrArticle.class, "categories");
 
         try (val writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(xstream.toXML(articles));

@@ -11,6 +11,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.lang.Integer.parseInt;
@@ -51,13 +52,13 @@ public class PerformanceFilter {
             .collect(toMap(Performance::title, performance -> performance));
 
         val mapPerformanceListDate = performanceList.stream()
-            .filter(performance -> uniqueTitleMap.containsKey(performance.title()))
             .collect(groupingBy(
                 performance -> uniqueTitleMap.get(performance.title()),
                 mapping(Performance::date, toList())));
 
-        mapPerformanceListDate.values().removeIf(List::isEmpty);
-        return mapPerformanceListDate;
+        return mapPerformanceListDate.entrySet().stream()
+            .filter(entry -> !entry.getValue().isEmpty())
+            .collect(toUnmodifiableMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public List<Performance> getPerformanceListTask4(@NonNull final LocalTime durationLimit) {
@@ -72,11 +73,13 @@ public class PerformanceFilter {
     }
 
     private List<Performance> getListPerformanceUniqueTitle(@NonNull final List<Performance> performanceList) {
-        return new ArrayList<>(performanceList.stream()
+        return performanceList.stream()
             .collect(toMap(
                 Performance::title,
                 performance -> performance,
                 (existing, replacement) -> existing))
-            .values());
+            .values()
+            .stream()
+            .toList();
     }
 }

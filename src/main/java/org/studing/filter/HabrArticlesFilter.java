@@ -7,9 +7,9 @@ import org.studing.type.HabrArticle;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import static java.lang.Integer.parseInt;
+import static java.util.Collections.unmodifiableMap;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
@@ -19,10 +19,11 @@ public class HabrArticlesFilter {
     List<HabrArticle> articles;
 
     public Map<String, List<String>> getAuthorAndHisTitles() {
-        return articles.stream().collect(
+        val mutableMap = articles.stream().collect(
             groupingBy(
                 HabrArticle::author,
                 mapping(HabrArticle::title, toList())));
+        return unmodifiableMap(mutableMap);
     }
 
     public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) {
@@ -32,10 +33,11 @@ public class HabrArticlesFilter {
             .toList();
     }
 
-    public Set<String> getUniqueCategories() {
+    public List<String> getUniqueCategories() {
         return articles.stream()
             .flatMap(article -> article.categories().stream())
-            .collect(toSet());
+            .distinct()
+            .toList();
     }
 
     public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() {
@@ -47,6 +49,6 @@ public class HabrArticlesFilter {
 
         return articles.stream().
             filter(article -> parseInt(article.timeToRead()) < averageTime).
-            collect(toList());
+            toList();
     }
 }
