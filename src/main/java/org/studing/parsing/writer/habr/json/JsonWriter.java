@@ -1,7 +1,6 @@
 package org.studing.parsing.writer.habr.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.NonNull;
 
 import java.io.IOException;
 import java.util.List;
@@ -17,5 +16,5 @@ public abstract class JsonWriter<T> {
         mapper.configure(INDENT_OUTPUT, true);
     }
 
-    abstract void parse(@NonNull final List<T> list, @NonNull final String path) throws IOException;
+    abstract void parse(List<T> list, String path) throws IOException;
 }

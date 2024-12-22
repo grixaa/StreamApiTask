@@ -15,8 +15,7 @@ public record HabrArticle(
     String timeToRead,
     String countViews,
     String imageUrl,
-    @XStreamConverter(CategoriesListConverter.class)
-    List<String> categories,
+    @XStreamConverter(CategoriesListConverter.class) List<String> categories,
     String textPreview,
     @JsonFormat(pattern = "dd.MM.yyyy HH:mm") LocalDateTime datePublished) {
 }

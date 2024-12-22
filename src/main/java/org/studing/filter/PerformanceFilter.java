@@ -3,15 +3,14 @@ package org.studing.filter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import lombok.experimental.NonFinal;
 import lombok.val;
 import org.studing.type.Performance;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.lang.Integer.parseInt;
@@ -27,49 +26,72 @@ public class PerformanceFilter {
     List<Performance> performanceList;
     private static final LocalTime TIME_EVENING;
 
+    @NonFinal
+    List<Performance> listPerformanceUniqueTitle;
+
+    @NonFinal
+    List<Performance> listLimitedAgePerformance;
+
+    @NonFinal
+    List<Performance> listPerformanceTask4;
+
+    @NonFinal
+    Map<Performance, List<LocalDateTime>> mapPerformanceListDateTime;
+
     static {
         val dotenv = load();
         TIME_EVENING = parse(dotenv.get("TIME_EVENING"), ofPattern(dotenv.get("LOCAL_TIME_FORMAT")));
     }
 
     public List<Performance> getLimitAgePerformance(final int ageLimit) {
-        val temp = performanceList.stream()
-            .filter(performance -> parseInt(performance.ageLimit()) <= ageLimit)
-            .sorted(comparing(Performance::duration))
-            .toList();
-
-        return getListPerformanceUniqueTitle(temp);
+        if (listLimitedAgePerformance == null) {
+            val temp = performanceList.stream()
+                .filter(performance -> parseInt(performance.ageLimit()) <= ageLimit)
+                .sorted(comparing(Performance::duration))
+                .toList();
+            listLimitedAgePerformance = getListPerformanceUniqueTitle(temp);
+        }
+        return listLimitedAgePerformance;
     }
 
     public List<Performance> getListPerformanceUniqueTitle() {
-        return getListPerformanceUniqueTitle(performanceList);
+        if (listPerformanceUniqueTitle == null) {
+            listPerformanceUniqueTitle = getListPerformanceUniqueTitle(performanceList);
+        }
+        return listPerformanceUniqueTitle;
     }
 
     public Map<Performance, List<LocalDateTime>> getMapTitleListDate() {
-        val performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
+        if (mapPerformanceListDateTime == null) {
+            val performancesUniqueTitle = getListPerformanceUniqueTitle(performanceList);
 
-        val uniqueTitleMap = performancesUniqueTitle.stream()
-            .collect(toMap(Performance::title, performance -> performance));
+            val uniqueTitleMap = performancesUniqueTitle.stream()
+                .collect(toMap(Performance::title, performance -> performance));
 
-        val mapPerformanceListDate = performanceList.stream()
-            .collect(groupingBy(
-                performance -> uniqueTitleMap.get(performance.title()),
-                mapping(Performance::date, toList())));
+            val mapPerformanceListDate = performanceList.stream()
+                .collect(groupingBy(
+                    performance -> uniqueTitleMap.get(performance.title()),
+                    mapping(Performance::date, toList())));
 
-        return mapPerformanceListDate.entrySet().stream()
-            .filter(entry -> !entry.getValue().isEmpty())
-            .collect(toUnmodifiableMap(Map.Entry::getKey, Map.Entry::getValue));
+            mapPerformanceListDateTime = mapPerformanceListDate.entrySet().stream()
+                .filter(entry -> !entry.getValue().isEmpty())
+                .collect(toUnmodifiableMap(Map.Entry::getKey, Map.Entry::getValue));
+        }
+        return mapPerformanceListDateTime;
     }
 
     public List<Performance> getPerformanceListTask4(@NonNull final LocalTime durationLimit) {
-        return performanceList.stream()
-            .filter(performance -> performance.duration().isBefore(durationLimit))
-            .filter(performance -> performance.date().getHour() >= TIME_EVENING.getHour())
-            .filter(performance -> {
-                val dayOfWeek = performance.date().getDayOfWeek();
-                return dayOfWeek == SATURDAY || dayOfWeek == TUESDAY || dayOfWeek == THURSDAY;
-            })
-            .toList();
+        if (listPerformanceTask4 == null) {
+            listPerformanceTask4 = performanceList.stream()
+                .filter(performance -> performance.duration().isBefore(durationLimit))
+                .filter(performance -> performance.date().getHour() >= TIME_EVENING.getHour())
+                .filter(performance -> {
+                    val dayOfWeek = performance.date().getDayOfWeek();
+                    return dayOfWeek == SATURDAY || dayOfWeek == TUESDAY || dayOfWeek == THURSDAY;
+                })
+                .toList();
+        }
+        return listPerformanceTask4;
     }
 
     private List<Performance> getListPerformanceUniqueTitle(@NonNull final List<Performance> performanceList) {

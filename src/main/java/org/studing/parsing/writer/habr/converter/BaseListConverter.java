@@ -29,7 +29,7 @@ public abstract class BaseListConverter implements Converter {
     }
 
     @Override
-    public boolean canConvert(Class aClass) {
+    public boolean canConvert(@NonNull final Class aClass) {
         return List.class.isAssignableFrom(aClass);
     }
 

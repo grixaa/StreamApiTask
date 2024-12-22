@@ -2,6 +2,7 @@ package org.studing.filter;
 
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import lombok.experimental.NonFinal;
 import lombok.val;
 import org.studing.type.HabrArticle;
 
@@ -18,37 +19,61 @@ import static java.util.stream.Collectors.*;
 public class HabrArticlesFilter {
     List<HabrArticle> articles;
 
+    @NonFinal
+    List<HabrArticle> listArticlesLimitedCountView;
+
+    @NonFinal
+    List<HabrArticle> listArticlesTimeToReadLessThanAverage;
+
+    @NonFinal
+    List<String> listCategories;
+
+    @NonFinal
+    Map<String, List<String>> mapAuthorAndHisTitles;
+
     public Map<String, List<String>> getAuthorAndHisTitles() {
-        val mutableMap = articles.stream().collect(
-            groupingBy(
-                HabrArticle::author,
-                mapping(HabrArticle::title, toList())));
-        return unmodifiableMap(mutableMap);
+        if (mapAuthorAndHisTitles == null) {
+            val mutableMap = articles.stream().collect(
+                groupingBy(
+                    HabrArticle::author,
+                    mapping(HabrArticle::title, toList())));
+            mapAuthorAndHisTitles = unmodifiableMap(mutableMap);
+        }
+        return mapAuthorAndHisTitles;
     }
 
     public List<HabrArticle> getHabrArticlesLimitCountView(final int limitCountView) {
-        return articles.stream()
-            .filter(article -> parseInt(article.countViews()) > limitCountView)
-            .sorted(comparing(HabrArticle::title))
-            .toList();
+        if (listArticlesLimitedCountView == null) {
+            listArticlesLimitedCountView = articles.stream()
+                .filter(article -> parseInt(article.countViews()) > limitCountView)
+                .sorted(comparing(HabrArticle::title))
+                .toList();
+        }
+        return listArticlesLimitedCountView;
     }
 
     public List<String> getUniqueCategories() {
-        return articles.stream()
-            .flatMap(article -> article.categories().stream())
-            .distinct()
-            .toList();
+        if (listCategories == null) {
+            listCategories = articles.stream()
+                .flatMap(article -> article.categories().stream())
+                .distinct()
+                .toList();
+        }
+        return listCategories;
     }
 
     public List<HabrArticle> getHabrArticlesWhereTimeToReadLessThanAverage() {
-        val timeToRead = articles.stream()
-            .map(article -> parseInt(article.timeToRead()))
-            .toList();
+        if (listArticlesTimeToReadLessThanAverage == null) {
+            val timeToRead = articles.stream()
+                .map(article -> parseInt(article.timeToRead()))
+                .toList();
 
-        final int averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
+            val averageTime = timeToRead.stream().mapToInt(Integer::intValue).sum() / timeToRead.size();
 
-        return articles.stream().
-            filter(article -> parseInt(article.timeToRead()) < averageTime).
-            toList();
+            listArticlesTimeToReadLessThanAverage = articles.stream().
+                filter(article -> parseInt(article.timeToRead()) < averageTime).
+                toList();
+        }
+        return listArticlesTimeToReadLessThanAverage;
     }
 }
