@@ -1,16 +1,14 @@
 package org.studing.parsing.writer.theatre;
 
 import lombok.NonNull;
+import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.studing.filter.PerformanceFilter;
+import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.Performance;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -20,18 +18,18 @@ import java.util.Locale;
 import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
-import static javax.xml.transform.OutputKeys.INDENT;
 
-public class PerformanceXmlWriter {
+@FieldDefaults(makeFinal = true)
+public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     private static final DateTimeFormatter FORMAT_DATE;
-    final PerformanceFilter filter;
+    PerformanceFilter filter;
 
     static {
         val dotenv = load();
         FORMAT_DATE = ofPattern(dotenv.get("PERFORMANCE_DATE_FORMAT"), new Locale("ru"));
     }
 
-    public PerformanceXmlWriter(@NonNull final List<Performance> performanceList) {
+    public PerformanceDomXmlWriter(@NonNull final List<Performance> performanceList) {
         filter = new PerformanceFilter(performanceList);
     }
 
@@ -47,10 +45,8 @@ public class PerformanceXmlWriter {
             for (val performance : filter.getLimitAgePerformance(ageLimit)) {
                 writeOnePerformance(root, doc, performance);
             }
+            transform(doc, filePath);
 
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
             System.err.println("Failed to write list performance age-limit to " + filePath);
             throw thrown;
@@ -66,10 +62,8 @@ public class PerformanceXmlWriter {
             for (val performance : filter.getListPerformanceUniqueTitle()) {
                 writeOnePerformance(root, doc, performance);
             }
+            transform(doc, filePath);
 
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
         } catch (Exception thrown) {
             System.err.println("Failed to write unique-title performance to " + filePath);
             throw thrown;
@@ -85,10 +79,7 @@ public class PerformanceXmlWriter {
             for (val entry : filter.getMapTitleListDate().entrySet()) {
                 writeOnePerformanceWithListDate(root, doc, entry.getKey(), entry.getValue());
             }
-
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+            transform(doc, filePath);
         } catch (Exception thrown) {
             System.err.println("Failed to write map (performance, list date) to " + filePath);
             throw thrown;
@@ -107,10 +98,7 @@ public class PerformanceXmlWriter {
             for (val performance : filter.getPerformanceListTask4(durationLimit)) {
                 writeOnePerformance(root, doc, performance);
             }
-
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+            transform(doc, filePath);
         } catch (Exception thrown) {
             System.err.println("Failed to write task4 to " + filePath);
             throw thrown;

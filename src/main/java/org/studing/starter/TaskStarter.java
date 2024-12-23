@@ -5,9 +5,8 @@ import org.studing.parsing.reader.HabrArticleJsonReader;
 import org.studing.parsing.reader.PerformanceJsonReader;
 import org.studing.parsing.writer.habr.xml.HabrArticleDomWriter;
 import org.studing.parsing.writer.habr.xml.HabrArticleXStreamWriter;
-import org.studing.parsing.writer.theatre.PerformanceXmlWriter;
+import org.studing.parsing.writer.theatre.PerformanceDomXmlWriter;
 
-import java.io.IOException;
 import java.time.LocalTime;
 
 import static io.github.cdimascio.dotenv.Dotenv.load;
@@ -51,7 +50,7 @@ public class TaskStarter {
 
     public static void startTask2() {
         try {
-            val writer = new PerformanceXmlWriter(new PerformanceJsonReader().parse(PERFORMANCES));
+            val writer = new PerformanceDomXmlWriter(new PerformanceJsonReader().parse(PERFORMANCES));
             writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
             writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
             writer.writeUniqueTitlePerformance(UNIQUE_TITLE);

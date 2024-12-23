@@ -1,29 +1,27 @@
 package org.studing.parsing.writer.habr.xml;
 
 import lombok.NonNull;
+import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
+import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.HabrArticle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
-import static javax.xml.transform.OutputKeys.INDENT;
 
-public class HabrArticleDomWriter implements HabrArticleXmlWriter {
+@FieldDefaults(makeFinal = true)
+public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticleXmlWriter {
     private static final DateTimeFormatter FORMAT_DATE_PUBLISHED;
-    final HabrArticlesFilter filter;
+    HabrArticlesFilter filter;
 
     static {
         FORMAT_DATE_PUBLISHED = ofPattern(load().get("HABR_ARTICLE_DATE_FORMAT"));
@@ -55,10 +53,7 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
                     titlesElement.appendChild(titleElement);
                 }
             }
-
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+            transform(doc, filePath);
         } catch (Exception thrown) {
             System.err.println("Failed to write author and his Habr article titles to: " + filePath);
             throw thrown;
@@ -89,10 +84,7 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
                 categoryElement.appendChild(doc.createTextNode(category));
                 root.appendChild(categoryElement);
             }
-
-            val transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.setOutputProperty(INDENT, "yes");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+            transform(doc, filePath);
         } catch (Exception thrown) {
             System.err.println("Failed to write HabrArticle unique categories to: " + filePath);
             throw thrown;
@@ -134,6 +126,7 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
         for (val category : article.categories()) {
             categoriesElement.appendChild(createElement(doc, "category", category));
         }
+
         articleElement.appendChild(categoriesElement);
     }
 
@@ -159,8 +152,6 @@ public class HabrArticleDomWriter implements HabrArticleXmlWriter {
             writeOneArticle(root, doc, article);
         }
 
-        val transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty(INDENT, "yes");
-        transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+        transform(doc, filePath);
     }
 }

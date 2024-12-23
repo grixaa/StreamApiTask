@@ -2,6 +2,7 @@ package org.studing.parsing.writer.habr.xml;
 
 import com.thoughtworks.xstream.XStream;
 import lombok.NonNull;
+import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.wrapper.AuthorWrapper;
@@ -15,8 +16,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@FieldDefaults(makeFinal = true)
 public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
-    final HabrArticlesFilter filter;
+    HabrArticlesFilter filter;
 
     public HabrArticleXStreamWriter(@NonNull final List<HabrArticle> articles) {
         this.filter = new HabrArticlesFilter(articles);
