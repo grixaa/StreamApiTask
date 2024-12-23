@@ -1,4 +1,4 @@
-package org.studing.parsing.wrapper;
+package org.studing.parsing.writer.habr.wrapper;
 
 import java.util.List;
 
