@@ -15,9 +15,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
-import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
+import static org.studing.util.EnvParser.get;
 
 @FieldDefaults(makeFinal = true)
 public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
@@ -25,8 +25,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     PerformanceFilter filter;
 
     static {
-        val dotenv = load();
-        FORMAT_DATE = ofPattern(dotenv.get("PERFORMANCE_DATE_FORMAT"), new Locale("ru"));
+        FORMAT_DATE = ofPattern(get("PERFORMANCE_DATE_FORMAT"), new Locale("ru"));
     }
 
     public PerformanceDomXmlWriter(@NonNull final List<Performance> performanceList) {

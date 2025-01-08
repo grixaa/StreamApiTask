@@ -2,8 +2,6 @@ package org.studing.filter;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
-import lombok.experimental.NonFinal;
 import lombok.val;
 import org.studing.type.Performance;
 
@@ -12,35 +10,25 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.Map;
 
-import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.lang.Integer.parseInt;
 import static java.time.DayOfWeek.*;
 import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
+import static org.studing.util.EnvParser.get;
 
 @RequiredArgsConstructor
-@FieldDefaults(makeFinal = true)
 public class PerformanceFilter {
-    List<Performance> performanceList;
     private static final LocalTime TIME_EVENING;
-
-    @NonFinal
+    final List<Performance> performanceList;
     List<Performance> listPerformanceUniqueTitle;
-
-    @NonFinal
     List<Performance> listLimitedAgePerformance;
-
-    @NonFinal
     List<Performance> listPerformanceTask4;
-
-    @NonFinal
     Map<Performance, List<LocalDateTime>> mapPerformanceListDateTime;
 
     static {
-        val dotenv = load();
-        TIME_EVENING = parse(dotenv.get("TIME_EVENING"), ofPattern(dotenv.get("LOCAL_TIME_FORMAT")));
+        TIME_EVENING = parse(get("TIME_EVENING"), ofPattern(get("LOCAL_TIME_FORMAT")));
     }
 
     public List<Performance> getLimitAgePerformance(final int ageLimit) {

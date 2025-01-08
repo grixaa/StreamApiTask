@@ -1,8 +1,6 @@
 package org.studing.filter;
 
 import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
-import lombok.experimental.NonFinal;
 import lombok.val;
 import org.studing.type.HabrArticle;
 
@@ -15,20 +13,11 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 @RequiredArgsConstructor
-@FieldDefaults(makeFinal = true)
 public class HabrArticlesFilter {
-    List<HabrArticle> articles;
-
-    @NonFinal
+    final List<HabrArticle> articles;
     List<HabrArticle> listArticlesLimitedCountView;
-
-    @NonFinal
     List<HabrArticle> listArticlesTimeToReadLessThanAverage;
-
-    @NonFinal
     List<String> listCategories;
-
-    @NonFinal
     Map<String, List<String>> mapAuthorAndHisTitles;
 
     public Map<String, List<String>> getAuthorAndHisTitles() {
