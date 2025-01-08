@@ -9,11 +9,9 @@ import org.studing.parsing.writer.theatre.PerformanceDomXmlWriter;
 
 import java.time.LocalTime;
 
-import static io.github.cdimascio.dotenv.Dotenv.load;
 import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
-import static org.studing.util.path.HabrArticlePath.*;
-import static org.studing.util.path.PerformancePath.*;
+import static org.studing.util.EnvParser.get;
 
 public class Main {
     private static final int LIMIT_COUNT_VIEWS = 10000;
@@ -21,7 +19,7 @@ public class Main {
     private static final LocalTime DURATION_LIMIT;
 
     static {
-        DURATION_LIMIT = parse(load().get("DURATION_LIMIT"), ofPattern("HH:mm"));
+        DURATION_LIMIT = parse(get("DURATION_LIMIT"), ofPattern("HH:mm"));
     }
 
     public static void main(String[] args) {
@@ -32,11 +30,11 @@ public class Main {
 
     public static void startTask11() {
         try {
-            val writer = new HabrArticleDomWriter(new HabrArticleJsonReader().parse(HABR_ARTICLES));
-            writer.writeAuthorAndHisTitles(AUTHORS_TITLES_DOM);
-            writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_DOM, LIMIT_COUNT_VIEWS);
-            writer.writeTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_DOM);
-            writer.writeUniqueCategories(UNIQUE_CATEGORIES_DOM);
+            val writer = new HabrArticleDomWriter(new HabrArticleJsonReader().parse(get("HABR_ARTICLES")));
+            writer.writeAuthorAndHisTitles(get("AUTHORS_TITLES_DOM"));
+            writer.writeLimitCountViews(get("LIMIT_COUNT_VIEWS_DOM"), LIMIT_COUNT_VIEWS);
+            writer.writeTimeToReadLessThanAverage(get("LESS_THAN_AVERAGE_TIME_DOM"));
+            writer.writeUniqueCategories(get("UNIQUE_CATEGORIES_DOM"));
         } catch (Exception thrown) {
             System.err.println("Failed to solve task11:" + thrown);
         }
@@ -44,11 +42,11 @@ public class Main {
 
     public static void startTask12() {
         try {
-            val writer = new HabrArticleXStreamWriter(new HabrArticleJsonReader().parse(HABR_ARTICLES));
-            writer.writeAuthorAndHisTitles(AUTHORS_TITLES_XSTREAM);
-            writer.writeLimitCountViews(LIMIT_COUNT_VIEWS_XSTREAM, LIMIT_COUNT_VIEWS);
-            writer.writeTimeToReadLessThanAverage(LESS_THAN_AVERAGE_TIME_XSTREAM);
-            writer.writeUniqueCategories(UNIQUE_CATEGORIES_XSTREAM);
+            val writer = new HabrArticleXStreamWriter(new HabrArticleJsonReader().parse(get("HABR_ARTICLES")));
+            writer.writeAuthorAndHisTitles(get("AUTHORS_TITLES_XSTREAM"));
+            writer.writeLimitCountViews(get("LIMIT_COUNT_VIEWS_XSTREAM"), LIMIT_COUNT_VIEWS);
+            writer.writeTimeToReadLessThanAverage(get("LESS_THAN_AVERAGE_TIME_XSTREAM"));
+            writer.writeUniqueCategories(get("UNIQUE_CATEGORIES_XSTREAM"));
         } catch (Exception thrown) {
             System.err.println("Failed to solve task12:" + thrown);
         }
@@ -56,11 +54,11 @@ public class Main {
 
     public static void startTask2() {
         try {
-            val writer = new PerformanceDomXmlWriter(new PerformanceJsonReader().parse(PERFORMANCES));
-            writer.writeMapPerformanceListDate(MAP_PERFORMANCE_DATE);
-            writer.writePerformanceAgeLimit(AGE_LIMIT, LIMIT_AGE);
-            writer.writeUniqueTitlePerformance(UNIQUE_TITLE);
-            writer.writeTask4(TASK_4, DURATION_LIMIT);
+            val writer = new PerformanceDomXmlWriter(new PerformanceJsonReader().parse(get("PERFORMANCES")));
+            writer.writeMapPerformanceListDate(get("MAP_PERFORMANCE_DATE"));
+            writer.writePerformanceAgeLimit(get("AGE_LIMIT"), LIMIT_AGE);
+            writer.writeUniqueTitlePerformance(get("UNIQUE_TITLE"));
+            writer.writeTask4(get("TASK_4"), DURATION_LIMIT);
         } catch (Exception thrown) {
             System.err.println("Failed to solve task2:" + thrown);
         }
