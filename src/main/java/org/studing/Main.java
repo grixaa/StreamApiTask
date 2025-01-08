@@ -1,4 +1,4 @@
-package org.studing.starter;
+package org.studing;
 
 import lombok.val;
 import org.studing.parsing.reader.HabrArticleJsonReader;
@@ -15,13 +15,19 @@ import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.studing.util.path.HabrArticlePath.*;
 import static org.studing.util.path.PerformancePath.*;
 
-public class TaskStarter {
+public class Main {
     private static final int LIMIT_COUNT_VIEWS = 10000;
     private static final int LIMIT_AGE = 12;
     private static final LocalTime DURATION_LIMIT;
 
     static {
         DURATION_LIMIT = parse(load().get("DURATION_LIMIT"), ofPattern("HH:mm"));
+    }
+
+    public static void main(String[] args) {
+        startTask11();
+        startTask12();
+        startTask2();
     }
 
     public static void startTask11() {
