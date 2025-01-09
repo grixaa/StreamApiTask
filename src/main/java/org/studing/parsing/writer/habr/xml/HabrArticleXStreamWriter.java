@@ -78,7 +78,10 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
         try {
             write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
         } catch (IOException thrown) {
-            logger.error("Failed to write HabrArticle with time to read less then average to path: {}", filePath, thrown);
+            logger.error(
+                "Failed to write HabrArticle with time to read less then average to path: {}",
+                filePath,
+                thrown);
             throw new XmlWriteException(thrown);
         }
     }

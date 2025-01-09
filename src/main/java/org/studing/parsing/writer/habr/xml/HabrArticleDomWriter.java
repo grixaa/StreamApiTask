@@ -102,7 +102,10 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
                 filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
                 filePath);
         } catch (TransformerException | ParserConfigurationException thrown) {
-            logger.error("Failed to write HabrArticle with time to read less then average to path: {}", filePath, thrown);
+            logger.error(
+                "Failed to write HabrArticle with time to read less then average to path: {}",
+                filePath,
+                thrown);
             throw new XmlWriteException(thrown);
         }
     }

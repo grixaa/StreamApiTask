@@ -4,7 +4,6 @@ import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.studing.exception.XmlWriteException;
 import org.studing.filter.PerformanceFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
@@ -52,7 +51,6 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
                 writeOnePerformance(root, doc, performance);
             }
             transform(doc, filePath);
-
         } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write list performance age-limit to path: {}", filePath, thrown);
             throw new XmlWriteException(thrown);
@@ -69,7 +67,6 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
                 writeOnePerformance(root, doc, performance);
             }
             transform(doc, filePath);
-
         } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write unique-title performance to path: {}", filePath, thrown);
             throw new XmlWriteException(thrown);

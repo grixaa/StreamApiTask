@@ -12,19 +12,22 @@ import org.studing.parsing.writer.theatre.PerformanceDomXmlWriter;
 import java.io.IOException;
 import java.time.LocalTime;
 
+import static java.lang.Integer.parseInt;
 import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.slf4j.LoggerFactory.getLogger;
 import static org.studing.util.EnvParser.get;
 
 public class Main {
-    private static final int LIMIT_COUNT_VIEWS = 10000;
-    private static final int LIMIT_AGE = 12;
+    private static final int LIMIT_COUNT_VIEWS;
+    private static final int LIMIT_AGE;
     private static final LocalTime DURATION_LIMIT;
     private static final Logger logger = getLogger(Main.class);
 
     static {
         DURATION_LIMIT = parse(get("DURATION_LIMIT"), ofPattern("HH:mm"));
+        LIMIT_COUNT_VIEWS = parseInt(get("LIMIT_COUNT_VIEWS"));
+        LIMIT_AGE = parseInt(get("LIMIT_AGE"));
     }
 
     public static void main(String[] args) {
