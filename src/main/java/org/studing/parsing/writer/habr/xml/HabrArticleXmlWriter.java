@@ -1,11 +1,13 @@
 package org.studing.parsing.writer.habr.xml;
 
+import org.studing.exception.XmlWriteException;
+
 public interface HabrArticleXmlWriter {
-    void writeAuthorAndHisTitles(String filePath) throws Exception;
+    void writeAuthorAndHisTitles(String filePath) throws XmlWriteException;
 
-    void writeLimitCountViews(String filePath, final int limitCount) throws Exception;
+    void writeLimitCountViews(String filePath, final int limitCount) throws XmlWriteException;
 
-    void writeUniqueCategories(String filePath) throws Exception;
+    void writeUniqueCategories(String filePath) throws XmlWriteException;
 
-    void writeTimeToReadLessThanAverage(String filePath) throws Exception;
+    void writeTimeToReadLessThanAverage(String filePath) throws XmlWriteException;
 }

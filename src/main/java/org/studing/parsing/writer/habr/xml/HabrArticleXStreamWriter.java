@@ -5,6 +5,7 @@ import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.slf4j.Logger;
+import org.studing.exception.XmlWriteException;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.writer.habr.converter.CategoriesListConverter;
 import org.studing.parsing.writer.habr.converter.HabrArticlesListConverter;
@@ -29,7 +30,7 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
     }
 
     @Override
-    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws Exception {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws XmlWriteException {
         val xstream = new XStream();
         xstream.alias("authors", List.class);
         xstream.alias("author", AuthorWrapper.class);
@@ -45,22 +46,22 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
             writer.write(xstream.toXML(authorsList));
         } catch (IOException thrown) {
             logger.error("Failed to write author and his Habr article titles to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws XmlWriteException {
         try {
             write(filePath, filter.getHabrArticlesLimitCountView(limitCount));
         } catch (IOException thrown) {
             logger.error("Failed to write HabrArticle limit count view to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeUniqueCategories(@NonNull final String filePath) throws Exception {
+    public void writeUniqueCategories(@NonNull final String filePath) throws XmlWriteException {
         val xstream = new XStream();
         xstream.registerConverter(new CategoriesListConverter(true));
 
@@ -68,17 +69,17 @@ public class HabrArticleXStreamWriter implements HabrArticleXmlWriter {
             writer.write(xstream.toXML(filter.getUniqueCategories()));
         } catch (IOException thrown) {
             logger.error("Failed to write HabrArticle unique categories to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws XmlWriteException {
         try {
             write(filePath, filter.getHabrArticlesWhereTimeToReadLessThanAverage());
         } catch (IOException thrown) {
             logger.error("Failed to write HabrArticle with time to read less then average to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 

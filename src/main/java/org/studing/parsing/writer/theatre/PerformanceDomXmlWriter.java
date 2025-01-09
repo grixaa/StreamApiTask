@@ -5,12 +5,15 @@ import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.studing.exception.XmlWriteException;
 import org.studing.filter.PerformanceFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.Performance;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -38,7 +41,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
 
     public void writePerformanceAgeLimit(
         @NonNull final String filePath,
-        final int ageLimit) throws Exception {
+        final int ageLimit) throws XmlWriteException {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
@@ -50,13 +53,13 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             }
             transform(doc, filePath);
 
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write list performance age-limit to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
-    public void writeUniqueTitlePerformance(@NonNull final String filePath) throws Exception {
+    public void writeUniqueTitlePerformance(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("performanceList");
@@ -67,13 +70,13 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             }
             transform(doc, filePath);
 
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write unique-title performance to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
-    public void writeMapPerformanceListDate(@NonNull final String filePath) throws Exception {
+    public void writeMapPerformanceListDate(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("performanceList");
@@ -83,15 +86,15 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
                 writeOnePerformanceWithListDate(root, doc, entry.getKey(), entry.getValue());
             }
             transform(doc, filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write map (performance, list date) to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     public void writeTask4(
         @NonNull final String filePath,
-        @NonNull final LocalTime durationLimit) throws Exception {
+        @NonNull final LocalTime durationLimit) throws XmlWriteException {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
@@ -102,9 +105,9 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
                 writeOnePerformance(root, doc, performance);
             }
             transform(doc, filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write task4 to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 

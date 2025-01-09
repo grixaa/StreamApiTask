@@ -4,6 +4,7 @@ import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
 import org.slf4j.Logger;
+import org.studing.exception.XmlWriteException;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.HabrArticle;
@@ -35,7 +36,7 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
     }
 
     @Override
-    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws Exception {
+    public void writeAuthorAndHisTitles(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val rootElement = doc.createElement("authors");
@@ -57,26 +58,26 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
                 }
             }
             transform(doc, filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write author and his Habr article titles to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws Exception {
+    public void writeLimitCountViews(@NonNull final String filePath, final int limitCount) throws XmlWriteException {
         try {
             writeHabrArticles(
                 filter.getHabrArticlesLimitCountView(limitCount),
                 filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write HabrArticle limit count view to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeUniqueCategories(@NonNull final String filePath) throws Exception {
+    public void writeUniqueCategories(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
             val root = doc.createElement("categories");
@@ -88,21 +89,21 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
                 root.appendChild(categoryElement);
             }
             transform(doc, filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write HabrArticle unique categories to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
     @Override
-    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws Exception {
+    public void writeTimeToReadLessThanAverage(@NonNull final String filePath) throws XmlWriteException {
         try {
             writeHabrArticles(
                 filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
                 filePath);
-        } catch (Exception thrown) {
+        } catch (TransformerException | ParserConfigurationException thrown) {
             logger.error("Failed to write HabrArticle with time to read less then average to path: {}", filePath, thrown);
-            throw thrown;
+            throw new XmlWriteException(thrown);
         }
     }
 
