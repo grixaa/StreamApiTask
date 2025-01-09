@@ -3,6 +3,8 @@ package org.studing.parsing.writer.theatre;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.studing.filter.PerformanceFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.Performance;
@@ -17,11 +19,13 @@ import java.util.Locale;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
+import static org.slf4j.LoggerFactory.getLogger;
 import static org.studing.util.EnvParser.get;
 
 @FieldDefaults(makeFinal = true)
 public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     private static final DateTimeFormatter FORMAT_DATE;
+    private static final Logger logger = getLogger(PerformanceDomXmlWriter.class);
     PerformanceFilter filter;
 
     static {
@@ -47,7 +51,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             transform(doc, filePath);
 
         } catch (Exception thrown) {
-            System.err.println("Failed to write list performance age-limit to " + filePath);
+            logger.error("Failed to write list performance age-limit to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -64,7 +68,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             transform(doc, filePath);
 
         } catch (Exception thrown) {
-            System.err.println("Failed to write unique-title performance to " + filePath);
+            logger.error("Failed to write unique-title performance to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -80,7 +84,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             }
             transform(doc, filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write map (performance, list date) to " + filePath);
+            logger.error("Failed to write map (performance, list date) to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -99,7 +103,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
             }
             transform(doc, filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write task4 to " + filePath);
+            logger.error("Failed to write task4 to path: {}", filePath, thrown);
             throw thrown;
         }
     }

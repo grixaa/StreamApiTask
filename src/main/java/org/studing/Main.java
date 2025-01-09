@@ -1,6 +1,7 @@
 package org.studing;
 
 import lombok.val;
+import org.slf4j.Logger;
 import org.studing.parsing.reader.HabrArticleJsonReader;
 import org.studing.parsing.reader.PerformanceJsonReader;
 import org.studing.parsing.writer.habr.xml.HabrArticleDomWriter;
@@ -11,12 +12,14 @@ import java.time.LocalTime;
 
 import static java.time.LocalTime.parse;
 import static java.time.format.DateTimeFormatter.ofPattern;
+import static org.slf4j.LoggerFactory.getLogger;
 import static org.studing.util.EnvParser.get;
 
 public class Main {
     private static final int LIMIT_COUNT_VIEWS = 10000;
     private static final int LIMIT_AGE = 12;
     private static final LocalTime DURATION_LIMIT;
+    private static final Logger logger = getLogger(Main.class);
 
     static {
         DURATION_LIMIT = parse(get("DURATION_LIMIT"), ofPattern("HH:mm"));
@@ -36,7 +39,7 @@ public class Main {
             writer.writeTimeToReadLessThanAverage(get("LESS_THAN_AVERAGE_TIME_DOM"));
             writer.writeUniqueCategories(get("UNIQUE_CATEGORIES_DOM"));
         } catch (Exception thrown) {
-            System.err.println("Failed to solve task11:" + thrown);
+            logger.error("Failed to solve task11", thrown);
         }
     }
 
@@ -48,7 +51,7 @@ public class Main {
             writer.writeTimeToReadLessThanAverage(get("LESS_THAN_AVERAGE_TIME_XSTREAM"));
             writer.writeUniqueCategories(get("UNIQUE_CATEGORIES_XSTREAM"));
         } catch (Exception thrown) {
-            System.err.println("Failed to solve task12:" + thrown);
+            logger.error("Failed to solve task12", thrown);
         }
     }
 
@@ -60,7 +63,7 @@ public class Main {
             writer.writeUniqueTitlePerformance(get("UNIQUE_TITLE"));
             writer.writeTask4(get("TASK_4"), DURATION_LIMIT);
         } catch (Exception thrown) {
-            System.err.println("Failed to solve task2:" + thrown);
+            logger.error("Failed to solve task2:", thrown);
         }
     }
 }

@@ -15,7 +15,7 @@ public class HabrArticleJsonReader extends JsonReader<HabrArticle> {
                 new File(path),
                 mapper.getTypeFactory().constructCollectionType(List.class, HabrArticle.class));
         } catch (IOException thrown) {
-            System.err.println("Failed to read json file: " + thrown);
+            logger.error("Failed to read json file at path: {}", path, thrown);
             throw thrown;
         }
     }

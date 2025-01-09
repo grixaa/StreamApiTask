@@ -15,7 +15,7 @@ public class PerformanceJsonReader extends JsonReader<Performance> {
                 new File(path),
                 mapper.getTypeFactory().constructCollectionType(List.class, Performance.class));
         } catch (IOException thrown) {
-            System.err.println("Failed to read json file: " + thrown);
+            logger.error("Failed to read json file at path: {}", path, thrown);
             throw thrown;
         }
     }

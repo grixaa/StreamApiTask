@@ -3,6 +3,7 @@ package org.studing.parsing.writer.habr.xml;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
+import org.slf4j.Logger;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.HabrArticle;
@@ -16,11 +17,13 @@ import java.util.List;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
+import static org.slf4j.LoggerFactory.getLogger;
 import static org.studing.util.EnvParser.get;
 
 @FieldDefaults(makeFinal = true)
 public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticleXmlWriter {
     private static final DateTimeFormatter FORMAT_DATE_PUBLISHED;
+    private static final Logger logger = getLogger(HabrArticleDomWriter.class);
     HabrArticlesFilter filter;
 
     static {
@@ -55,7 +58,7 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
             }
             transform(doc, filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write author and his Habr article titles to: " + filePath);
+            logger.error("Failed to write author and his Habr article titles to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -67,7 +70,7 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
                 filter.getHabrArticlesLimitCountView(limitCount),
                 filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write HabrArticle limit count view to: " + filePath);
+            logger.error("Failed to write HabrArticle limit count view to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -86,7 +89,7 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
             }
             transform(doc, filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write HabrArticle unique categories to: " + filePath);
+            logger.error("Failed to write HabrArticle unique categories to path: {}", filePath, thrown);
             throw thrown;
         }
     }
@@ -98,7 +101,7 @@ public class HabrArticleDomWriter extends BaseDomXmlWriter implements HabrArticl
                 filter.getHabrArticlesWhereTimeToReadLessThanAverage(),
                 filePath);
         } catch (Exception thrown) {
-            System.err.println("Failed to write HabrArticle with time to read less then average to: " + filePath);
+            logger.error("Failed to write HabrArticle with time to read less then average to path: {}", filePath, thrown);
             throw thrown;
         }
     }

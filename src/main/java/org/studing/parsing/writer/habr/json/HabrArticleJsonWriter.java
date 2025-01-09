@@ -15,7 +15,7 @@ public class HabrArticleJsonWriter extends JsonWriter<HabrArticle> {
         try (val writer = new BufferedWriter(new FileWriter(path))) {
             writer.write(mapper.writeValueAsString(list));
         } catch (final IOException thrown) {
-            System.err.println("Failed to write json file: " + thrown);
+            logger.error("Failed to write json file at path: {}", path, thrown);
             throw thrown;
         }
     }

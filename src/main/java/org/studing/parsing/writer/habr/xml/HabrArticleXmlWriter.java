@@ -1,7 +1,5 @@
 package org.studing.parsing.writer.habr.xml;
 
-import lombok.NonNull;
-
 public interface HabrArticleXmlWriter {
     void writeAuthorAndHisTitles(String filePath) throws Exception;
 
