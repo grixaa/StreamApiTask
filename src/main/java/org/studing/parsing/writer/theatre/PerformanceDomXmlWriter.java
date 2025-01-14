@@ -25,6 +25,7 @@ import static org.studing.util.EnvParser.get;
 @FieldDefaults(makeFinal = true)
 public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     private static final DateTimeFormatter FORMAT_DATE;
+    private static final String TAG_NAME_PERFORMANCE = "performanceList";
     PerformanceFilter filter;
 
     static {
@@ -41,7 +42,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
-            val root = doc.createElement("performanceList");
+            val root = doc.createElement(TAG_NAME_PERFORMANCE);
             doc.appendChild(root);
 
             for (val performance : filter.getLimitAgePerformance(ageLimit)) {
@@ -58,7 +59,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     public void writeUniqueTitlePerformance(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
-            val root = doc.createElement("performanceList");
+            val root = doc.createElement(TAG_NAME_PERFORMANCE);
             doc.appendChild(root);
 
             for (val performance : filter.getListPerformanceUniqueTitle()) {
@@ -75,7 +76,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
     public void writeMapPerformanceListDate(@NonNull final String filePath) throws XmlWriteException {
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
-            val root = doc.createElement("performanceList");
+            val root = doc.createElement(TAG_NAME_PERFORMANCE);
             doc.appendChild(root);
 
             for (val entry : filter.getMapTitleListDate().entrySet()) {
@@ -95,7 +96,7 @@ public class PerformanceDomXmlWriter extends BaseDomXmlWriter {
 
         try {
             val doc = newInstance().newDocumentBuilder().newDocument();
-            val root = doc.createElement("performanceList");
+            val root = doc.createElement(TAG_NAME_PERFORMANCE);
             doc.appendChild(root);
 
             for (val performance : filter.getPerformanceListTask4(durationLimit)) {
