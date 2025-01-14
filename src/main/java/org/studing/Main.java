@@ -2,7 +2,7 @@ package org.studing;
 
 import lombok.val;
 import org.slf4j.Logger;
-import org.studing.exception.XmlWriteException;
+import org.studing.exception.xml.XmlWriteException;
 import org.studing.parsing.reader.HabrArticleJsonReader;
 import org.studing.parsing.reader.PerformanceJsonReader;
 import org.studing.parsing.writer.habr.xml.HabrArticleDomWriter;

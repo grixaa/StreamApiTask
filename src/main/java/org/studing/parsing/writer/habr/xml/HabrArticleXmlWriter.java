@@ -1,6 +1,6 @@
 package org.studing.parsing.writer.habr.xml;
 
-import org.studing.exception.XmlWriteException;
+import org.studing.exception.xml.XmlWriteException;
 
 public interface HabrArticleXmlWriter {
     void writeAuthorAndHisTitles(String filePath) throws XmlWriteException;

@@ -3,7 +3,7 @@ package org.studing.parsing.writer.habr.xml;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import lombok.val;
-import org.studing.exception.XmlWriteException;
+import org.studing.exception.xml.XmlWriteException;
 import org.studing.filter.HabrArticlesFilter;
 import org.studing.parsing.writer.BaseDomXmlWriter;
 import org.studing.type.HabrArticle;
