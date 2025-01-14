@@ -1,10 +1,8 @@
 package org.studing.parsing.writer.habr.converter;
 
 import com.thoughtworks.xstream.converters.Converter;
-import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.converters.UnmarshallingContext;
 import com.thoughtworks.xstream.io.HierarchicalStreamReader;
-import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import lombok.NonNull;
 import lombok.val;
 
@@ -32,10 +30,4 @@ public abstract class BaseListConverter implements Converter {
     public boolean canConvert(@NonNull final Class aClass) {
         return List.class.isAssignableFrom(aClass);
     }
-
-    @Override
-    public abstract void marshal(
-        Object o,
-        HierarchicalStreamWriter hierarchicalStreamWriter,
-        MarshallingContext marshallingContext);
 }
